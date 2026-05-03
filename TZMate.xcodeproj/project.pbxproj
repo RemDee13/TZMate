@@ -25,7 +25,53 @@
 		33A1B2C3D4E5F60000000005 /* TimeZoneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B2C3D4E5F60000000015 /* TimeZoneService.swift */; };
 		33A1B2C3D4E5F60000000006 /* PhoneCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B2C3D4E5F60000000016 /* PhoneCodeService.swift */; };
 		33A1B2C3D4E5F60000000007 /* country_time_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 33A1B2C3D4E5F60000000017 /* country_time_data.json */; };
+		44A1B2C3D4E5F60000000001 /* ContactStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1B2C3D4E5F60000000011 /* ContactStorageService.swift */; };
+		44A1B2C3D4E5F60000000002 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1B2C3D4E5F60000000012 /* ContactsView.swift */; };
+		44A1B2C3D4E5F60000000003 /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1B2C3D4E5F60000000013 /* ContactRowView.swift */; };
+		44A1B2C3D4E5F60000000004 /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1B2C3D4E5F60000000014 /* ContactFormView.swift */; };
+		55A1B2C3D4E5F60000000001 /* TimeConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B2C3D4E5F60000000011 /* TimeConverterView.swift */; };
+		66A1B2C3D4E5F60000000001 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1B2C3D4E5F60000000011 /* Constants.swift */; };
+		66A1B2C3D4E5F60000000002 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1B2C3D4E5F60000000011 /* Constants.swift */; };
+		77A1B2C3D4E5F60000000001 /* TZMateWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1B2C3D4E5F60000000011 /* TZMateWidgetProvider.swift */; };
+		77A1B2C3D4E5F60000000002 /* TZMateWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1B2C3D4E5F60000000012 /* TZMateWidgetEntryView.swift */; };
+		77A1B2C3D4E5F60000000003 /* TZMateWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1B2C3D4E5F60000000013 /* TZMateWidget.swift */; };
+		77A1B2C3D4E5F60000000004 /* TZMateWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1B2C3D4E5F60000000014 /* TZMateWidgetBundle.swift */; };
+		77A1B2C3D4E5F60000000005 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000011 /* Contact.swift */; };
+		77A1B2C3D4E5F60000000006 /* CountryTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000013 /* CountryTimeZone.swift */; };
+		77A1B2C3D4E5F60000000007 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000014 /* AppSettings.swift */; };
+		77A1B2C3D4E5F60000000008 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000015 /* AppTheme.swift */; };
+		77A1B2C3D4E5F60000000009 /* TimeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000016 /* TimeFormat.swift */; };
+		77A1B2C3D4E5F6000000000A /* TimeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B2C3D4E5F60000000011 /* TimeStatus.swift */; };
+		77A1B2C3D4E5F6000000000B /* DateRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B2C3D4E5F60000000012 /* DateRelation.swift */; };
+		77A1B2C3D4E5F6000000000C /* TimeZoneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B2C3D4E5F60000000015 /* TimeZoneService.swift */; };
+		77A1B2C3D4E5F6000000000D /* ContactStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1B2C3D4E5F60000000011 /* ContactStorageService.swift */; };
+		77A1B2C3D4E5F6000000000E /* SettingsStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000017 /* SettingsStorageService.swift */; };
+		77A1B2C3D4E5F6000000000F /* TZMateWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 77A1B2C3D4E5F60000000010 /* TZMateWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77A1B2C3D4E5F60000000050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11A1B2C3D4E5F60000000060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77A1B2C3D4E5F60000000040;
+			remoteInfo = TZMateWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77A1B2C3D4E5F60000000051 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				77A1B2C3D4E5F6000000000F /* TZMateWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11A1B2C3D4E5F60000000010 /* TZMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TZMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,10 +94,31 @@
 		33A1B2C3D4E5F60000000015 /* TimeZoneService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneService.swift; sourceTree = "<group>"; };
 		33A1B2C3D4E5F60000000016 /* PhoneCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCodeService.swift; sourceTree = "<group>"; };
 		33A1B2C3D4E5F60000000017 /* country_time_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = country_time_data.json; sourceTree = "<group>"; };
+		44A1B2C3D4E5F60000000011 /* ContactStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStorageService.swift; sourceTree = "<group>"; };
+		44A1B2C3D4E5F60000000012 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		44A1B2C3D4E5F60000000013 /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
+		44A1B2C3D4E5F60000000014 /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
+		55A1B2C3D4E5F60000000011 /* TimeConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverterView.swift; sourceTree = "<group>"; };
+		66A1B2C3D4E5F60000000011 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		66A1B2C3D4E5F60000000012 /* TZMate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TZMate.entitlements; sourceTree = "<group>"; };
+		77A1B2C3D4E5F60000000010 /* TZMateWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TZMateWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A1B2C3D4E5F60000000011 /* TZMateWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZMateWidgetProvider.swift; sourceTree = "<group>"; };
+		77A1B2C3D4E5F60000000012 /* TZMateWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZMateWidgetEntryView.swift; sourceTree = "<group>"; };
+		77A1B2C3D4E5F60000000013 /* TZMateWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZMateWidget.swift; sourceTree = "<group>"; };
+		77A1B2C3D4E5F60000000014 /* TZMateWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZMateWidgetBundle.swift; sourceTree = "<group>"; };
+		77A1B2C3D4E5F60000000015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A1B2C3D4E5F60000000016 /* TZMateWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TZMateWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		11A1B2C3D4E5F60000000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A1B2C3D4E5F60000000020 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				11A1B2C3D4E5F60000000031 /* TZMate */,
+				77A1B2C3D4E5F60000000030 /* TZMateWidgetExtension */,
 				11A1B2C3D4E5F60000000034 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +145,8 @@
 				22A1B2C3D4E5F60000000030 /* Models */,
 				22A1B2C3D4E5F60000000031 /* Services */,
 				33A1B2C3D4E5F60000000030 /* Data */,
+				66A1B2C3D4E5F60000000030 /* Utilities */,
+				66A1B2C3D4E5F60000000012 /* TZMate.entitlements */,
 				11A1B2C3D4E5F60000000014 /* Info.plist */,
 			);
 			path = TZMate;
@@ -95,9 +165,20 @@
 			isa = PBXGroup;
 			children = (
 				11A1B2C3D4E5F60000000013 /* RootPopoverView.swift */,
+				44A1B2C3D4E5F60000000030 /* Contacts */,
+				55A1B2C3D4E5F60000000030 /* Converter */,
 				22A1B2C3D4E5F60000000032 /* Settings */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		11A1B2C3D4E5F60000000034 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11A1B2C3D4E5F60000000010 /* TZMate.app */,
+				77A1B2C3D4E5F60000000010 /* TZMateWidgetExtension.appex */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		22A1B2C3D4E5F60000000030 /* Models */ = {
@@ -120,19 +201,12 @@
 			isa = PBXGroup;
 			children = (
 				22A1B2C3D4E5F60000000017 /* SettingsStorageService.swift */,
+				44A1B2C3D4E5F60000000011 /* ContactStorageService.swift */,
 				33A1B2C3D4E5F60000000014 /* CountryDataService.swift */,
 				33A1B2C3D4E5F60000000015 /* TimeZoneService.swift */,
 				33A1B2C3D4E5F60000000016 /* PhoneCodeService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		33A1B2C3D4E5F60000000030 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				33A1B2C3D4E5F60000000017 /* country_time_data.json */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		22A1B2C3D4E5F60000000032 /* Settings */ = {
@@ -143,12 +217,51 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		11A1B2C3D4E5F60000000034 /* Products */ = {
+		33A1B2C3D4E5F60000000030 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				11A1B2C3D4E5F60000000010 /* TZMate.app */,
+				33A1B2C3D4E5F60000000017 /* country_time_data.json */,
 			);
-			name = Products;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		44A1B2C3D4E5F60000000030 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				44A1B2C3D4E5F60000000012 /* ContactsView.swift */,
+				44A1B2C3D4E5F60000000013 /* ContactRowView.swift */,
+				44A1B2C3D4E5F60000000014 /* ContactFormView.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		55A1B2C3D4E5F60000000030 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				55A1B2C3D4E5F60000000011 /* TimeConverterView.swift */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		66A1B2C3D4E5F60000000030 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				66A1B2C3D4E5F60000000011 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		77A1B2C3D4E5F60000000030 /* TZMateWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				77A1B2C3D4E5F60000000011 /* TZMateWidgetProvider.swift */,
+				77A1B2C3D4E5F60000000012 /* TZMateWidgetEntryView.swift */,
+				77A1B2C3D4E5F60000000013 /* TZMateWidget.swift */,
+				77A1B2C3D4E5F60000000014 /* TZMateWidgetBundle.swift */,
+				77A1B2C3D4E5F60000000016 /* TZMateWidgetExtension.entitlements */,
+				77A1B2C3D4E5F60000000015 /* Info.plist */,
+			);
+			path = TZMateWidgetExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,15 +274,34 @@
 				11A1B2C3D4E5F60000000050 /* Sources */,
 				11A1B2C3D4E5F60000000020 /* Frameworks */,
 				11A1B2C3D4E5F60000000051 /* Resources */,
+				77A1B2C3D4E5F60000000051 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				77A1B2C3D4E5F60000000052 /* PBXTargetDependency */,
 			);
 			name = TZMate;
 			productName = TZMate;
 			productReference = 11A1B2C3D4E5F60000000010 /* TZMate.app */;
 			productType = "com.apple.product-type.application";
+		};
+		77A1B2C3D4E5F60000000040 /* TZMateWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77A1B2C3D4E5F60000000070 /* Build configuration list for PBXNativeTarget "TZMateWidgetExtension" */;
+			buildPhases = (
+				77A1B2C3D4E5F60000000053 /* Sources */,
+				77A1B2C3D4E5F60000000020 /* Frameworks */,
+				77A1B2C3D4E5F60000000054 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TZMateWidgetExtension;
+			productName = TZMateWidgetExtension;
+			productReference = 77A1B2C3D4E5F60000000010 /* TZMateWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -183,6 +315,9 @@
 				TargetAttributes = {
 					11A1B2C3D4E5F60000000040 = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					77A1B2C3D4E5F60000000040 = {
+						CreatedOnToolsVersion = 26.4.1;
 					};
 				};
 			};
@@ -200,6 +335,7 @@
 			projectRoot = "";
 			targets = (
 				11A1B2C3D4E5F60000000040 /* TZMate */,
+				77A1B2C3D4E5F60000000040 /* TZMateWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -213,6 +349,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77A1B2C3D4E5F60000000054 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -223,6 +366,7 @@
 				11A1B2C3D4E5F60000000001 /* TZMateApp.swift in Sources */,
 				11A1B2C3D4E5F60000000002 /* AppState.swift in Sources */,
 				11A1B2C3D4E5F60000000003 /* RootPopoverView.swift in Sources */,
+				66A1B2C3D4E5F60000000001 /* Constants.swift in Sources */,
 				22A1B2C3D4E5F60000000001 /* Contact.swift in Sources */,
 				22A1B2C3D4E5F60000000002 /* CountryTimeData.swift in Sources */,
 				22A1B2C3D4E5F60000000003 /* CountryTimeZone.swift in Sources */,
@@ -237,10 +381,45 @@
 				33A1B2C3D4E5F60000000004 /* CountryDataService.swift in Sources */,
 				33A1B2C3D4E5F60000000005 /* TimeZoneService.swift in Sources */,
 				33A1B2C3D4E5F60000000006 /* PhoneCodeService.swift in Sources */,
+				44A1B2C3D4E5F60000000001 /* ContactStorageService.swift in Sources */,
+				44A1B2C3D4E5F60000000002 /* ContactsView.swift in Sources */,
+				44A1B2C3D4E5F60000000003 /* ContactRowView.swift in Sources */,
+				44A1B2C3D4E5F60000000004 /* ContactFormView.swift in Sources */,
+				55A1B2C3D4E5F60000000001 /* TimeConverterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A1B2C3D4E5F60000000053 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A1B2C3D4E5F60000000001 /* TZMateWidgetProvider.swift in Sources */,
+				77A1B2C3D4E5F60000000002 /* TZMateWidgetEntryView.swift in Sources */,
+				77A1B2C3D4E5F60000000003 /* TZMateWidget.swift in Sources */,
+				77A1B2C3D4E5F60000000004 /* TZMateWidgetBundle.swift in Sources */,
+				66A1B2C3D4E5F60000000002 /* Constants.swift in Sources */,
+				77A1B2C3D4E5F60000000005 /* Contact.swift in Sources */,
+				77A1B2C3D4E5F60000000006 /* CountryTimeZone.swift in Sources */,
+				77A1B2C3D4E5F60000000007 /* AppSettings.swift in Sources */,
+				77A1B2C3D4E5F60000000008 /* AppTheme.swift in Sources */,
+				77A1B2C3D4E5F60000000009 /* TimeFormat.swift in Sources */,
+				77A1B2C3D4E5F6000000000A /* TimeStatus.swift in Sources */,
+				77A1B2C3D4E5F6000000000B /* DateRelation.swift in Sources */,
+				77A1B2C3D4E5F6000000000C /* TimeZoneService.swift in Sources */,
+				77A1B2C3D4E5F6000000000D /* ContactStorageService.swift in Sources */,
+				77A1B2C3D4E5F6000000000E /* SettingsStorageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77A1B2C3D4E5F60000000052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77A1B2C3D4E5F60000000040 /* TZMateWidgetExtension */;
+			targetProxy = 77A1B2C3D4E5F60000000050 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		11A1B2C3D4E5F60000000062 /* Debug */ = {
@@ -360,11 +539,13 @@
 		11A1B2C3D4E5F60000000071 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = TZMate/TZMate.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMate/Info.plist;
@@ -375,6 +556,7 @@
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.remdee.tzmate;
 				PRODUCT_NAME = TZMate;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -383,11 +565,13 @@
 		11A1B2C3D4E5F60000000072 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = TZMate/TZMate.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMate/Info.plist;
@@ -398,8 +582,67 @@
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.remdee.tzmate;
 				PRODUCT_NAME = TZMate;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		77A1B2C3D4E5F60000000071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = TZMateWidgetExtension/TZMateWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TZMateWidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.remdee.tzmate.TZMateWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = appex;
+			};
+			name = Debug;
+		};
+		77A1B2C3D4E5F60000000072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = TZMateWidgetExtension/TZMateWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TZMateWidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.remdee.tzmate.TZMateWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = appex;
 			};
 			name = Release;
 		};
@@ -420,6 +663,15 @@
 			buildConfigurations = (
 				11A1B2C3D4E5F60000000071 /* Debug */,
 				11A1B2C3D4E5F60000000072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77A1B2C3D4E5F60000000070 /* Build configuration list for PBXNativeTarget "TZMateWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A1B2C3D4E5F60000000071 /* Debug */,
+				77A1B2C3D4E5F60000000072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

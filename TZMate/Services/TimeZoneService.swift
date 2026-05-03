@@ -21,6 +21,29 @@ struct TimeZoneService {
         return formatter.string(from: date)
     }
 
+    func timeRangeDescription(for timeZones: [CountryTimeZone], format: TimeFormat) -> String {
+        let date = Date()
+        let formattedTimes = timeZones
+            .map { timeZone in
+                (
+                    offset: self.timeZone(for: timeZone.identifier).secondsFromGMT(for: date),
+                    time: formatTime(date, in: timeZone.identifier, format: format)
+                )
+            }
+            .sorted { $0.offset < $1.offset }
+            .map(\.time)
+
+        guard let firstTime = formattedTimes.first else {
+            return ""
+        }
+
+        guard let lastTime = formattedTimes.last, lastTime != firstTime else {
+            return firstTime
+        }
+
+        return "\(firstTime)-\(lastTime)"
+    }
+
     func timeDifferenceDescription(
         from sourceTimeZoneIdentifier: String,
         to targetTimeZoneIdentifier: String
@@ -69,7 +92,52 @@ struct TimeZoneService {
         from sourceTimeZoneIdentifier: String,
         to targetTimeZoneIdentifier: String
     ) -> Date {
-        date
+        makeDate(from: date, in: sourceTimeZoneIdentifier) ?? date
+    }
+
+    func makeDate(
+        year: Int,
+        month: Int,
+        day: Int,
+        hour: Int,
+        minute: Int,
+        in timeZoneIdentifier: String
+    ) -> Date? {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = timeZone(for: timeZoneIdentifier)
+
+        var components = DateComponents()
+        components.calendar = calendar
+        components.timeZone = calendar.timeZone
+        components.year = year
+        components.month = month
+        components.day = day
+        components.hour = hour
+        components.minute = minute
+
+        return calendar.date(from: components)
+    }
+
+    func makeDate(from wallClockDate: Date, in timeZoneIdentifier: String) -> Date? {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day, .hour, .minute], from: wallClockDate)
+
+        guard let year = components.year,
+              let month = components.month,
+              let day = components.day,
+              let hour = components.hour,
+              let minute = components.minute else {
+            return nil
+        }
+
+        return makeDate(
+            year: year,
+            month: month,
+            day: day,
+            hour: hour,
+            minute: minute,
+            in: timeZoneIdentifier
+        )
     }
 
     func dateRelation(

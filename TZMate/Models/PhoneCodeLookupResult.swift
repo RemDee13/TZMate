@@ -1,7 +1,7 @@
 import Foundation
 
 enum PhoneCodeLookupResult: Equatable {
-    case noMatch
+    case noMatch(query: String)
     case singleCountrySingleTimeZone(CountryTimeData)
     case singleCountryMultipleTimeZones(CountryTimeData)
     case multipleCountries([CountryTimeData])

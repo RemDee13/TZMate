@@ -42,17 +42,9 @@ struct RootPopoverView: View {
     private var activeTab: some View {
         switch appState.selectedTab {
         case .contacts:
-            PlaceholderTabView(
-                title: "Contacts",
-                systemImageName: "person.2",
-                message: "Saved client times will appear here."
-            )
+            ContactsView()
         case .converter:
-            PlaceholderTabView(
-                title: "Converter",
-                systemImageName: "clock.arrow.circlepath",
-                message: "Time conversion will appear here."
-            )
+            TimeConverterView()
         case .settings:
             SettingsView()
         }
