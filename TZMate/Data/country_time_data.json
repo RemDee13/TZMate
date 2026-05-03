@@ -1,0 +1,457 @@
+[
+  {
+    "countryName": "Thailand",
+    "isoCode": "TH",
+    "phoneCode": "+66",
+    "defaultCity": "Bangkok",
+    "defaultTimeZone": "Asia/Bangkok",
+    "timeZones": [
+      {
+        "identifier": "Asia/Bangkok",
+        "label": "Thailand Time",
+        "majorCities": ["Bangkok", "Phuket", "Chiang Mai", "Pattaya"]
+      }
+    ]
+  },
+  {
+    "countryName": "Germany",
+    "isoCode": "DE",
+    "phoneCode": "+49",
+    "defaultCity": "Berlin",
+    "defaultTimeZone": "Europe/Berlin",
+    "timeZones": [
+      {
+        "identifier": "Europe/Berlin",
+        "label": "Central European Time",
+        "majorCities": ["Berlin", "Munich", "Hamburg", "Frankfurt"]
+      }
+    ]
+  },
+  {
+    "countryName": "United Kingdom",
+    "isoCode": "GB",
+    "phoneCode": "+44",
+    "defaultCity": "London",
+    "defaultTimeZone": "Europe/London",
+    "timeZones": [
+      {
+        "identifier": "Europe/London",
+        "label": "United Kingdom Time",
+        "majorCities": ["London", "Manchester", "Birmingham", "Edinburgh"]
+      }
+    ]
+  },
+  {
+    "countryName": "United States",
+    "isoCode": "US",
+    "phoneCode": "+1",
+    "defaultCity": "New York",
+    "defaultTimeZone": "America/New_York",
+    "timeZones": [
+      {
+        "identifier": "America/New_York",
+        "label": "Eastern Time",
+        "majorCities": ["New York", "Washington", "Miami", "Boston"]
+      },
+      {
+        "identifier": "America/Chicago",
+        "label": "Central Time",
+        "majorCities": ["Chicago", "Houston", "Dallas", "Minneapolis"]
+      },
+      {
+        "identifier": "America/Denver",
+        "label": "Mountain Time",
+        "majorCities": ["Denver", "Salt Lake City", "Boise"]
+      },
+      {
+        "identifier": "America/Phoenix",
+        "label": "Arizona Time",
+        "majorCities": ["Phoenix", "Tucson"]
+      },
+      {
+        "identifier": "America/Los_Angeles",
+        "label": "Pacific Time",
+        "majorCities": ["Los Angeles", "San Francisco", "Seattle", "Las Vegas"]
+      },
+      {
+        "identifier": "America/Anchorage",
+        "label": "Alaska Time",
+        "majorCities": ["Anchorage", "Juneau"]
+      },
+      {
+        "identifier": "Pacific/Honolulu",
+        "label": "Hawaii Time",
+        "majorCities": ["Honolulu"]
+      }
+    ]
+  },
+  {
+    "countryName": "Canada",
+    "isoCode": "CA",
+    "phoneCode": "+1",
+    "defaultCity": "Toronto",
+    "defaultTimeZone": "America/Toronto",
+    "timeZones": [
+      {
+        "identifier": "America/St_Johns",
+        "label": "Newfoundland Time",
+        "majorCities": ["St. John's"]
+      },
+      {
+        "identifier": "America/Halifax",
+        "label": "Atlantic Time",
+        "majorCities": ["Halifax", "Moncton"]
+      },
+      {
+        "identifier": "America/Toronto",
+        "label": "Eastern Time",
+        "majorCities": ["Toronto", "Ottawa", "Montreal"]
+      },
+      {
+        "identifier": "America/Winnipeg",
+        "label": "Central Time",
+        "majorCities": ["Winnipeg", "Regina"]
+      },
+      {
+        "identifier": "America/Edmonton",
+        "label": "Mountain Time",
+        "majorCities": ["Edmonton", "Calgary"]
+      },
+      {
+        "identifier": "America/Vancouver",
+        "label": "Pacific Time",
+        "majorCities": ["Vancouver", "Victoria"]
+      }
+    ]
+  },
+  {
+    "countryName": "Australia",
+    "isoCode": "AU",
+    "phoneCode": "+61",
+    "defaultCity": "Sydney",
+    "defaultTimeZone": "Australia/Sydney",
+    "timeZones": [
+      {
+        "identifier": "Australia/Sydney",
+        "label": "Australian Eastern Time",
+        "majorCities": ["Sydney", "Canberra"]
+      },
+      {
+        "identifier": "Australia/Melbourne",
+        "label": "Australian Eastern Time",
+        "majorCities": ["Melbourne"]
+      },
+      {
+        "identifier": "Australia/Brisbane",
+        "label": "Australian Eastern Standard Time",
+        "majorCities": ["Brisbane", "Gold Coast"]
+      },
+      {
+        "identifier": "Australia/Adelaide",
+        "label": "Australian Central Time",
+        "majorCities": ["Adelaide"]
+      },
+      {
+        "identifier": "Australia/Darwin",
+        "label": "Australian Central Standard Time",
+        "majorCities": ["Darwin"]
+      },
+      {
+        "identifier": "Australia/Perth",
+        "label": "Australian Western Time",
+        "majorCities": ["Perth"]
+      },
+      {
+        "identifier": "Australia/Hobart",
+        "label": "Tasmania Time",
+        "majorCities": ["Hobart"]
+      }
+    ]
+  },
+  {
+    "countryName": "Russia",
+    "isoCode": "RU",
+    "phoneCode": "+7",
+    "defaultCity": "Moscow",
+    "defaultTimeZone": "Europe/Moscow",
+    "timeZones": [
+      {
+        "identifier": "Europe/Kaliningrad",
+        "label": "Kaliningrad Time",
+        "majorCities": ["Kaliningrad"]
+      },
+      {
+        "identifier": "Europe/Moscow",
+        "label": "Moscow Time",
+        "majorCities": ["Moscow", "Saint Petersburg", "Kazan"]
+      },
+      {
+        "identifier": "Europe/Samara",
+        "label": "Samara Time",
+        "majorCities": ["Samara", "Izhevsk"]
+      },
+      {
+        "identifier": "Asia/Yekaterinburg",
+        "label": "Yekaterinburg Time",
+        "majorCities": ["Yekaterinburg", "Ufa", "Perm"]
+      },
+      {
+        "identifier": "Asia/Omsk",
+        "label": "Omsk Time",
+        "majorCities": ["Omsk"]
+      },
+      {
+        "identifier": "Asia/Krasnoyarsk",
+        "label": "Krasnoyarsk Time",
+        "majorCities": ["Krasnoyarsk", "Novosibirsk"]
+      },
+      {
+        "identifier": "Asia/Irkutsk",
+        "label": "Irkutsk Time",
+        "majorCities": ["Irkutsk"]
+      },
+      {
+        "identifier": "Asia/Yakutsk",
+        "label": "Yakutsk Time",
+        "majorCities": ["Yakutsk"]
+      },
+      {
+        "identifier": "Asia/Vladivostok",
+        "label": "Vladivostok Time",
+        "majorCities": ["Vladivostok", "Khabarovsk"]
+      },
+      {
+        "identifier": "Asia/Magadan",
+        "label": "Magadan Time",
+        "majorCities": ["Magadan"]
+      },
+      {
+        "identifier": "Asia/Kamchatka",
+        "label": "Kamchatka Time",
+        "majorCities": ["Petropavlovsk-Kamchatsky"]
+      }
+    ]
+  },
+  {
+    "countryName": "Kazakhstan",
+    "isoCode": "KZ",
+    "phoneCode": "+7",
+    "defaultCity": "Almaty",
+    "defaultTimeZone": "Asia/Almaty",
+    "timeZones": [
+      {
+        "identifier": "Asia/Almaty",
+        "label": "Kazakhstan Time",
+        "majorCities": ["Almaty", "Astana", "Karaganda"]
+      },
+      {
+        "identifier": "Asia/Aqtobe",
+        "label": "Western Kazakhstan Time",
+        "majorCities": ["Aqtobe"]
+      },
+      {
+        "identifier": "Asia/Aqtau",
+        "label": "Caspian Kazakhstan Time",
+        "majorCities": ["Aqtau"]
+      },
+      {
+        "identifier": "Asia/Atyrau",
+        "label": "Atyrau Time",
+        "majorCities": ["Atyrau"]
+      },
+      {
+        "identifier": "Asia/Oral",
+        "label": "Oral Time",
+        "majorCities": ["Oral"]
+      }
+    ]
+  },
+  {
+    "countryName": "India",
+    "isoCode": "IN",
+    "phoneCode": "+91",
+    "defaultCity": "Mumbai",
+    "defaultTimeZone": "Asia/Kolkata",
+    "timeZones": [
+      {
+        "identifier": "Asia/Kolkata",
+        "label": "India Standard Time",
+        "majorCities": ["Mumbai", "Delhi", "Bengaluru", "Chennai"]
+      }
+    ]
+  },
+  {
+    "countryName": "Malaysia",
+    "isoCode": "MY",
+    "phoneCode": "+60",
+    "defaultCity": "Kuala Lumpur",
+    "defaultTimeZone": "Asia/Kuala_Lumpur",
+    "timeZones": [
+      {
+        "identifier": "Asia/Kuala_Lumpur",
+        "label": "Malaysia Time",
+        "majorCities": ["Kuala Lumpur", "George Town", "Johor Bahru"]
+      },
+      {
+        "identifier": "Asia/Kuching",
+        "label": "Malaysia Time",
+        "majorCities": ["Kuching", "Kota Kinabalu"]
+      }
+    ]
+  },
+  {
+    "countryName": "Singapore",
+    "isoCode": "SG",
+    "phoneCode": "+65",
+    "defaultCity": "Singapore",
+    "defaultTimeZone": "Asia/Singapore",
+    "timeZones": [
+      {
+        "identifier": "Asia/Singapore",
+        "label": "Singapore Time",
+        "majorCities": ["Singapore"]
+      }
+    ]
+  },
+  {
+    "countryName": "United Arab Emirates",
+    "isoCode": "AE",
+    "phoneCode": "+971",
+    "defaultCity": "Dubai",
+    "defaultTimeZone": "Asia/Dubai",
+    "timeZones": [
+      {
+        "identifier": "Asia/Dubai",
+        "label": "Gulf Standard Time",
+        "majorCities": ["Dubai", "Abu Dhabi", "Sharjah"]
+      }
+    ]
+  },
+  {
+    "countryName": "Indonesia",
+    "isoCode": "ID",
+    "phoneCode": "+62",
+    "defaultCity": "Jakarta",
+    "defaultTimeZone": "Asia/Jakarta",
+    "timeZones": [
+      {
+        "identifier": "Asia/Jakarta",
+        "label": "Western Indonesia Time",
+        "majorCities": ["Jakarta", "Bandung", "Medan", "Surabaya"]
+      },
+      {
+        "identifier": "Asia/Makassar",
+        "label": "Central Indonesia Time",
+        "majorCities": ["Makassar", "Bali", "Denpasar", "Balikpapan"]
+      },
+      {
+        "identifier": "Asia/Jayapura",
+        "label": "Eastern Indonesia Time",
+        "majorCities": ["Jayapura", "Ambon"]
+      }
+    ]
+  },
+  {
+    "countryName": "France",
+    "isoCode": "FR",
+    "phoneCode": "+33",
+    "defaultCity": "Paris",
+    "defaultTimeZone": "Europe/Paris",
+    "timeZones": [
+      {
+        "identifier": "Europe/Paris",
+        "label": "Central European Time",
+        "majorCities": ["Paris", "Lyon", "Marseille", "Nice"]
+      }
+    ]
+  },
+  {
+    "countryName": "Spain",
+    "isoCode": "ES",
+    "phoneCode": "+34",
+    "defaultCity": "Madrid",
+    "defaultTimeZone": "Europe/Madrid",
+    "timeZones": [
+      {
+        "identifier": "Europe/Madrid",
+        "label": "Central European Time",
+        "majorCities": ["Madrid", "Barcelona", "Valencia", "Seville"]
+      },
+      {
+        "identifier": "Atlantic/Canary",
+        "label": "Canary Islands Time",
+        "majorCities": ["Las Palmas", "Santa Cruz de Tenerife"]
+      }
+    ]
+  },
+  {
+    "countryName": "Italy",
+    "isoCode": "IT",
+    "phoneCode": "+39",
+    "defaultCity": "Rome",
+    "defaultTimeZone": "Europe/Rome",
+    "timeZones": [
+      {
+        "identifier": "Europe/Rome",
+        "label": "Central European Time",
+        "majorCities": ["Rome", "Milan", "Naples", "Turin"]
+      }
+    ]
+  },
+  {
+    "countryName": "China",
+    "isoCode": "CN",
+    "phoneCode": "+86",
+    "defaultCity": "Shanghai",
+    "defaultTimeZone": "Asia/Shanghai",
+    "timeZones": [
+      {
+        "identifier": "Asia/Shanghai",
+        "label": "China Standard Time",
+        "majorCities": ["Shanghai", "Beijing", "Shenzhen", "Guangzhou"]
+      }
+    ]
+  },
+  {
+    "countryName": "Japan",
+    "isoCode": "JP",
+    "phoneCode": "+81",
+    "defaultCity": "Tokyo",
+    "defaultTimeZone": "Asia/Tokyo",
+    "timeZones": [
+      {
+        "identifier": "Asia/Tokyo",
+        "label": "Japan Standard Time",
+        "majorCities": ["Tokyo", "Osaka", "Kyoto", "Yokohama"]
+      }
+    ]
+  },
+  {
+    "countryName": "South Korea",
+    "isoCode": "KR",
+    "phoneCode": "+82",
+    "defaultCity": "Seoul",
+    "defaultTimeZone": "Asia/Seoul",
+    "timeZones": [
+      {
+        "identifier": "Asia/Seoul",
+        "label": "Korea Standard Time",
+        "majorCities": ["Seoul", "Busan", "Incheon", "Daegu"]
+      }
+    ]
+  },
+  {
+    "countryName": "Turkey",
+    "isoCode": "TR",
+    "phoneCode": "+90",
+    "defaultCity": "Istanbul",
+    "defaultTimeZone": "Europe/Istanbul",
+    "timeZones": [
+      {
+        "identifier": "Europe/Istanbul",
+        "label": "Turkey Time",
+        "majorCities": ["Istanbul", "Ankara", "Izmir", "Antalya"]
+      }
+    ]
+  }
+]

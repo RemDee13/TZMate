@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11A1B2C3D4E5F60000000001 /* TZMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1B2C3D4E5F60000000011 /* TZMateApp.swift */; };
+		11A1B2C3D4E5F60000000002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1B2C3D4E5F60000000012 /* AppState.swift */; };
+		11A1B2C3D4E5F60000000003 /* RootPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1B2C3D4E5F60000000013 /* RootPopoverView.swift */; };
+		22A1B2C3D4E5F60000000001 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000011 /* Contact.swift */; };
+		22A1B2C3D4E5F60000000002 /* CountryTimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000012 /* CountryTimeData.swift */; };
+		22A1B2C3D4E5F60000000003 /* CountryTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000013 /* CountryTimeZone.swift */; };
+		22A1B2C3D4E5F60000000004 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000014 /* AppSettings.swift */; };
+		22A1B2C3D4E5F60000000005 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000015 /* AppTheme.swift */; };
+		22A1B2C3D4E5F60000000006 /* TimeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000016 /* TimeFormat.swift */; };
+		22A1B2C3D4E5F60000000007 /* SettingsStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000017 /* SettingsStorageService.swift */; };
+		22A1B2C3D4E5F60000000008 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000018 /* SettingsView.swift */; };
+		33A1B2C3D4E5F60000000001 /* TimeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B2C3D4E5F60000000011 /* TimeStatus.swift */; };
+		33A1B2C3D4E5F60000000002 /* DateRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B2C3D4E5F60000000012 /* DateRelation.swift */; };
+		33A1B2C3D4E5F60000000003 /* PhoneCodeLookupResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B2C3D4E5F60000000013 /* PhoneCodeLookupResult.swift */; };
+		33A1B2C3D4E5F60000000004 /* CountryDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B2C3D4E5F60000000014 /* CountryDataService.swift */; };
+		33A1B2C3D4E5F60000000005 /* TimeZoneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B2C3D4E5F60000000015 /* TimeZoneService.swift */; };
+		33A1B2C3D4E5F60000000006 /* PhoneCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B2C3D4E5F60000000016 /* PhoneCodeService.swift */; };
+		33A1B2C3D4E5F60000000007 /* country_time_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 33A1B2C3D4E5F60000000017 /* country_time_data.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11A1B2C3D4E5F60000000010 /* TZMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TZMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A1B2C3D4E5F60000000011 /* TZMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZMateApp.swift; sourceTree = "<group>"; };
+		11A1B2C3D4E5F60000000012 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		11A1B2C3D4E5F60000000013 /* RootPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPopoverView.swift; sourceTree = "<group>"; };
+		11A1B2C3D4E5F60000000014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A1B2C3D4E5F60000000011 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		22A1B2C3D4E5F60000000012 /* CountryTimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTimeData.swift; sourceTree = "<group>"; };
+		22A1B2C3D4E5F60000000013 /* CountryTimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTimeZone.swift; sourceTree = "<group>"; };
+		22A1B2C3D4E5F60000000014 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		22A1B2C3D4E5F60000000015 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		22A1B2C3D4E5F60000000016 /* TimeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormat.swift; sourceTree = "<group>"; };
+		22A1B2C3D4E5F60000000017 /* SettingsStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStorageService.swift; sourceTree = "<group>"; };
+		22A1B2C3D4E5F60000000018 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		33A1B2C3D4E5F60000000011 /* TimeStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStatus.swift; sourceTree = "<group>"; };
+		33A1B2C3D4E5F60000000012 /* DateRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRelation.swift; sourceTree = "<group>"; };
+		33A1B2C3D4E5F60000000013 /* PhoneCodeLookupResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCodeLookupResult.swift; sourceTree = "<group>"; };
+		33A1B2C3D4E5F60000000014 /* CountryDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataService.swift; sourceTree = "<group>"; };
+		33A1B2C3D4E5F60000000015 /* TimeZoneService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneService.swift; sourceTree = "<group>"; };
+		33A1B2C3D4E5F60000000016 /* PhoneCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCodeService.swift; sourceTree = "<group>"; };
+		33A1B2C3D4E5F60000000017 /* country_time_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = country_time_data.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11A1B2C3D4E5F60000000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11A1B2C3D4E5F60000000030 = {
+			isa = PBXGroup;
+			children = (
+				11A1B2C3D4E5F60000000031 /* TZMate */,
+				11A1B2C3D4E5F60000000034 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11A1B2C3D4E5F60000000031 /* TZMate */ = {
+			isa = PBXGroup;
+			children = (
+				11A1B2C3D4E5F60000000032 /* App */,
+				11A1B2C3D4E5F60000000033 /* Views */,
+				22A1B2C3D4E5F60000000030 /* Models */,
+				22A1B2C3D4E5F60000000031 /* Services */,
+				33A1B2C3D4E5F60000000030 /* Data */,
+				11A1B2C3D4E5F60000000014 /* Info.plist */,
+			);
+			path = TZMate;
+			sourceTree = "<group>";
+		};
+		11A1B2C3D4E5F60000000032 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				11A1B2C3D4E5F60000000011 /* TZMateApp.swift */,
+				11A1B2C3D4E5F60000000012 /* AppState.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		11A1B2C3D4E5F60000000033 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11A1B2C3D4E5F60000000013 /* RootPopoverView.swift */,
+				22A1B2C3D4E5F60000000032 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22A1B2C3D4E5F60000000030 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22A1B2C3D4E5F60000000011 /* Contact.swift */,
+				22A1B2C3D4E5F60000000012 /* CountryTimeData.swift */,
+				22A1B2C3D4E5F60000000013 /* CountryTimeZone.swift */,
+				22A1B2C3D4E5F60000000014 /* AppSettings.swift */,
+				22A1B2C3D4E5F60000000015 /* AppTheme.swift */,
+				22A1B2C3D4E5F60000000016 /* TimeFormat.swift */,
+				33A1B2C3D4E5F60000000011 /* TimeStatus.swift */,
+				33A1B2C3D4E5F60000000012 /* DateRelation.swift */,
+				33A1B2C3D4E5F60000000013 /* PhoneCodeLookupResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22A1B2C3D4E5F60000000031 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				22A1B2C3D4E5F60000000017 /* SettingsStorageService.swift */,
+				33A1B2C3D4E5F60000000014 /* CountryDataService.swift */,
+				33A1B2C3D4E5F60000000015 /* TimeZoneService.swift */,
+				33A1B2C3D4E5F60000000016 /* PhoneCodeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		33A1B2C3D4E5F60000000030 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				33A1B2C3D4E5F60000000017 /* country_time_data.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		22A1B2C3D4E5F60000000032 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				22A1B2C3D4E5F60000000018 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		11A1B2C3D4E5F60000000034 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11A1B2C3D4E5F60000000010 /* TZMate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11A1B2C3D4E5F60000000040 /* TZMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11A1B2C3D4E5F60000000070 /* Build configuration list for PBXNativeTarget "TZMate" */;
+			buildPhases = (
+				11A1B2C3D4E5F60000000050 /* Sources */,
+				11A1B2C3D4E5F60000000020 /* Frameworks */,
+				11A1B2C3D4E5F60000000051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TZMate;
+			productName = TZMate;
+			productReference = 11A1B2C3D4E5F60000000010 /* TZMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11A1B2C3D4E5F60000000060 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					11A1B2C3D4E5F60000000040 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 11A1B2C3D4E5F60000000061 /* Build configuration list for PBXProject "TZMate" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11A1B2C3D4E5F60000000030;
+			productRefGroup = 11A1B2C3D4E5F60000000034 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11A1B2C3D4E5F60000000040 /* TZMate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11A1B2C3D4E5F60000000051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A1B2C3D4E5F60000000007 /* country_time_data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11A1B2C3D4E5F60000000050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11A1B2C3D4E5F60000000001 /* TZMateApp.swift in Sources */,
+				11A1B2C3D4E5F60000000002 /* AppState.swift in Sources */,
+				11A1B2C3D4E5F60000000003 /* RootPopoverView.swift in Sources */,
+				22A1B2C3D4E5F60000000001 /* Contact.swift in Sources */,
+				22A1B2C3D4E5F60000000002 /* CountryTimeData.swift in Sources */,
+				22A1B2C3D4E5F60000000003 /* CountryTimeZone.swift in Sources */,
+				22A1B2C3D4E5F60000000004 /* AppSettings.swift in Sources */,
+				22A1B2C3D4E5F60000000005 /* AppTheme.swift in Sources */,
+				22A1B2C3D4E5F60000000006 /* TimeFormat.swift in Sources */,
+				22A1B2C3D4E5F60000000007 /* SettingsStorageService.swift in Sources */,
+				22A1B2C3D4E5F60000000008 /* SettingsView.swift in Sources */,
+				33A1B2C3D4E5F60000000001 /* TimeStatus.swift in Sources */,
+				33A1B2C3D4E5F60000000002 /* DateRelation.swift in Sources */,
+				33A1B2C3D4E5F60000000003 /* PhoneCodeLookupResult.swift in Sources */,
+				33A1B2C3D4E5F60000000004 /* CountryDataService.swift in Sources */,
+				33A1B2C3D4E5F60000000005 /* TimeZoneService.swift in Sources */,
+				33A1B2C3D4E5F60000000006 /* PhoneCodeService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		11A1B2C3D4E5F60000000062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11A1B2C3D4E5F60000000063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		11A1B2C3D4E5F60000000071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TZMate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.remdee.tzmate;
+				PRODUCT_NAME = TZMate;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		11A1B2C3D4E5F60000000072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TZMate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.remdee.tzmate;
+				PRODUCT_NAME = TZMate;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11A1B2C3D4E5F60000000061 /* Build configuration list for PBXProject "TZMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11A1B2C3D4E5F60000000062 /* Debug */,
+				11A1B2C3D4E5F60000000063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11A1B2C3D4E5F60000000070 /* Build configuration list for PBXNativeTarget "TZMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11A1B2C3D4E5F60000000071 /* Debug */,
+				11A1B2C3D4E5F60000000072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11A1B2C3D4E5F60000000060 /* Project object */;
+}
