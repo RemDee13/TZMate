@@ -28,18 +28,23 @@ The app is intentionally small: no CRM, no login, no backend, and no cloud depen
 
 ## Screenshots
 
-Screenshots will be added as the app UI stabilizes.
+Screenshots will be added in `docs/screenshots/` as the app UI stabilizes.
 
-- Menu bar popover
-- Contacts tab
-- Time converter
-- Widget
+- `docs/screenshots/01-contacts.png` - coming soon
+- `docs/screenshots/02-add-contact-phone-lookup.png` - coming soon
+- `docs/screenshots/03-converter.png` - coming soon
+- `docs/screenshots/04-settings.png` - coming soon
+- `docs/screenshots/05-widget.png` - coming soon
 
 ## Installation
 
 TZ Mate is currently in development.
 
-For now, build the app from source using Xcode. GitHub Releases and a DMG installer will be added later.
+For now, build the app from source using Xcode. Future public downloads will be provided through GitHub Releases.
+
+Mac App Store distribution is not planned for the initial version. For a smooth experience outside the Mac App Store, public releases should be signed with a Developer ID certificate and notarized by Apple. Unsigned builds may trigger macOS Gatekeeper warnings.
+
+Signed and notarized releases require an Apple Developer Program membership. A DMG or ZIP package will be added later.
 
 ## Development
 
@@ -80,14 +85,19 @@ TZMate/
 │   ├── Services/
 │   ├── Utilities/
 │   ├── Views/
+│   ├── Assets.xcassets/
 │   ├── Info.plist
 │   └── TZMate.entitlements
 ├── TZMateWidgetExtension/
+├── docs/
+│   ├── releases/
+│   └── screenshots/
 ├── README.md
 ├── LICENSE
 ├── CONTRIBUTING.md
 ├── PRIVACY.md
-└── CHANGELOG.md
+├── CHANGELOG.md
+└── RELEASE_CHECKLIST.md
 ```
 
 ## App Groups And Signing

@@ -7,7 +7,7 @@ struct TimeConverterView: View {
     private let countries: [CountryTimeData]
     private let timeZoneService = TimeZoneService()
 
-    @State private var direction: ConverterDirection = .myTimeToClientTime
+    @State private var direction: ConverterDirection = .myToClient
     @State private var myCountryISOCode: String
     @State private var myTimeZoneIdentifier: String
     @State private var myCityName: String
@@ -54,8 +54,8 @@ struct TimeConverterView: View {
                         timeZoneIdentifier: $myTimeZoneIdentifier,
                         cityName: $myCityName,
                         dateTime: $myDateTime,
-                        isEditable: direction == .myTimeToClientTime,
-                        resultDate: direction == .clientTimeToMyTime ? convertedInstant : nil
+                        isEditable: direction == .myToClient,
+                        resultDate: direction == .clientToMe ? convertedInstant : nil
                     )
 
                     converterSection(
@@ -64,8 +64,8 @@ struct TimeConverterView: View {
                         timeZoneIdentifier: $clientTimeZoneIdentifier,
                         cityName: $clientCityName,
                         dateTime: $clientDateTime,
-                        isEditable: direction == .clientTimeToMyTime,
-                        resultDate: direction == .myTimeToClientTime ? convertedInstant : nil
+                        isEditable: direction == .clientToMe,
+                        resultDate: direction == .myToClient ? convertedInstant : nil
                     )
 
                     resultSection
@@ -99,23 +99,23 @@ struct TimeConverterView: View {
     }
 
     private var sourceTimeZoneIdentifier: String {
-        direction == .myTimeToClientTime ? myTimeZoneIdentifier : clientTimeZoneIdentifier
+        direction == .myToClient ? myTimeZoneIdentifier : clientTimeZoneIdentifier
     }
 
     private var targetTimeZoneIdentifier: String {
-        direction == .myTimeToClientTime ? clientTimeZoneIdentifier : myTimeZoneIdentifier
+        direction == .myToClient ? clientTimeZoneIdentifier : myTimeZoneIdentifier
     }
 
     private var sourceDateTime: Date {
-        direction == .myTimeToClientTime ? myDateTime : clientDateTime
+        direction == .myToClient ? myDateTime : clientDateTime
     }
 
     private var sourceCityName: String {
-        direction == .myTimeToClientTime ? myCityName : clientCityName
+        direction == .myToClient ? myCityName : clientCityName
     }
 
     private var targetCityName: String {
-        direction == .myTimeToClientTime ? clientCityName : myCityName
+        direction == .myToClient ? clientCityName : myCityName
     }
 
     private var convertedInstant: Date {
@@ -322,8 +322,8 @@ struct TimeConverterView: View {
 }
 
 private enum ConverterDirection: String, CaseIterable, Identifiable {
-    case myTimeToClientTime
-    case clientTimeToMyTime
+    case myToClient
+    case clientToMe
 
     var id: String {
         rawValue
@@ -331,9 +331,9 @@ private enum ConverterDirection: String, CaseIterable, Identifiable {
 
     var title: String {
         switch self {
-        case .myTimeToClientTime:
+        case .myToClient:
             return "My time -> Client"
-        case .clientTimeToMyTime:
+        case .clientToMe:
             return "Client -> My time"
         }
     }

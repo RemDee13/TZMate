@@ -5,6 +5,11 @@
 ## User settings
 xcuserdata/
 *.xcuserstate
+*.xcuserdatad
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.moved-aside
 DerivedData/
 build/
 
@@ -15,6 +20,10 @@ build/
 *.ipa
 *.dSYM.zip
 *.dSYM
+*.xcarchive
+*.app
+*.dmg
+*.zip
 
 ## Playgrounds
 timeline.xctimeline
@@ -66,3 +75,12 @@ fastlane/screenshots/**/*.png
 fastlane/test_output
 
 .DS_Store
+
+# Signing, provisioning, and local secrets
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.cer
+*.key
+.env
+.env.*

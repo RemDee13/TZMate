@@ -47,6 +47,7 @@
 		77A1B2C3D4E5F6000000000D /* ContactStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1B2C3D4E5F60000000011 /* ContactStorageService.swift */; };
 		77A1B2C3D4E5F6000000000E /* SettingsStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000017 /* SettingsStorageService.swift */; };
 		77A1B2C3D4E5F6000000000F /* TZMateWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 77A1B2C3D4E5F60000000010 /* TZMateWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		88A1B2C3D4E5F60000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A1B2C3D4E5F60000000011 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		77A1B2C3D4E5F60000000014 /* TZMateWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZMateWidgetBundle.swift; sourceTree = "<group>"; };
 		77A1B2C3D4E5F60000000015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77A1B2C3D4E5F60000000016 /* TZMateWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TZMateWidgetExtension.entitlements; sourceTree = "<group>"; };
+		88A1B2C3D4E5F60000000011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				22A1B2C3D4E5F60000000031 /* Services */,
 				33A1B2C3D4E5F60000000030 /* Data */,
 				66A1B2C3D4E5F60000000030 /* Utilities */,
+				88A1B2C3D4E5F60000000011 /* Assets.xcassets */,
 				66A1B2C3D4E5F60000000012 /* TZMate.entitlements */,
 				11A1B2C3D4E5F60000000014 /* Info.plist */,
 			);
@@ -346,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33A1B2C3D4E5F60000000007 /* country_time_data.json in Resources */,
+				88A1B2C3D4E5F60000000001 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,13 +543,14 @@
 		11A1B2C3D4E5F60000000071 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TZMate/TZMate.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RJH4M6H673;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMate/Info.plist;
@@ -565,13 +570,14 @@
 		11A1B2C3D4E5F60000000072 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TZMate/TZMate.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RJH4M6H673;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMate/Info.plist;
@@ -596,7 +602,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RJH4M6H673;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMateWidgetExtension/Info.plist;
@@ -625,7 +631,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RJH4M6H673;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMateWidgetExtension/Info.plist;

@@ -50,30 +50,3 @@ struct RootPopoverView: View {
         }
     }
 }
-
-private struct PlaceholderTabView: View {
-    let title: String
-    let systemImageName: String
-    let message: String
-
-    var body: some View {
-        VStack(spacing: 12) {
-            Spacer()
-
-            Image(systemName: systemImageName)
-                .font(.system(size: 36, weight: .regular))
-                .foregroundStyle(.secondary)
-
-            Text(title)
-                .font(.headline)
-
-            Text(message)
-                .font(.callout)
-                .foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
-
-            Spacer()
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-    }
-}
