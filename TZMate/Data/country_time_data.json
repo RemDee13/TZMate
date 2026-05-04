@@ -506,7 +506,7 @@
     "countryName": "Brazil",
     "isoCode": "BR",
     "phoneCode": "+55",
-    "defaultCity": "Sao Paulo",
+    "defaultCity": "São Paulo",
     "defaultTimeZone": "America/Sao_Paulo",
     "timeZones": [
       {
@@ -520,7 +520,7 @@
         "identifier": "America/Sao_Paulo",
         "label": "Brasilia Time",
         "majorCities": [
-          "Sao Paulo",
+          "São Paulo",
           "Rio de Janeiro",
           "Brasilia"
         ]
@@ -983,7 +983,7 @@
     ]
   },
   {
-    "countryName": "Cura\u00e7ao",
+    "countryName": "Curaçao",
     "isoCode": "CW",
     "phoneCode": "+599",
     "defaultCity": "Curacao",
@@ -3279,7 +3279,7 @@
     ]
   },
   {
-    "countryName": "R\u00e9union",
+    "countryName": "Réunion",
     "isoCode": "RE",
     "phoneCode": "+262",
     "defaultCity": "Reunion",
@@ -3295,7 +3295,7 @@
     ]
   },
   {
-    "countryName": "Saint Barth\u00e9lemy",
+    "countryName": "Saint Barthélemy",
     "isoCode": "BL",
     "phoneCode": "+590",
     "defaultCity": "St Barthelemy",
@@ -4048,7 +4048,7 @@
     ]
   },
   {
-    "countryName": "T\u00fcrkiye",
+    "countryName": "Türkiye",
     "isoCode": "TR",
     "phoneCode": "+90",
     "defaultCity": "Istanbul",

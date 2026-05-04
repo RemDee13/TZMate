@@ -1,3 +1,10 @@
+//
+//  TZ Mate
+//  Copyright (c) 2026 Anton Pavlov
+//  GitHub: https://github.com/RemDee13
+//  Licensed under the MIT License.
+//
+
 import Foundation
 
 struct AppSettings: Codable, Equatable {
@@ -11,9 +18,11 @@ struct AppSettings: Codable, Equatable {
     var launchAtLogin: Bool
 
     static var `default`: AppSettings {
-        let systemTimeZoneIdentifier = TimeZone.current.identifier
+        `default`(for: TimeZone.current.identifier)
+    }
 
-        if systemTimeZoneIdentifier == "Asia/Bangkok" {
+    static func `default`(for timeZoneIdentifier: String) -> AppSettings {
+        if timeZoneIdentifier == "Asia/Bangkok" {
             return AppSettings(
                 defaultCountryName: "Thailand",
                 defaultCountryCode: "TH",
@@ -30,7 +39,7 @@ struct AppSettings: Codable, Equatable {
             defaultCountryName: "Local",
             defaultCountryCode: "",
             defaultCity: "System Time Zone",
-            defaultTimeZoneIdentifier: systemTimeZoneIdentifier,
+            defaultTimeZoneIdentifier: timeZoneIdentifier,
             timeFormat: .twentyFourHour,
             theme: .system,
             showTimeInMenuBar: false,

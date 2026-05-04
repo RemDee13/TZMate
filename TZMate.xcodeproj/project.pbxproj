@@ -51,6 +51,10 @@
 		99A1B2C3D4E5F60000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A1B2C3D4E5F60000000011 /* AppDelegate.swift */; };
 		99A1B2C3D4E5F60000000002 /* PhoneLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A1B2C3D4E5F60000000012 /* PhoneLookupView.swift */; };
 		99A1B2C3D4E5F60000000003 /* SectionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A1B2C3D4E5F60000000013 /* SectionCardView.swift */; };
+		AA13B2C3D4E5F60000000001 /* LaunchAtLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA13B2C3D4E5F60000000011 /* LaunchAtLoginService.swift */; };
+		BB14B2C3D4E5F60000000001 /* DefaultSettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14B2C3D4E5F60000000011 /* DefaultSettingsService.swift */; };
+		CC14B2C3D4E5F60000000001 /* SharedUserDefaultsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC14B2C3D4E5F60000000011 /* SharedUserDefaultsProvider.swift */; };
+		CC14B2C3D4E5F60000000002 /* SharedUserDefaultsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC14B2C3D4E5F60000000011 /* SharedUserDefaultsProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +120,9 @@
 		99A1B2C3D4E5F60000000011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99A1B2C3D4E5F60000000012 /* PhoneLookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLookupView.swift; sourceTree = "<group>"; };
 		99A1B2C3D4E5F60000000013 /* SectionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCardView.swift; sourceTree = "<group>"; };
+		AA13B2C3D4E5F60000000011 /* LaunchAtLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginService.swift; sourceTree = "<group>"; };
+		BB14B2C3D4E5F60000000011 /* DefaultSettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSettingsService.swift; sourceTree = "<group>"; };
+		CC14B2C3D4E5F60000000011 /* SharedUserDefaultsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUserDefaultsProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +224,9 @@
 				33A1B2C3D4E5F60000000014 /* CountryDataService.swift */,
 				33A1B2C3D4E5F60000000015 /* TimeZoneService.swift */,
 				33A1B2C3D4E5F60000000016 /* PhoneCodeService.swift */,
+				AA13B2C3D4E5F60000000011 /* LaunchAtLoginService.swift */,
+				BB14B2C3D4E5F60000000011 /* DefaultSettingsService.swift */,
+				CC14B2C3D4E5F60000000011 /* SharedUserDefaultsProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -428,6 +438,9 @@
 				44A1B2C3D4E5F60000000004 /* ContactFormView.swift in Sources */,
 				99A1B2C3D4E5F60000000002 /* PhoneLookupView.swift in Sources */,
 				55A1B2C3D4E5F60000000001 /* TimeConverterView.swift in Sources */,
+				AA13B2C3D4E5F60000000001 /* LaunchAtLoginService.swift in Sources */,
+				BB14B2C3D4E5F60000000001 /* DefaultSettingsService.swift in Sources */,
+				CC14B2C3D4E5F60000000001 /* SharedUserDefaultsProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +463,7 @@
 				77A1B2C3D4E5F6000000000C /* TimeZoneService.swift in Sources */,
 				77A1B2C3D4E5F6000000000D /* ContactStorageService.swift in Sources */,
 				77A1B2C3D4E5F6000000000E /* SettingsStorageService.swift in Sources */,
+				CC14B2C3D4E5F60000000002 /* SharedUserDefaultsProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,7 +602,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = RJH4M6H673;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMate/Info.plist;
@@ -615,7 +629,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = RJH4M6H673;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMate/Info.plist;
@@ -636,12 +650,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				AUTOMATION_APPLE_EVENTS = NO;
 				CODE_SIGN_ENTITLEMENTS = TZMateWidgetExtension/TZMateWidgetExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RJH4M6H673;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMateWidgetExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -654,6 +675,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.remdee.tzmate.TZMateWidgetExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -665,12 +692,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				AUTOMATION_APPLE_EVENTS = NO;
 				CODE_SIGN_ENTITLEMENTS = TZMateWidgetExtension/TZMateWidgetExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RJH4M6H673;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMateWidgetExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -683,6 +717,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.remdee.tzmate.TZMateWidgetExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

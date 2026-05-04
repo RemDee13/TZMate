@@ -1,16 +1,27 @@
+//
+//  TZ Mate
+//  Copyright (c) 2026 Anton Pavlov
+//  GitHub: https://github.com/RemDee13
+//  Licensed under the MIT License.
+//
+
 import Foundation
 
 struct SettingsStorageService {
     private let sharedUserDefaults: UserDefaults?
     private let standardUserDefaults: UserDefaults
+    private let defaultSettingsProvider: () -> AppSettings
     private let settingsKey = Constants.appSettingsStorageKey
 
     init(
-        sharedUserDefaults: UserDefaults? = UserDefaults(suiteName: Constants.appGroupIdentifier),
-        standardUserDefaults: UserDefaults = .standard
+        sharedUserDefaults: UserDefaults? = SharedUserDefaultsProvider.makeSharedDefaults(),
+        standardUserDefaults: UserDefaults = .standard,
+        defaultSettingsProvider: @escaping () -> AppSettings = { AppSettings.default }
     ) {
         self.sharedUserDefaults = sharedUserDefaults
         self.standardUserDefaults = standardUserDefaults
+        self.defaultSettingsProvider = defaultSettingsProvider
+        Self.migrateValueIfNeeded(key: settingsKey, from: standardUserDefaults, to: sharedUserDefaults)
     }
 
     func loadSettings() -> AppSettings {
@@ -21,11 +32,10 @@ struct SettingsStorageService {
 
         if let standardData = standardUserDefaults.data(forKey: settingsKey),
            let settings = decodeSettings(from: standardData) {
-            sharedUserDefaults?.set(standardData, forKey: settingsKey)
             return settings
         }
 
-        return AppSettings.default
+        return defaultSettingsProvider()
     }
 
     func saveSettings(_ settings: AppSettings) {
@@ -47,5 +57,15 @@ struct SettingsStorageService {
         } catch {
             return nil
         }
+    }
+
+    private static func migrateValueIfNeeded(key: String, from standardUserDefaults: UserDefaults, to sharedUserDefaults: UserDefaults?) {
+        guard let sharedUserDefaults,
+              sharedUserDefaults.data(forKey: key) == nil,
+              let standardData = standardUserDefaults.data(forKey: key) else {
+            return
+        }
+
+        sharedUserDefaults.set(standardData, forKey: key)
     }
 }

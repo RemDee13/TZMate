@@ -1,3 +1,10 @@
+//
+//  TZ Mate
+//  Copyright (c) 2026 Anton Pavlov
+//  GitHub: https://github.com/RemDee13
+//  Licensed under the MIT License.
+//
+
 import Foundation
 
 struct ContactStorageService {
@@ -6,11 +13,12 @@ struct ContactStorageService {
     private let contactsKey = Constants.contactsStorageKey
 
     init(
-        sharedUserDefaults: UserDefaults? = UserDefaults(suiteName: Constants.appGroupIdentifier),
+        sharedUserDefaults: UserDefaults? = SharedUserDefaultsProvider.makeSharedDefaults(),
         standardUserDefaults: UserDefaults = .standard
     ) {
         self.sharedUserDefaults = sharedUserDefaults
         self.standardUserDefaults = standardUserDefaults
+        Self.migrateValueIfNeeded(key: contactsKey, from: standardUserDefaults, to: sharedUserDefaults)
     }
 
     func loadContacts() -> [Contact] {
@@ -21,7 +29,6 @@ struct ContactStorageService {
 
         if let standardData = standardUserDefaults.data(forKey: contactsKey),
            let contacts = decodeContacts(from: standardData) {
-            sharedUserDefaults?.set(standardData, forKey: contactsKey)
             return sortedContacts(contacts)
         }
 
@@ -89,5 +96,15 @@ struct ContactStorageService {
 
             return leftContact.createdAt < rightContact.createdAt
         }
+    }
+
+    private static func migrateValueIfNeeded(key: String, from standardUserDefaults: UserDefaults, to sharedUserDefaults: UserDefaults?) {
+        guard let sharedUserDefaults,
+              sharedUserDefaults.data(forKey: key) == nil,
+              let standardData = standardUserDefaults.data(forKey: key) else {
+            return
+        }
+
+        sharedUserDefaults.set(standardData, forKey: key)
     }
 }

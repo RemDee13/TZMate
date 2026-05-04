@@ -1,3 +1,11 @@
+//
+//  TZ Mate
+//  Copyright (c) 2026 Anton Pavlov
+//  GitHub: https://github.com/RemDee13
+//  Licensed under the MIT License.
+//
+
+import AppKit
 import SwiftUI
 
 @MainActor
@@ -5,18 +13,29 @@ final class AppState: ObservableObject {
     @Published var selectedTab: PopoverTab = .contacts
     @Published private(set) var settings: AppSettings
     @Published private(set) var contacts: [Contact]
+    @Published private(set) var launchAtLoginErrorMessage: String?
 
     let settingsStorageService: SettingsStorageService
     let contactStorageService: ContactStorageService
+    let launchAtLoginService: LaunchAtLoginService
 
     init(
-        settingsStorageService: SettingsStorageService = SettingsStorageService(),
-        contactStorageService: ContactStorageService = ContactStorageService()
+        settingsStorageService: SettingsStorageService? = nil,
+        contactStorageService: ContactStorageService = ContactStorageService(),
+        launchAtLoginService: LaunchAtLoginService = LaunchAtLoginService()
     ) {
-        self.settingsStorageService = settingsStorageService
+        self.settingsStorageService = settingsStorageService ?? SettingsStorageService(
+            defaultSettingsProvider: {
+                DefaultSettingsService().defaultSettings()
+            }
+        )
         self.contactStorageService = contactStorageService
-        settings = settingsStorageService.loadSettings()
+        self.launchAtLoginService = launchAtLoginService
+        settings = self.settingsStorageService.loadSettings()
         contacts = contactStorageService.loadContacts()
+        DispatchQueue.main.async { [weak self] in
+            self?.syncLaunchAtLoginStatus()
+        }
     }
 
     func updateSettings(_ newSettings: AppSettings) {
@@ -56,6 +75,23 @@ final class AppState: ObservableObject {
         contactStorageService.saveContacts(contacts)
     }
 
+    func setLaunchAtLogin(_ enabled: Bool) {
+        launchAtLoginErrorMessage = nil
+
+        do {
+            try launchAtLoginService.setEnabled(enabled)
+            var updatedSettings = settings
+            updatedSettings.launchAtLogin = launchAtLoginService.isEnabled()
+            updateSettings(updatedSettings)
+        } catch {
+            launchAtLoginErrorMessage = launchAtLoginService.errorMessage(for: error)
+        }
+    }
+
+    func quitApplication() {
+        NSApplication.shared.terminate(nil)
+    }
+
     private func contactWithWidgetOrderIfNeeded(_ contact: Contact) -> Contact {
         var updatedContact = contact
 
@@ -73,6 +109,19 @@ final class AppState: ObservableObject {
     private func nextWidgetOrder() -> Int {
         let maxOrder = contacts.compactMap(\.widgetOrder).max() ?? -1
         return maxOrder + 1
+    }
+
+    private func syncLaunchAtLoginStatus() {
+        let systemValue = launchAtLoginService.isEnabled()
+
+        guard settings.launchAtLogin != systemValue else {
+            return
+        }
+
+        var updatedSettings = settings
+        updatedSettings.launchAtLogin = systemValue
+        settings = updatedSettings
+        settingsStorageService.saveSettings(updatedSettings)
     }
 }
 

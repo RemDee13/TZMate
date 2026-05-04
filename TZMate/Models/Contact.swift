@@ -1,3 +1,10 @@
+//
+//  TZ Mate
+//  Copyright (c) 2026 Anton Pavlov
+//  GitHub: https://github.com/RemDee13
+//  Licensed under the MIT License.
+//
+
 import Foundation
 
 struct Contact: Identifiable, Codable, Equatable {

@@ -36,6 +36,7 @@ Track B - Public GitHub Release:
 - Build a Release configuration.
 - Use Developer ID signing for distribution outside the Mac App Store.
 - Include the widget extension in the signed app bundle.
+- Notarize the final app or DMG before publishing.
 
 ## 4. Signing
 
@@ -54,9 +55,18 @@ Track B - Public GitHub Release:
 
 ## 6. DMG Or ZIP Packaging
 
-- Package the signed and notarized app as `.dmg` or `.zip`.
-- Prefer DMG for a more polished user install flow.
+- Package the signed and notarized app as `.dmg`.
+- Use `.zip` only for developer/testing builds.
+- Prefer DMG for the public GitHub Release.
 - Keep generated `.dmg`, `.zip`, `.app`, and `.xcarchive` files out of Git.
+
+Draft packaging helper:
+
+```sh
+scripts/build_release.sh
+```
+
+The script creates a local Release build and ZIP for testing. Developer ID signing, notarization, and final DMG polish still require release-owner configuration.
 
 ## 7. GitHub Release
 

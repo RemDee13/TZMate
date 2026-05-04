@@ -29,6 +29,9 @@ Use this checklist before publishing a developer prerelease or public GitHub Rel
 - [ ] 12-hour format
 - [ ] 24-hour format
 - [ ] Default time zone display is correct
+- [ ] Enable Launch at Login
+- [ ] Disable Launch at Login
+- [ ] Quit TZ Mate from Settings
 - [ ] Settings persist after relaunch
 
 ## 4. Contacts

@@ -1,3 +1,10 @@
+//
+//  TZ Mate
+//  Copyright (c) 2026 Anton Pavlov
+//  GitHub: https://github.com/RemDee13
+//  Licensed under the MIT License.
+//
+
 import SwiftUI
 
 struct SettingsView: View {
@@ -9,6 +16,7 @@ struct SettingsView: View {
                 defaultTimeZoneSection
                 preferencesSection
                 launchAtLoginSection
+                appLifecycleSection
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }
@@ -56,13 +64,39 @@ struct SettingsView: View {
 
     private var launchAtLoginSection: some View {
         SectionCardView {
-            VStack(alignment: .leading, spacing: 6) {
-                Toggle("Launch at login", isOn: .constant(appState.settings.launchAtLogin))
-                    .disabled(true)
+            VStack(alignment: .leading, spacing: 8) {
+                Toggle("Launch at Login", isOn: launchAtLoginBinding)
 
-                Text("Coming later")
+                Text("Open TZ Mate automatically when you sign in.")
                     .font(.caption)
                     .foregroundStyle(.secondary)
+
+                if let errorMessage = appState.launchAtLoginErrorMessage {
+                    Text(errorMessage)
+                        .font(.caption)
+                        .foregroundStyle(.red)
+                }
+            }
+        }
+    }
+
+    private var appLifecycleSection: some View {
+        SectionCardView {
+            VStack(alignment: .leading, spacing: 10) {
+                Text("App")
+                    .font(.headline)
+
+                Text("Close TZ Mate from the menu bar when you no longer need it.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+
+                Button(role: .destructive) {
+                    appState.quitApplication()
+                } label: {
+                    Label("Quit TZ Mate", systemImage: "power")
+                }
+                .buttonStyle(.bordered)
+                .controlSize(.small)
             }
         }
     }
@@ -85,7 +119,22 @@ struct SettingsView: View {
             set: { newValue in
                 var updatedSettings = appState.settings
                 updatedSettings[keyPath: keyPath] = newValue
-                appState.updateSettings(updatedSettings)
+                DispatchQueue.main.async {
+                    appState.updateSettings(updatedSettings)
+                }
+            }
+        )
+    }
+
+    private var launchAtLoginBinding: Binding<Bool> {
+        Binding(
+            get: {
+                appState.settings.launchAtLogin
+            },
+            set: { enabled in
+                DispatchQueue.main.async {
+                    appState.setLaunchAtLogin(enabled)
+                }
             }
         )
     }
