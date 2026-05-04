@@ -49,7 +49,7 @@ struct ContactRowView: View {
 
                 HStack(spacing: 6) {
                     Text(difference)
-                    Text(status.displayName)
+                    StatusBadgeView(status: status)
                 }
                 .font(.caption2)
                 .foregroundStyle(.secondary)
@@ -88,7 +88,11 @@ struct ContactRowView: View {
             }
         }
         .padding(10)
-        .background(.quaternary.opacity(0.45))
+        .background(Color(nsColor: .controlBackgroundColor).opacity(0.9))
+        .overlay(
+            RoundedRectangle(cornerRadius: 8, style: .continuous)
+                .stroke(Color(nsColor: .separatorColor).opacity(0.18), lineWidth: 1)
+        )
         .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
     }
 

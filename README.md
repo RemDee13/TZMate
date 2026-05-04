@@ -112,6 +112,16 @@ Both the main app and the widget extension need the same App Group enabled so th
 
 For local unsigned builds, use `CODE_SIGNING_ALLOWED=NO`. For normal Xcode builds, configure Signing & Capabilities for both targets.
 
+## Widget Troubleshooting
+
+If the widget does not appear in macOS:
+
+- Build and run the main app.
+- Open Notification Center, choose Edit Widgets, and search for `TZ Mate`.
+- Clean the build folder and rebuild if the widget is still missing.
+- Make sure both `TZMate` and `TZMateWidgetExtension` use the same Development Team.
+- Make sure both targets have App Groups enabled with `group.com.remdee.tzmate`.
+
 ## Privacy
 
 - No account required

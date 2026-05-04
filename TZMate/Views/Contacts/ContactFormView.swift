@@ -1,3 +1,4 @@
+import AppKit
 import SwiftUI
 
 struct ContactFormView: View {
@@ -114,7 +115,7 @@ struct ContactFormView: View {
             }
         }
         .padding(20)
-        .frame(width: 390, height: 540)
+        .frame(width: 420, height: 580)
         .onChange(of: selectedCountryISOCode) { newISOCode in
             if isApplyingLookupSelection {
                 isApplyingLookupSelection = false
@@ -224,7 +225,11 @@ struct ContactFormView: View {
                 .controlSize(.small)
         }
         .padding(8)
-        .background(.quaternary.opacity(0.45))
+        .background(Color(nsColor: .controlBackgroundColor).opacity(0.9))
+        .overlay(
+            RoundedRectangle(cornerRadius: 8, style: .continuous)
+                .stroke(Color(nsColor: .separatorColor).opacity(0.18), lineWidth: 1)
+        )
         .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
     }
 
@@ -261,7 +266,11 @@ struct ContactFormView: View {
             .controlSize(.small)
         }
         .padding(8)
-        .background(.quaternary.opacity(0.45))
+        .background(Color(nsColor: .controlBackgroundColor).opacity(0.9))
+        .overlay(
+            RoundedRectangle(cornerRadius: 8, style: .continuous)
+                .stroke(Color(nsColor: .separatorColor).opacity(0.18), lineWidth: 1)
+        )
         .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
     }
 
@@ -298,8 +307,8 @@ struct ContactFormView: View {
                     .controlSize(.small)
                 }
                 .padding(6)
-                .background(.quaternary.opacity(0.35))
-                .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
+                .background(Color(nsColor: .controlBackgroundColor).opacity(0.8))
+                .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
             }
         }
     }

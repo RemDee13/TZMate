@@ -78,6 +78,7 @@ final class AppState: ObservableObject {
 
 enum PopoverTab: String, CaseIterable, Identifiable {
     case contacts
+    case lookup
     case converter
     case settings
 
@@ -89,8 +90,10 @@ enum PopoverTab: String, CaseIterable, Identifiable {
         switch self {
         case .contacts:
             return "Contacts"
+        case .lookup:
+            return "Lookup"
         case .converter:
-            return "Converter"
+            return "Convert"
         case .settings:
             return "Settings"
         }
@@ -100,6 +103,8 @@ enum PopoverTab: String, CaseIterable, Identifiable {
         switch self {
         case .contacts:
             return "person.2"
+        case .lookup:
+            return "magnifyingglass.circle"
         case .converter:
             return "clock.arrow.circlepath"
         case .settings:

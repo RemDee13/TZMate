@@ -136,35 +136,33 @@ struct TimeConverterView: View {
     }
 
     private var resultSection: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("Result")
-                .font(.headline)
+        SectionCardView {
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Result")
+                    .font(.headline)
 
-            Text(resultSummary)
-                .font(.callout.weight(.semibold))
-                .textSelection(.enabled)
+                Text(resultSummary)
+                    .font(.callout.weight(.semibold))
+                    .textSelection(.enabled)
 
-            HStack(spacing: 8) {
-                Text("Difference: \(timeZoneService.timeDifferenceDescription(from: sourceTimeZoneIdentifier, to: targetTimeZoneIdentifier))")
+                HStack(spacing: 8) {
+                    Text("Difference: \(timeZoneService.timeDifferenceDescription(from: sourceTimeZoneIdentifier, to: targetTimeZoneIdentifier))")
 
-                if dateRelation != .sameDay {
-                    Text(dateRelation.displayName)
+                    if dateRelation != .sameDay {
+                        Text(dateRelation.displayName)
+                    }
                 }
-            }
-            .font(.caption)
-            .foregroundStyle(.secondary)
+                .font(.caption)
+                .foregroundStyle(.secondary)
 
-            Button {
-                copyResult()
-            } label: {
-                Label("Copy result", systemImage: "doc.on.doc")
+                Button {
+                    copyResult()
+                } label: {
+                    Label("Copy result", systemImage: "doc.on.doc")
+                }
+                .controlSize(.small)
             }
-            .controlSize(.small)
         }
-        .padding(10)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(.quaternary.opacity(0.45))
-        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
     }
 
     private var resultSummary: String {
@@ -200,48 +198,46 @@ struct TimeConverterView: View {
         let selectedCountry = country(for: countryISOCode.wrappedValue)
         let timeZones = selectedCountry?.timeZones ?? []
 
-        return VStack(alignment: .leading, spacing: 8) {
-            Text(title)
-                .font(.headline)
+        return SectionCardView {
+            VStack(alignment: .leading, spacing: 8) {
+                Text(title)
+                    .font(.headline)
 
-            if countries.isEmpty {
-                Text("Country data unavailable")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-            } else {
-                Picker("Country", selection: countryISOCode) {
-                    ForEach(countries) { country in
-                        Text(country.countryName)
-                            .tag(country.isoCode)
-                    }
-                }
-
-                if timeZones.count > 1 {
-                    Picker("City/time zone", selection: timeZoneIdentifier) {
-                        ForEach(timeZones) { timeZone in
-                            Text(timeZonePickerLabel(for: timeZone))
-                                .tag(timeZone.identifier)
+                if countries.isEmpty {
+                    Text("Country data unavailable")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                } else {
+                    Picker("Country", selection: countryISOCode) {
+                        ForEach(countries) { country in
+                            Text(country.countryName)
+                                .tag(country.isoCode)
                         }
                     }
-                } else if let timeZone = timeZones.first {
-                    LabeledContent("City/time zone") {
-                        Text(timeZonePickerLabel(for: timeZone))
-                            .foregroundStyle(.secondary)
-                    }
-                }
 
-                if isEditable {
-                    DatePicker("Date", selection: dateTime, displayedComponents: .date)
-                    DatePicker("Time", selection: dateTime, displayedComponents: .hourAndMinute)
-                } else if let resultDate {
-                    convertedTimeDisplay(for: resultDate, timeZoneIdentifier: timeZoneIdentifier.wrappedValue)
+                    if timeZones.count > 1 {
+                        Picker("City/time zone", selection: timeZoneIdentifier) {
+                            ForEach(timeZones) { timeZone in
+                                Text(timeZonePickerLabel(for: timeZone))
+                                    .tag(timeZone.identifier)
+                            }
+                        }
+                    } else if let timeZone = timeZones.first {
+                        LabeledContent("City/time zone") {
+                            Text(timeZonePickerLabel(for: timeZone))
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+
+                    if isEditable {
+                        DatePicker("Date", selection: dateTime, displayedComponents: .date)
+                        DatePicker("Time", selection: dateTime, displayedComponents: .hourAndMinute)
+                    } else if let resultDate {
+                        convertedTimeDisplay(for: resultDate, timeZoneIdentifier: timeZoneIdentifier.wrappedValue)
+                    }
                 }
             }
         }
-        .padding(10)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(.quaternary.opacity(0.32))
-        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
     }
 
     private func convertedTimeDisplay(for date: Date, timeZoneIdentifier: String) -> some View {

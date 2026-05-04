@@ -15,49 +15,55 @@ struct SettingsView: View {
     }
 
     private var defaultTimeZoneSection: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("Default Time Zone")
-                .font(.headline)
+        SectionCardView {
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Default Time Zone")
+                    .font(.headline)
 
-            VStack(alignment: .leading, spacing: 4) {
-                Text(defaultLocationText)
-                    .font(.body.weight(.medium))
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(defaultLocationText)
+                        .font(.body.weight(.medium))
 
-                Text(appState.settings.defaultTimeZoneIdentifier)
-                    .font(.callout)
-                    .foregroundStyle(.secondary)
+                    Text(appState.settings.defaultTimeZoneIdentifier)
+                        .font(.callout)
+                        .foregroundStyle(.secondary)
+                }
             }
         }
     }
 
     private var preferencesSection: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            Picker("Time format", selection: binding(for: \.timeFormat)) {
-                ForEach(TimeFormat.allCases) { format in
-                    Text(format.displayName)
-                        .tag(format)
+        SectionCardView {
+            VStack(alignment: .leading, spacing: 14) {
+                Picker("Time format", selection: binding(for: \.timeFormat)) {
+                    ForEach(TimeFormat.allCases) { format in
+                        Text(format.displayName)
+                            .tag(format)
+                    }
                 }
-            }
 
-            Picker("Theme", selection: binding(for: \.theme)) {
-                ForEach(AppTheme.allCases) { theme in
-                    Text(theme.displayName)
-                        .tag(theme)
+                Picker("Theme", selection: binding(for: \.theme)) {
+                    ForEach(AppTheme.allCases) { theme in
+                        Text(theme.displayName)
+                            .tag(theme)
+                    }
                 }
-            }
 
-            Toggle("Show time in menu bar", isOn: binding(for: \.showTimeInMenuBar))
+                Toggle("Show time in menu bar", isOn: binding(for: \.showTimeInMenuBar))
+            }
         }
     }
 
     private var launchAtLoginSection: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Toggle("Launch at login", isOn: .constant(appState.settings.launchAtLogin))
-                .disabled(true)
+        SectionCardView {
+            VStack(alignment: .leading, spacing: 6) {
+                Toggle("Launch at login", isOn: .constant(appState.settings.launchAtLogin))
+                    .disabled(true)
 
-            Text("Coming later")
-                .font(.caption)
-                .foregroundStyle(.secondary)
+                Text("Coming later")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
         }
     }
 

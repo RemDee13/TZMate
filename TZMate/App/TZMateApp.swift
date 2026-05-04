@@ -2,13 +2,11 @@ import SwiftUI
 
 @main
 struct TZMateApp: App {
-    @StateObject private var appState = AppState()
+    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
 
     var body: some Scene {
-        MenuBarExtra("TZ Mate", systemImage: "clock") {
-            RootPopoverView()
-                .environmentObject(appState)
+        Settings {
+            EmptyView()
         }
-        .menuBarExtraStyle(.window)
     }
 }

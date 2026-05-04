@@ -1,3 +1,4 @@
+import AppKit
 import SwiftUI
 
 struct ContactsView: View {
@@ -23,31 +24,42 @@ struct ContactsView: View {
     }
 
     private var header: some View {
-        HStack {
-            VStack(alignment: .leading, spacing: 2) {
-                Text("Contacts")
-                    .font(.headline)
+        SectionCardView {
+            HStack {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Contacts")
+                        .font(.headline)
 
-                Text("\(appState.contacts.count) saved")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                    Text("\(appState.contacts.count) saved")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+
+                Spacer()
+
+                Button {
+                    formContext = ContactFormContext(contact: nil)
+                } label: {
+                    Label("Add", systemImage: "plus")
+                }
+                .buttonStyle(.borderedProminent)
+                .controlSize(.small)
             }
-
-            Spacer()
-
-            Button {
-                formContext = ContactFormContext(contact: nil)
-            } label: {
-                Label("Add contact", systemImage: "plus")
-            }
-            .buttonStyle(.borderedProminent)
-            .controlSize(.small)
         }
     }
 
     private var searchField: some View {
-        TextField("Search contacts", text: $searchText)
-            .textFieldStyle(.roundedBorder)
+        HStack(spacing: 8) {
+            Image(systemName: "magnifyingglass")
+                .foregroundStyle(.secondary)
+
+            TextField("Search contacts", text: $searchText)
+                .textFieldStyle(.plain)
+        }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 8)
+        .background(Color(nsColor: .controlBackgroundColor))
+        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
     }
 
     @ViewBuilder
@@ -103,24 +115,26 @@ struct ContactsView: View {
     }
 
     private func emptyState(title: String, message: String) -> some View {
-        VStack(spacing: 10) {
-            Spacer()
+        SectionCardView {
+            VStack(spacing: 10) {
+                Spacer()
 
-            Image(systemName: "person.2")
-                .font(.system(size: 32))
-                .foregroundStyle(.secondary)
+                Image(systemName: "person.2")
+                    .font(.system(size: 32))
+                    .foregroundStyle(.secondary)
 
-            Text(title)
-                .font(.headline)
+                Text(title)
+                    .font(.headline)
 
-            Text(message)
-                .font(.callout)
-                .foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
+                Text(message)
+                    .font(.callout)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
 
-            Spacer()
+                Spacer()
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 

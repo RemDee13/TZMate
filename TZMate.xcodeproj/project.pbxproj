@@ -10,6 +10,7 @@
 		11A1B2C3D4E5F60000000001 /* TZMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1B2C3D4E5F60000000011 /* TZMateApp.swift */; };
 		11A1B2C3D4E5F60000000002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1B2C3D4E5F60000000012 /* AppState.swift */; };
 		11A1B2C3D4E5F60000000003 /* RootPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1B2C3D4E5F60000000013 /* RootPopoverView.swift */; };
+		99A1B2C3D4E5F60000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A1B2C3D4E5F60000000011 /* AppDelegate.swift */; };
 		22A1B2C3D4E5F60000000001 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000011 /* Contact.swift */; };
 		22A1B2C3D4E5F60000000002 /* CountryTimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000012 /* CountryTimeData.swift */; };
 		22A1B2C3D4E5F60000000003 /* CountryTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1B2C3D4E5F60000000013 /* CountryTimeZone.swift */; };
@@ -30,6 +31,8 @@
 		44A1B2C3D4E5F60000000003 /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1B2C3D4E5F60000000013 /* ContactRowView.swift */; };
 		44A1B2C3D4E5F60000000004 /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1B2C3D4E5F60000000014 /* ContactFormView.swift */; };
 		55A1B2C3D4E5F60000000001 /* TimeConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B2C3D4E5F60000000011 /* TimeConverterView.swift */; };
+		99A1B2C3D4E5F60000000002 /* PhoneLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A1B2C3D4E5F60000000012 /* PhoneLookupView.swift */; };
+		99A1B2C3D4E5F60000000003 /* SectionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A1B2C3D4E5F60000000013 /* SectionCardView.swift */; };
 		66A1B2C3D4E5F60000000001 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1B2C3D4E5F60000000011 /* Constants.swift */; };
 		66A1B2C3D4E5F60000000002 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1B2C3D4E5F60000000011 /* Constants.swift */; };
 		77A1B2C3D4E5F60000000001 /* TZMateWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1B2C3D4E5F60000000011 /* TZMateWidgetProvider.swift */; };
@@ -80,6 +83,7 @@
 		11A1B2C3D4E5F60000000012 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		11A1B2C3D4E5F60000000013 /* RootPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPopoverView.swift; sourceTree = "<group>"; };
 		11A1B2C3D4E5F60000000014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A1B2C3D4E5F60000000011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22A1B2C3D4E5F60000000011 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		22A1B2C3D4E5F60000000012 /* CountryTimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTimeData.swift; sourceTree = "<group>"; };
 		22A1B2C3D4E5F60000000013 /* CountryTimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTimeZone.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 		44A1B2C3D4E5F60000000013 /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
 		44A1B2C3D4E5F60000000014 /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
 		55A1B2C3D4E5F60000000011 /* TimeConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverterView.swift; sourceTree = "<group>"; };
+		99A1B2C3D4E5F60000000012 /* PhoneLookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLookupView.swift; sourceTree = "<group>"; };
+		99A1B2C3D4E5F60000000013 /* SectionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCardView.swift; sourceTree = "<group>"; };
 		66A1B2C3D4E5F60000000011 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		66A1B2C3D4E5F60000000012 /* TZMate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TZMate.entitlements; sourceTree = "<group>"; };
 		77A1B2C3D4E5F60000000010 /* TZMateWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TZMateWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				11A1B2C3D4E5F60000000011 /* TZMateApp.swift */,
+				99A1B2C3D4E5F60000000011 /* AppDelegate.swift */,
 				11A1B2C3D4E5F60000000012 /* AppState.swift */,
 			);
 			path = App;
@@ -168,7 +175,9 @@
 			isa = PBXGroup;
 			children = (
 				11A1B2C3D4E5F60000000013 /* RootPopoverView.swift */,
+				99A1B2C3D4E5F60000000031 /* Shared */,
 				44A1B2C3D4E5F60000000030 /* Contacts */,
+				99A1B2C3D4E5F60000000030 /* Lookup */,
 				55A1B2C3D4E5F60000000030 /* Converter */,
 				22A1B2C3D4E5F60000000032 /* Settings */,
 			);
@@ -246,6 +255,22 @@
 			path = Converter;
 			sourceTree = "<group>";
 		};
+		99A1B2C3D4E5F60000000030 /* Lookup */ = {
+			isa = PBXGroup;
+			children = (
+				99A1B2C3D4E5F60000000012 /* PhoneLookupView.swift */,
+			);
+			path = Lookup;
+			sourceTree = "<group>";
+		};
+		99A1B2C3D4E5F60000000031 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				99A1B2C3D4E5F60000000013 /* SectionCardView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		66A1B2C3D4E5F60000000030 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,9 +343,19 @@
 				TargetAttributes = {
 					11A1B2C3D4E5F60000000040 = {
 						CreatedOnToolsVersion = 15.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups = {
+								enabled = 1;
+							};
+						};
 					};
 					77A1B2C3D4E5F60000000040 = {
 						CreatedOnToolsVersion = 26.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -368,8 +403,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				11A1B2C3D4E5F60000000001 /* TZMateApp.swift in Sources */,
+				99A1B2C3D4E5F60000000001 /* AppDelegate.swift in Sources */,
 				11A1B2C3D4E5F60000000002 /* AppState.swift in Sources */,
 				11A1B2C3D4E5F60000000003 /* RootPopoverView.swift in Sources */,
+				99A1B2C3D4E5F60000000003 /* SectionCardView.swift in Sources */,
 				66A1B2C3D4E5F60000000001 /* Constants.swift in Sources */,
 				22A1B2C3D4E5F60000000001 /* Contact.swift in Sources */,
 				22A1B2C3D4E5F60000000002 /* CountryTimeData.swift in Sources */,
@@ -389,6 +426,7 @@
 				44A1B2C3D4E5F60000000002 /* ContactsView.swift in Sources */,
 				44A1B2C3D4E5F60000000003 /* ContactRowView.swift in Sources */,
 				44A1B2C3D4E5F60000000004 /* ContactFormView.swift in Sources */,
+				99A1B2C3D4E5F60000000002 /* PhoneLookupView.swift in Sources */,
 				55A1B2C3D4E5F60000000001 /* TimeConverterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,7 +588,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = RJH4M6H673;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMate/Info.plist;
@@ -577,7 +615,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = RJH4M6H673;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMate/Info.plist;
@@ -602,7 +640,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RJH4M6H673;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMateWidgetExtension/Info.plist;
@@ -631,7 +669,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RJH4M6H673;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMateWidgetExtension/Info.plist;
