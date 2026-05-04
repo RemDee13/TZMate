@@ -18,7 +18,8 @@ The app is intentionally small: no CRM, no login, no backend, and no cloud depen
 - Favorite contacts
 - macOS WidgetKit widget
 - Time zone converter
-- Phone code country lookup
+- Phone code and country name lookup
+- Expanded local country and time zone dataset
 - Multiple time zones for large countries
 - Practical time status labels
 - Light, dark, and system theme

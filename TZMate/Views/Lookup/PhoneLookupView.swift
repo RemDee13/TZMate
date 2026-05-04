@@ -4,12 +4,14 @@ struct PhoneLookupView: View {
     @EnvironmentObject private var appState: AppState
 
     private let countries: [CountryTimeData]
+    private let countryDataService: CountryDataService
     private let timeZoneService = TimeZoneService()
 
     @State private var query = ""
-    @State private var result: PhoneCodeLookupResult?
+    @State private var result: LookupSearchResult?
 
     init(countryDataService: CountryDataService = CountryDataService()) {
+        self.countryDataService = countryDataService
         countries = countryDataService.getAllCountries()
     }
 
@@ -26,7 +28,7 @@ struct PhoneLookupView: View {
             Text("Phone Lookup")
                 .font(.headline)
 
-            Text("Find countries and local time from a phone code.")
+            Text("Find countries and local time from a phone code or country name.")
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }
@@ -36,7 +38,7 @@ struct PhoneLookupView: View {
         SectionCardView {
             VStack(alignment: .leading, spacing: 10) {
                 HStack(spacing: 8) {
-                    TextField("+49, 49, +1 212", text: $query)
+                    TextField("+49, +1 212, Japan, Germany", text: $query)
                         .textFieldStyle(.roundedBorder)
                         .onSubmit(runLookup)
 
@@ -50,7 +52,7 @@ struct PhoneLookupView: View {
                     .disabled(trimmedQuery.isEmpty)
                 }
 
-                Text("Try +49, +66, +1, +7, or +61.")
+                Text("Search by phone code or country name.")
                     .font(.caption2)
                     .foregroundStyle(.secondary)
             }
@@ -70,7 +72,7 @@ struct PhoneLookupView: View {
                                 .font(.title2)
                                 .foregroundStyle(.secondary)
 
-                            Text("Enter a phone code to see matching countries, time zones, and current local time.")
+                            Text("Enter a phone code or country name to see matching countries, time zones, and current local time.")
                                 .font(.callout)
                                 .foregroundStyle(.secondary)
                         }
@@ -82,7 +84,17 @@ struct PhoneLookupView: View {
     }
 
     @ViewBuilder
-    private func resultView(_ result: PhoneCodeLookupResult) -> some View {
+    private func resultView(_ result: LookupSearchResult) -> some View {
+        switch result {
+        case .phone(let phoneResult):
+            phoneResultView(phoneResult)
+        case .countryName(_, let countries):
+            countryNameResultView(countries)
+        }
+    }
+
+    @ViewBuilder
+    private func phoneResultView(_ result: PhoneCodeLookupResult) -> some View {
         switch result {
         case .noMatch:
             SectionCardView {
@@ -108,6 +120,23 @@ struct PhoneLookupView: View {
         }
     }
 
+    @ViewBuilder
+    private func countryNameResultView(_ countries: [CountryTimeData]) -> some View {
+        if countries.isEmpty {
+            SectionCardView {
+                Text("No country found.")
+                    .font(.callout)
+                    .foregroundStyle(.secondary)
+            }
+        } else {
+            VStack(alignment: .leading, spacing: 10) {
+                ForEach(countries) { country in
+                    countryCard(country, showsAllTimeZones: country.timeZones.count > 1)
+                }
+            }
+        }
+    }
+
     private func countryCard(_ country: CountryTimeData, showsAllTimeZones: Bool) -> some View {
         SectionCardView {
             VStack(alignment: .leading, spacing: 10) {
@@ -116,7 +145,7 @@ struct PhoneLookupView: View {
                         Text(country.countryName)
                             .font(.headline)
 
-                        Text("\(country.phoneCode) · \(country.defaultCity)")
+                        Text("\(country.isoCode) · \(country.phoneCode) · \(country.defaultCity)")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }
@@ -170,7 +199,7 @@ struct PhoneLookupView: View {
                     .font(.caption.weight(.semibold))
                     .lineLimit(1)
 
-                Text(timeZone.label)
+                Text("\(timeZone.label) · \(timeZone.identifier)")
                     .font(.caption2)
                     .foregroundStyle(.secondary)
                     .lineLimit(1)
@@ -194,6 +223,26 @@ struct PhoneLookupView: View {
             return
         }
 
-        result = PhoneCodeService(countries: countries).lookup(trimmedQuery)
+        if shouldSearchByCountryName(trimmedQuery) {
+            result = .countryName(query: trimmedQuery, countries: countryDataService.searchCountries(trimmedQuery))
+        } else {
+            result = .phone(PhoneCodeService(countries: countries).lookup(trimmedQuery))
+        }
     }
+
+    private func shouldSearchByCountryName(_ value: String) -> Bool {
+        let hasLetters = value.rangeOfCharacter(from: .letters) != nil
+
+        if hasLetters {
+            return true
+        }
+
+        let digitCount = value.filter(\.isNumber).count
+        return digitCount == 0 && !value.hasPrefix("+")
+    }
+}
+
+private enum LookupSearchResult: Equatable {
+    case phone(PhoneCodeLookupResult)
+    case countryName(query: String, countries: [CountryTimeData])
 }

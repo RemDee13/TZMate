@@ -1,87 +1,671 @@
 [
   {
-    "countryName": "Thailand",
-    "isoCode": "TH",
-    "phoneCode": "+66",
-    "defaultCity": "Bangkok",
-    "defaultTimeZone": "Asia/Bangkok",
+    "countryName": "Afghanistan",
+    "isoCode": "AF",
+    "phoneCode": "+93",
+    "defaultCity": "Kabul",
+    "defaultTimeZone": "Asia/Kabul",
     "timeZones": [
       {
-        "identifier": "Asia/Bangkok",
-        "label": "Thailand Time",
-        "majorCities": ["Bangkok", "Phuket", "Chiang Mai", "Pattaya"]
+        "identifier": "Asia/Kabul",
+        "label": "Kabul Time",
+        "majorCities": [
+          "Kabul"
+        ]
       }
     ]
   },
   {
-    "countryName": "Germany",
-    "isoCode": "DE",
-    "phoneCode": "+49",
-    "defaultCity": "Berlin",
-    "defaultTimeZone": "Europe/Berlin",
+    "countryName": "Aland Islands",
+    "isoCode": "AX",
+    "phoneCode": "+358",
+    "defaultCity": "Mariehamn",
+    "defaultTimeZone": "Europe/Mariehamn",
     "timeZones": [
       {
-        "identifier": "Europe/Berlin",
-        "label": "Central European Time",
-        "majorCities": ["Berlin", "Munich", "Hamburg", "Frankfurt"]
+        "identifier": "Europe/Mariehamn",
+        "label": "Mariehamn Time",
+        "majorCities": [
+          "Mariehamn"
+        ]
       }
     ]
   },
   {
-    "countryName": "United Kingdom",
-    "isoCode": "GB",
-    "phoneCode": "+44",
-    "defaultCity": "London",
-    "defaultTimeZone": "Europe/London",
+    "countryName": "Albania",
+    "isoCode": "AL",
+    "phoneCode": "+355",
+    "defaultCity": "Tirane",
+    "defaultTimeZone": "Europe/Tirane",
     "timeZones": [
       {
-        "identifier": "Europe/London",
-        "label": "United Kingdom Time",
-        "majorCities": ["London", "Manchester", "Birmingham", "Edinburgh"]
+        "identifier": "Europe/Tirane",
+        "label": "Tirane Time",
+        "majorCities": [
+          "Tirane"
+        ]
       }
     ]
   },
   {
-    "countryName": "United States",
-    "isoCode": "US",
+    "countryName": "Algeria",
+    "isoCode": "DZ",
+    "phoneCode": "+213",
+    "defaultCity": "Algiers",
+    "defaultTimeZone": "Africa/Algiers",
+    "timeZones": [
+      {
+        "identifier": "Africa/Algiers",
+        "label": "Algiers Time",
+        "majorCities": [
+          "Algiers"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "American Samoa",
+    "isoCode": "AS",
     "phoneCode": "+1",
-    "defaultCity": "New York",
-    "defaultTimeZone": "America/New_York",
+    "defaultCity": "Pago Pago",
+    "defaultTimeZone": "Pacific/Pago_Pago",
     "timeZones": [
       {
-        "identifier": "America/New_York",
-        "label": "Eastern Time",
-        "majorCities": ["New York", "Washington", "Miami", "Boston"]
+        "identifier": "Pacific/Pago_Pago",
+        "label": "Pago Pago Time",
+        "majorCities": [
+          "Pago Pago"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Andorra",
+    "isoCode": "AD",
+    "phoneCode": "+376",
+    "defaultCity": "Andorra",
+    "defaultTimeZone": "Europe/Andorra",
+    "timeZones": [
+      {
+        "identifier": "Europe/Andorra",
+        "label": "Andorra Time",
+        "majorCities": [
+          "Andorra"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Angola",
+    "isoCode": "AO",
+    "phoneCode": "+244",
+    "defaultCity": "Luanda",
+    "defaultTimeZone": "Africa/Luanda",
+    "timeZones": [
+      {
+        "identifier": "Africa/Luanda",
+        "label": "Luanda Time",
+        "majorCities": [
+          "Luanda"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Anguilla",
+    "isoCode": "AI",
+    "phoneCode": "+1",
+    "defaultCity": "Anguilla",
+    "defaultTimeZone": "America/Anguilla",
+    "timeZones": [
+      {
+        "identifier": "America/Anguilla",
+        "label": "Anguilla Time",
+        "majorCities": [
+          "Anguilla"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Antigua and Barbuda",
+    "isoCode": "AG",
+    "phoneCode": "+1",
+    "defaultCity": "Antigua",
+    "defaultTimeZone": "America/Antigua",
+    "timeZones": [
+      {
+        "identifier": "America/Antigua",
+        "label": "Antigua Time",
+        "majorCities": [
+          "Antigua"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Argentina",
+    "isoCode": "AR",
+    "phoneCode": "+54",
+    "defaultCity": "Buenos Aires",
+    "defaultTimeZone": "America/Argentina/Buenos_Aires",
+    "timeZones": [
+      {
+        "identifier": "America/Argentina/Buenos_Aires",
+        "label": "Argentina Time",
+        "majorCities": [
+          "Buenos Aires",
+          "Cordoba",
+          "Mendoza"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Armenia",
+    "isoCode": "AM",
+    "phoneCode": "+374",
+    "defaultCity": "Yerevan",
+    "defaultTimeZone": "Asia/Yerevan",
+    "timeZones": [
+      {
+        "identifier": "Asia/Yerevan",
+        "label": "Yerevan Time",
+        "majorCities": [
+          "Yerevan"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Aruba",
+    "isoCode": "AW",
+    "phoneCode": "+297",
+    "defaultCity": "Aruba",
+    "defaultTimeZone": "America/Aruba",
+    "timeZones": [
+      {
+        "identifier": "America/Aruba",
+        "label": "Aruba Time",
+        "majorCities": [
+          "Aruba"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Ascension Island",
+    "isoCode": "AC",
+    "phoneCode": "+247",
+    "defaultCity": "Georgetown",
+    "defaultTimeZone": "Atlantic/St_Helena",
+    "timeZones": [
+      {
+        "identifier": "Atlantic/St_Helena",
+        "label": "Ascension Island Time",
+        "majorCities": [
+          "Georgetown"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Australia",
+    "isoCode": "AU",
+    "phoneCode": "+61",
+    "defaultCity": "Sydney",
+    "defaultTimeZone": "Australia/Sydney",
+    "timeZones": [
+      {
+        "identifier": "Australia/Perth",
+        "label": "Australian Western Time",
+        "majorCities": [
+          "Perth"
+        ]
       },
       {
-        "identifier": "America/Chicago",
-        "label": "Central Time",
-        "majorCities": ["Chicago", "Houston", "Dallas", "Minneapolis"]
+        "identifier": "Australia/Darwin",
+        "label": "Australian Central Time",
+        "majorCities": [
+          "Darwin"
+        ]
       },
       {
-        "identifier": "America/Denver",
-        "label": "Mountain Time",
-        "majorCities": ["Denver", "Salt Lake City", "Boise"]
+        "identifier": "Australia/Adelaide",
+        "label": "Australian Central Time",
+        "majorCities": [
+          "Adelaide"
+        ]
       },
       {
-        "identifier": "America/Phoenix",
-        "label": "Arizona Time",
-        "majorCities": ["Phoenix", "Tucson"]
+        "identifier": "Australia/Brisbane",
+        "label": "Australian Eastern Time",
+        "majorCities": [
+          "Brisbane"
+        ]
       },
       {
-        "identifier": "America/Los_Angeles",
-        "label": "Pacific Time",
-        "majorCities": ["Los Angeles", "San Francisco", "Seattle", "Las Vegas"]
+        "identifier": "Australia/Sydney",
+        "label": "Australian Eastern Time",
+        "majorCities": [
+          "Sydney",
+          "Melbourne",
+          "Canberra"
+        ]
       },
       {
-        "identifier": "America/Anchorage",
-        "label": "Alaska Time",
-        "majorCities": ["Anchorage", "Juneau"]
+        "identifier": "Australia/Hobart",
+        "label": "Tasmania Time",
+        "majorCities": [
+          "Hobart"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Austria",
+    "isoCode": "AT",
+    "phoneCode": "+43",
+    "defaultCity": "Vienna",
+    "defaultTimeZone": "Europe/Vienna",
+    "timeZones": [
+      {
+        "identifier": "Europe/Vienna",
+        "label": "Vienna Time",
+        "majorCities": [
+          "Vienna"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Azerbaijan",
+    "isoCode": "AZ",
+    "phoneCode": "+994",
+    "defaultCity": "Baku",
+    "defaultTimeZone": "Asia/Baku",
+    "timeZones": [
+      {
+        "identifier": "Asia/Baku",
+        "label": "Baku Time",
+        "majorCities": [
+          "Baku"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Bahamas",
+    "isoCode": "BS",
+    "phoneCode": "+1",
+    "defaultCity": "Nassau",
+    "defaultTimeZone": "America/Nassau",
+    "timeZones": [
+      {
+        "identifier": "America/Nassau",
+        "label": "Nassau Time",
+        "majorCities": [
+          "Nassau"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Bahrain",
+    "isoCode": "BH",
+    "phoneCode": "+973",
+    "defaultCity": "Bahrain",
+    "defaultTimeZone": "Asia/Bahrain",
+    "timeZones": [
+      {
+        "identifier": "Asia/Bahrain",
+        "label": "Bahrain Time",
+        "majorCities": [
+          "Bahrain"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Bangladesh",
+    "isoCode": "BD",
+    "phoneCode": "+880",
+    "defaultCity": "Dhaka",
+    "defaultTimeZone": "Asia/Dhaka",
+    "timeZones": [
+      {
+        "identifier": "Asia/Dhaka",
+        "label": "Dhaka Time",
+        "majorCities": [
+          "Dhaka"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Barbados",
+    "isoCode": "BB",
+    "phoneCode": "+1",
+    "defaultCity": "Barbados",
+    "defaultTimeZone": "America/Barbados",
+    "timeZones": [
+      {
+        "identifier": "America/Barbados",
+        "label": "Barbados Time",
+        "majorCities": [
+          "Barbados"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Belarus",
+    "isoCode": "BY",
+    "phoneCode": "+375",
+    "defaultCity": "Minsk",
+    "defaultTimeZone": "Europe/Minsk",
+    "timeZones": [
+      {
+        "identifier": "Europe/Minsk",
+        "label": "Minsk Time",
+        "majorCities": [
+          "Minsk"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Belgium",
+    "isoCode": "BE",
+    "phoneCode": "+32",
+    "defaultCity": "Brussels",
+    "defaultTimeZone": "Europe/Brussels",
+    "timeZones": [
+      {
+        "identifier": "Europe/Brussels",
+        "label": "Brussels Time",
+        "majorCities": [
+          "Brussels"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Belize",
+    "isoCode": "BZ",
+    "phoneCode": "+501",
+    "defaultCity": "Belize",
+    "defaultTimeZone": "America/Belize",
+    "timeZones": [
+      {
+        "identifier": "America/Belize",
+        "label": "Belize Time",
+        "majorCities": [
+          "Belize"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Benin",
+    "isoCode": "BJ",
+    "phoneCode": "+229",
+    "defaultCity": "Porto-Novo",
+    "defaultTimeZone": "Africa/Porto-Novo",
+    "timeZones": [
+      {
+        "identifier": "Africa/Porto-Novo",
+        "label": "Porto-Novo Time",
+        "majorCities": [
+          "Porto-Novo"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Bermuda",
+    "isoCode": "BM",
+    "phoneCode": "+1",
+    "defaultCity": "Bermuda",
+    "defaultTimeZone": "Atlantic/Bermuda",
+    "timeZones": [
+      {
+        "identifier": "Atlantic/Bermuda",
+        "label": "Bermuda Time",
+        "majorCities": [
+          "Bermuda"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Bhutan",
+    "isoCode": "BT",
+    "phoneCode": "+975",
+    "defaultCity": "Thimphu",
+    "defaultTimeZone": "Asia/Thimphu",
+    "timeZones": [
+      {
+        "identifier": "Asia/Thimphu",
+        "label": "Thimphu Time",
+        "majorCities": [
+          "Thimphu"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Bolivia",
+    "isoCode": "BO",
+    "phoneCode": "+591",
+    "defaultCity": "La Paz",
+    "defaultTimeZone": "America/La_Paz",
+    "timeZones": [
+      {
+        "identifier": "America/La_Paz",
+        "label": "La Paz Time",
+        "majorCities": [
+          "La Paz"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Bosnia and Herzegovina",
+    "isoCode": "BA",
+    "phoneCode": "+387",
+    "defaultCity": "Sarajevo",
+    "defaultTimeZone": "Europe/Sarajevo",
+    "timeZones": [
+      {
+        "identifier": "Europe/Sarajevo",
+        "label": "Sarajevo Time",
+        "majorCities": [
+          "Sarajevo"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Botswana",
+    "isoCode": "BW",
+    "phoneCode": "+267",
+    "defaultCity": "Gaborone",
+    "defaultTimeZone": "Africa/Gaborone",
+    "timeZones": [
+      {
+        "identifier": "Africa/Gaborone",
+        "label": "Gaborone Time",
+        "majorCities": [
+          "Gaborone"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Brazil",
+    "isoCode": "BR",
+    "phoneCode": "+55",
+    "defaultCity": "Sao Paulo",
+    "defaultTimeZone": "America/Sao_Paulo",
+    "timeZones": [
+      {
+        "identifier": "America/Noronha",
+        "label": "Fernando de Noronha Time",
+        "majorCities": [
+          "Fernando de Noronha"
+        ]
       },
       {
-        "identifier": "Pacific/Honolulu",
-        "label": "Hawaii Time",
-        "majorCities": ["Honolulu"]
+        "identifier": "America/Sao_Paulo",
+        "label": "Brasilia Time",
+        "majorCities": [
+          "Sao Paulo",
+          "Rio de Janeiro",
+          "Brasilia"
+        ]
+      },
+      {
+        "identifier": "America/Manaus",
+        "label": "Amazon Time",
+        "majorCities": [
+          "Manaus"
+        ]
+      },
+      {
+        "identifier": "America/Rio_Branco",
+        "label": "Acre Time",
+        "majorCities": [
+          "Rio Branco"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "British Indian Ocean Territory",
+    "isoCode": "IO",
+    "phoneCode": "+246",
+    "defaultCity": "Chagos",
+    "defaultTimeZone": "Indian/Chagos",
+    "timeZones": [
+      {
+        "identifier": "Indian/Chagos",
+        "label": "Chagos Time",
+        "majorCities": [
+          "Chagos"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "British Virgin Islands",
+    "isoCode": "VG",
+    "phoneCode": "+1",
+    "defaultCity": "Tortola",
+    "defaultTimeZone": "America/Tortola",
+    "timeZones": [
+      {
+        "identifier": "America/Tortola",
+        "label": "Tortola Time",
+        "majorCities": [
+          "Tortola"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Brunei",
+    "isoCode": "BN",
+    "phoneCode": "+673",
+    "defaultCity": "Brunei",
+    "defaultTimeZone": "Asia/Brunei",
+    "timeZones": [
+      {
+        "identifier": "Asia/Brunei",
+        "label": "Brunei Time",
+        "majorCities": [
+          "Brunei"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Bulgaria",
+    "isoCode": "BG",
+    "phoneCode": "+359",
+    "defaultCity": "Sofia",
+    "defaultTimeZone": "Europe/Sofia",
+    "timeZones": [
+      {
+        "identifier": "Europe/Sofia",
+        "label": "Sofia Time",
+        "majorCities": [
+          "Sofia"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Burkina Faso",
+    "isoCode": "BF",
+    "phoneCode": "+226",
+    "defaultCity": "Ouagadougou",
+    "defaultTimeZone": "Africa/Ouagadougou",
+    "timeZones": [
+      {
+        "identifier": "Africa/Ouagadougou",
+        "label": "Ouagadougou Time",
+        "majorCities": [
+          "Ouagadougou"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Burundi",
+    "isoCode": "BI",
+    "phoneCode": "+257",
+    "defaultCity": "Bujumbura",
+    "defaultTimeZone": "Africa/Bujumbura",
+    "timeZones": [
+      {
+        "identifier": "Africa/Bujumbura",
+        "label": "Bujumbura Time",
+        "majorCities": [
+          "Bujumbura"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Cambodia",
+    "isoCode": "KH",
+    "phoneCode": "+855",
+    "defaultCity": "Phnom Penh",
+    "defaultTimeZone": "Asia/Phnom_Penh",
+    "timeZones": [
+      {
+        "identifier": "Asia/Phnom_Penh",
+        "label": "Phnom Penh Time",
+        "majorCities": [
+          "Phnom Penh"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Cameroon",
+    "isoCode": "CM",
+    "phoneCode": "+237",
+    "defaultCity": "Douala",
+    "defaultTimeZone": "Africa/Douala",
+    "timeZones": [
+      {
+        "identifier": "Africa/Douala",
+        "label": "Douala Time",
+        "majorCities": [
+          "Douala"
+        ]
       }
     ]
   },
@@ -95,259 +679,647 @@
       {
         "identifier": "America/St_Johns",
         "label": "Newfoundland Time",
-        "majorCities": ["St. John's"]
+        "majorCities": [
+          "St. John's"
+        ]
       },
       {
         "identifier": "America/Halifax",
         "label": "Atlantic Time",
-        "majorCities": ["Halifax", "Moncton"]
+        "majorCities": [
+          "Halifax"
+        ]
       },
       {
         "identifier": "America/Toronto",
         "label": "Eastern Time",
-        "majorCities": ["Toronto", "Ottawa", "Montreal"]
+        "majorCities": [
+          "Toronto",
+          "Ottawa",
+          "Montreal"
+        ]
       },
       {
         "identifier": "America/Winnipeg",
         "label": "Central Time",
-        "majorCities": ["Winnipeg", "Regina"]
+        "majorCities": [
+          "Winnipeg"
+        ]
       },
       {
         "identifier": "America/Edmonton",
         "label": "Mountain Time",
-        "majorCities": ["Edmonton", "Calgary"]
+        "majorCities": [
+          "Edmonton",
+          "Calgary"
+        ]
       },
       {
         "identifier": "America/Vancouver",
         "label": "Pacific Time",
-        "majorCities": ["Vancouver", "Victoria"]
+        "majorCities": [
+          "Vancouver",
+          "Victoria"
+        ]
       }
     ]
   },
   {
-    "countryName": "Australia",
-    "isoCode": "AU",
+    "countryName": "Cape Verde",
+    "isoCode": "CV",
+    "phoneCode": "+238",
+    "defaultCity": "Cape Verde",
+    "defaultTimeZone": "Atlantic/Cape_Verde",
+    "timeZones": [
+      {
+        "identifier": "Atlantic/Cape_Verde",
+        "label": "Cape Verde Time",
+        "majorCities": [
+          "Cape Verde"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Caribbean Netherlands",
+    "isoCode": "BQ",
+    "phoneCode": "+599",
+    "defaultCity": "Kralendijk",
+    "defaultTimeZone": "America/Kralendijk",
+    "timeZones": [
+      {
+        "identifier": "America/Kralendijk",
+        "label": "Kralendijk Time",
+        "majorCities": [
+          "Kralendijk"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Cayman Islands",
+    "isoCode": "KY",
+    "phoneCode": "+1",
+    "defaultCity": "Cayman",
+    "defaultTimeZone": "America/Cayman",
+    "timeZones": [
+      {
+        "identifier": "America/Cayman",
+        "label": "Cayman Time",
+        "majorCities": [
+          "Cayman"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Central African Republic",
+    "isoCode": "CF",
+    "phoneCode": "+236",
+    "defaultCity": "Bangui",
+    "defaultTimeZone": "Africa/Bangui",
+    "timeZones": [
+      {
+        "identifier": "Africa/Bangui",
+        "label": "Bangui Time",
+        "majorCities": [
+          "Bangui"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Chad",
+    "isoCode": "TD",
+    "phoneCode": "+235",
+    "defaultCity": "Ndjamena",
+    "defaultTimeZone": "Africa/Ndjamena",
+    "timeZones": [
+      {
+        "identifier": "Africa/Ndjamena",
+        "label": "Ndjamena Time",
+        "majorCities": [
+          "Ndjamena"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Chile",
+    "isoCode": "CL",
+    "phoneCode": "+56",
+    "defaultCity": "Santiago",
+    "defaultTimeZone": "America/Santiago",
+    "timeZones": [
+      {
+        "identifier": "America/Santiago",
+        "label": "Chile Time",
+        "majorCities": [
+          "Santiago",
+          "Valparaiso"
+        ]
+      },
+      {
+        "identifier": "Pacific/Easter",
+        "label": "Easter Island Time",
+        "majorCities": [
+          "Easter Island"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "China",
+    "isoCode": "CN",
+    "phoneCode": "+86",
+    "defaultCity": "Beijing",
+    "defaultTimeZone": "Asia/Shanghai",
+    "timeZones": [
+      {
+        "identifier": "Asia/Shanghai",
+        "label": "China Standard Time",
+        "majorCities": [
+          "Beijing",
+          "Shanghai",
+          "Shenzhen",
+          "Guangzhou"
+        ]
+      },
+      {
+        "identifier": "Asia/Urumqi",
+        "label": "Xinjiang Time",
+        "majorCities": [
+          "Urumqi"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Christmas Island",
+    "isoCode": "CX",
     "phoneCode": "+61",
-    "defaultCity": "Sydney",
-    "defaultTimeZone": "Australia/Sydney",
+    "defaultCity": "Christmas",
+    "defaultTimeZone": "Indian/Christmas",
     "timeZones": [
       {
-        "identifier": "Australia/Sydney",
-        "label": "Australian Eastern Time",
-        "majorCities": ["Sydney", "Canberra"]
-      },
-      {
-        "identifier": "Australia/Melbourne",
-        "label": "Australian Eastern Time",
-        "majorCities": ["Melbourne"]
-      },
-      {
-        "identifier": "Australia/Brisbane",
-        "label": "Australian Eastern Standard Time",
-        "majorCities": ["Brisbane", "Gold Coast"]
-      },
-      {
-        "identifier": "Australia/Adelaide",
-        "label": "Australian Central Time",
-        "majorCities": ["Adelaide"]
-      },
-      {
-        "identifier": "Australia/Darwin",
-        "label": "Australian Central Standard Time",
-        "majorCities": ["Darwin"]
-      },
-      {
-        "identifier": "Australia/Perth",
-        "label": "Australian Western Time",
-        "majorCities": ["Perth"]
-      },
-      {
-        "identifier": "Australia/Hobart",
-        "label": "Tasmania Time",
-        "majorCities": ["Hobart"]
+        "identifier": "Indian/Christmas",
+        "label": "Christmas Time",
+        "majorCities": [
+          "Christmas"
+        ]
       }
     ]
   },
   {
-    "countryName": "Russia",
-    "isoCode": "RU",
-    "phoneCode": "+7",
-    "defaultCity": "Moscow",
-    "defaultTimeZone": "Europe/Moscow",
+    "countryName": "Cocos Islands",
+    "isoCode": "CC",
+    "phoneCode": "+61",
+    "defaultCity": "Cocos",
+    "defaultTimeZone": "Indian/Cocos",
     "timeZones": [
       {
-        "identifier": "Europe/Kaliningrad",
-        "label": "Kaliningrad Time",
-        "majorCities": ["Kaliningrad"]
-      },
-      {
-        "identifier": "Europe/Moscow",
-        "label": "Moscow Time",
-        "majorCities": ["Moscow", "Saint Petersburg", "Kazan"]
-      },
-      {
-        "identifier": "Europe/Samara",
-        "label": "Samara Time",
-        "majorCities": ["Samara", "Izhevsk"]
-      },
-      {
-        "identifier": "Asia/Yekaterinburg",
-        "label": "Yekaterinburg Time",
-        "majorCities": ["Yekaterinburg", "Ufa", "Perm"]
-      },
-      {
-        "identifier": "Asia/Omsk",
-        "label": "Omsk Time",
-        "majorCities": ["Omsk"]
-      },
-      {
-        "identifier": "Asia/Krasnoyarsk",
-        "label": "Krasnoyarsk Time",
-        "majorCities": ["Krasnoyarsk", "Novosibirsk"]
-      },
-      {
-        "identifier": "Asia/Irkutsk",
-        "label": "Irkutsk Time",
-        "majorCities": ["Irkutsk"]
-      },
-      {
-        "identifier": "Asia/Yakutsk",
-        "label": "Yakutsk Time",
-        "majorCities": ["Yakutsk"]
-      },
-      {
-        "identifier": "Asia/Vladivostok",
-        "label": "Vladivostok Time",
-        "majorCities": ["Vladivostok", "Khabarovsk"]
-      },
-      {
-        "identifier": "Asia/Magadan",
-        "label": "Magadan Time",
-        "majorCities": ["Magadan"]
-      },
-      {
-        "identifier": "Asia/Kamchatka",
-        "label": "Kamchatka Time",
-        "majorCities": ["Petropavlovsk-Kamchatsky"]
+        "identifier": "Indian/Cocos",
+        "label": "Cocos Time",
+        "majorCities": [
+          "Cocos"
+        ]
       }
     ]
   },
   {
-    "countryName": "Kazakhstan",
-    "isoCode": "KZ",
-    "phoneCode": "+7",
-    "defaultCity": "Almaty",
-    "defaultTimeZone": "Asia/Almaty",
+    "countryName": "Colombia",
+    "isoCode": "CO",
+    "phoneCode": "+57",
+    "defaultCity": "Bogota",
+    "defaultTimeZone": "America/Bogota",
     "timeZones": [
       {
-        "identifier": "Asia/Almaty",
-        "label": "Kazakhstan Time",
-        "majorCities": ["Almaty", "Astana", "Karaganda"]
-      },
-      {
-        "identifier": "Asia/Aqtobe",
-        "label": "Western Kazakhstan Time",
-        "majorCities": ["Aqtobe"]
-      },
-      {
-        "identifier": "Asia/Aqtau",
-        "label": "Caspian Kazakhstan Time",
-        "majorCities": ["Aqtau"]
-      },
-      {
-        "identifier": "Asia/Atyrau",
-        "label": "Atyrau Time",
-        "majorCities": ["Atyrau"]
-      },
-      {
-        "identifier": "Asia/Oral",
-        "label": "Oral Time",
-        "majorCities": ["Oral"]
+        "identifier": "America/Bogota",
+        "label": "Bogota Time",
+        "majorCities": [
+          "Bogota"
+        ]
       }
     ]
   },
   {
-    "countryName": "India",
-    "isoCode": "IN",
-    "phoneCode": "+91",
-    "defaultCity": "Mumbai",
-    "defaultTimeZone": "Asia/Kolkata",
+    "countryName": "Comoros",
+    "isoCode": "KM",
+    "phoneCode": "+269",
+    "defaultCity": "Comoro",
+    "defaultTimeZone": "Indian/Comoro",
     "timeZones": [
       {
-        "identifier": "Asia/Kolkata",
-        "label": "India Standard Time",
-        "majorCities": ["Mumbai", "Delhi", "Bengaluru", "Chennai"]
+        "identifier": "Indian/Comoro",
+        "label": "Comoro Time",
+        "majorCities": [
+          "Comoro"
+        ]
       }
     ]
   },
   {
-    "countryName": "Malaysia",
-    "isoCode": "MY",
-    "phoneCode": "+60",
-    "defaultCity": "Kuala Lumpur",
-    "defaultTimeZone": "Asia/Kuala_Lumpur",
+    "countryName": "Cook Islands",
+    "isoCode": "CK",
+    "phoneCode": "+682",
+    "defaultCity": "Rarotonga",
+    "defaultTimeZone": "Pacific/Rarotonga",
     "timeZones": [
       {
-        "identifier": "Asia/Kuala_Lumpur",
-        "label": "Malaysia Time",
-        "majorCities": ["Kuala Lumpur", "George Town", "Johor Bahru"]
+        "identifier": "Pacific/Rarotonga",
+        "label": "Rarotonga Time",
+        "majorCities": [
+          "Rarotonga"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Costa Rica",
+    "isoCode": "CR",
+    "phoneCode": "+506",
+    "defaultCity": "Costa Rica",
+    "defaultTimeZone": "America/Costa_Rica",
+    "timeZones": [
+      {
+        "identifier": "America/Costa_Rica",
+        "label": "Costa Rica Time",
+        "majorCities": [
+          "Costa Rica"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Croatia",
+    "isoCode": "HR",
+    "phoneCode": "+385",
+    "defaultCity": "Zagreb",
+    "defaultTimeZone": "Europe/Zagreb",
+    "timeZones": [
+      {
+        "identifier": "Europe/Zagreb",
+        "label": "Zagreb Time",
+        "majorCities": [
+          "Zagreb"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Cuba",
+    "isoCode": "CU",
+    "phoneCode": "+53",
+    "defaultCity": "Havana",
+    "defaultTimeZone": "America/Havana",
+    "timeZones": [
+      {
+        "identifier": "America/Havana",
+        "label": "Havana Time",
+        "majorCities": [
+          "Havana"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Cura\u00e7ao",
+    "isoCode": "CW",
+    "phoneCode": "+599",
+    "defaultCity": "Curacao",
+    "defaultTimeZone": "America/Curacao",
+    "timeZones": [
+      {
+        "identifier": "America/Curacao",
+        "label": "Curacao Time",
+        "majorCities": [
+          "Curacao"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Cyprus",
+    "isoCode": "CY",
+    "phoneCode": "+357",
+    "defaultCity": "Nicosia",
+    "defaultTimeZone": "Asia/Nicosia",
+    "timeZones": [
+      {
+        "identifier": "Asia/Nicosia",
+        "label": "most of Cyprus Time",
+        "majorCities": [
+          "Nicosia"
+        ]
       },
       {
-        "identifier": "Asia/Kuching",
-        "label": "Malaysia Time",
-        "majorCities": ["Kuching", "Kota Kinabalu"]
+        "identifier": "Asia/Famagusta",
+        "label": "Northern Cyprus Time",
+        "majorCities": [
+          "Famagusta"
+        ]
       }
     ]
   },
   {
-    "countryName": "Singapore",
-    "isoCode": "SG",
-    "phoneCode": "+65",
-    "defaultCity": "Singapore",
-    "defaultTimeZone": "Asia/Singapore",
+    "countryName": "Czechia",
+    "isoCode": "CZ",
+    "phoneCode": "+420",
+    "defaultCity": "Prague",
+    "defaultTimeZone": "Europe/Prague",
     "timeZones": [
       {
-        "identifier": "Asia/Singapore",
-        "label": "Singapore Time",
-        "majorCities": ["Singapore"]
+        "identifier": "Europe/Prague",
+        "label": "Prague Time",
+        "majorCities": [
+          "Prague"
+        ]
       }
     ]
   },
   {
-    "countryName": "United Arab Emirates",
-    "isoCode": "AE",
-    "phoneCode": "+971",
-    "defaultCity": "Dubai",
-    "defaultTimeZone": "Asia/Dubai",
+    "countryName": "Democratic Republic of the Congo",
+    "isoCode": "CD",
+    "phoneCode": "+243",
+    "defaultCity": "Kinshasa",
+    "defaultTimeZone": "Africa/Kinshasa",
     "timeZones": [
       {
-        "identifier": "Asia/Dubai",
-        "label": "Gulf Standard Time",
-        "majorCities": ["Dubai", "Abu Dhabi", "Sharjah"]
-      }
-    ]
-  },
-  {
-    "countryName": "Indonesia",
-    "isoCode": "ID",
-    "phoneCode": "+62",
-    "defaultCity": "Jakarta",
-    "defaultTimeZone": "Asia/Jakarta",
-    "timeZones": [
-      {
-        "identifier": "Asia/Jakarta",
-        "label": "Western Indonesia Time",
-        "majorCities": ["Jakarta", "Bandung", "Medan", "Surabaya"]
+        "identifier": "Africa/Kinshasa",
+        "label": "Dem. Rep. of Congo (west) Time",
+        "majorCities": [
+          "Kinshasa"
+        ]
       },
       {
-        "identifier": "Asia/Makassar",
-        "label": "Central Indonesia Time",
-        "majorCities": ["Makassar", "Bali", "Denpasar", "Balikpapan"]
+        "identifier": "Africa/Lubumbashi",
+        "label": "Dem. Rep. of Congo (east) Time",
+        "majorCities": [
+          "Lubumbashi"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Denmark",
+    "isoCode": "DK",
+    "phoneCode": "+45",
+    "defaultCity": "Copenhagen",
+    "defaultTimeZone": "Europe/Copenhagen",
+    "timeZones": [
+      {
+        "identifier": "Europe/Copenhagen",
+        "label": "Copenhagen Time",
+        "majorCities": [
+          "Copenhagen"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Djibouti",
+    "isoCode": "DJ",
+    "phoneCode": "+253",
+    "defaultCity": "Djibouti",
+    "defaultTimeZone": "Africa/Djibouti",
+    "timeZones": [
+      {
+        "identifier": "Africa/Djibouti",
+        "label": "Djibouti Time",
+        "majorCities": [
+          "Djibouti"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Dominica",
+    "isoCode": "DM",
+    "phoneCode": "+1",
+    "defaultCity": "Dominica",
+    "defaultTimeZone": "America/Dominica",
+    "timeZones": [
+      {
+        "identifier": "America/Dominica",
+        "label": "Dominica Time",
+        "majorCities": [
+          "Dominica"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Dominican Republic",
+    "isoCode": "DO",
+    "phoneCode": "+1",
+    "defaultCity": "Santo Domingo",
+    "defaultTimeZone": "America/Santo_Domingo",
+    "timeZones": [
+      {
+        "identifier": "America/Santo_Domingo",
+        "label": "Santo Domingo Time",
+        "majorCities": [
+          "Santo Domingo"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Ecuador",
+    "isoCode": "EC",
+    "phoneCode": "+593",
+    "defaultCity": "Guayaquil",
+    "defaultTimeZone": "America/Guayaquil",
+    "timeZones": [
+      {
+        "identifier": "America/Guayaquil",
+        "label": "Ecuador (mainland) Time",
+        "majorCities": [
+          "Guayaquil"
+        ]
       },
       {
-        "identifier": "Asia/Jayapura",
-        "label": "Eastern Indonesia Time",
-        "majorCities": ["Jayapura", "Ambon"]
+        "identifier": "Pacific/Galapagos",
+        "label": "Galapagos Islands Time",
+        "majorCities": [
+          "Galapagos"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Egypt",
+    "isoCode": "EG",
+    "phoneCode": "+20",
+    "defaultCity": "Cairo",
+    "defaultTimeZone": "Africa/Cairo",
+    "timeZones": [
+      {
+        "identifier": "Africa/Cairo",
+        "label": "Cairo Time",
+        "majorCities": [
+          "Cairo"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "El Salvador",
+    "isoCode": "SV",
+    "phoneCode": "+503",
+    "defaultCity": "El Salvador",
+    "defaultTimeZone": "America/El_Salvador",
+    "timeZones": [
+      {
+        "identifier": "America/El_Salvador",
+        "label": "El Salvador Time",
+        "majorCities": [
+          "El Salvador"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Equatorial Guinea",
+    "isoCode": "GQ",
+    "phoneCode": "+240",
+    "defaultCity": "Malabo",
+    "defaultTimeZone": "Africa/Malabo",
+    "timeZones": [
+      {
+        "identifier": "Africa/Malabo",
+        "label": "Malabo Time",
+        "majorCities": [
+          "Malabo"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Eritrea",
+    "isoCode": "ER",
+    "phoneCode": "+291",
+    "defaultCity": "Asmara",
+    "defaultTimeZone": "Africa/Asmara",
+    "timeZones": [
+      {
+        "identifier": "Africa/Asmara",
+        "label": "Asmara Time",
+        "majorCities": [
+          "Asmara"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Estonia",
+    "isoCode": "EE",
+    "phoneCode": "+372",
+    "defaultCity": "Tallinn",
+    "defaultTimeZone": "Europe/Tallinn",
+    "timeZones": [
+      {
+        "identifier": "Europe/Tallinn",
+        "label": "Tallinn Time",
+        "majorCities": [
+          "Tallinn"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Eswatini",
+    "isoCode": "SZ",
+    "phoneCode": "+268",
+    "defaultCity": "Mbabane",
+    "defaultTimeZone": "Africa/Mbabane",
+    "timeZones": [
+      {
+        "identifier": "Africa/Mbabane",
+        "label": "Mbabane Time",
+        "majorCities": [
+          "Mbabane"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Ethiopia",
+    "isoCode": "ET",
+    "phoneCode": "+251",
+    "defaultCity": "Addis Ababa",
+    "defaultTimeZone": "Africa/Addis_Ababa",
+    "timeZones": [
+      {
+        "identifier": "Africa/Addis_Ababa",
+        "label": "Addis Ababa Time",
+        "majorCities": [
+          "Addis Ababa"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Falkland Islands",
+    "isoCode": "FK",
+    "phoneCode": "+500",
+    "defaultCity": "Stanley",
+    "defaultTimeZone": "Atlantic/Stanley",
+    "timeZones": [
+      {
+        "identifier": "Atlantic/Stanley",
+        "label": "Stanley Time",
+        "majorCities": [
+          "Stanley"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Faroe Islands",
+    "isoCode": "FO",
+    "phoneCode": "+298",
+    "defaultCity": "Faroe",
+    "defaultTimeZone": "Atlantic/Faroe",
+    "timeZones": [
+      {
+        "identifier": "Atlantic/Faroe",
+        "label": "Faroe Time",
+        "majorCities": [
+          "Faroe"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Fiji",
+    "isoCode": "FJ",
+    "phoneCode": "+679",
+    "defaultCity": "Fiji",
+    "defaultTimeZone": "Pacific/Fiji",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Fiji",
+        "label": "Fiji Time",
+        "majorCities": [
+          "Fiji"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Finland",
+    "isoCode": "FI",
+    "phoneCode": "+358",
+    "defaultCity": "Helsinki",
+    "defaultTimeZone": "Europe/Helsinki",
+    "timeZones": [
+      {
+        "identifier": "Europe/Helsinki",
+        "label": "Helsinki Time",
+        "majorCities": [
+          "Helsinki"
+        ]
       }
     ]
   },
@@ -361,26 +1333,551 @@
       {
         "identifier": "Europe/Paris",
         "label": "Central European Time",
-        "majorCities": ["Paris", "Lyon", "Marseille", "Nice"]
+        "majorCities": [
+          "Paris",
+          "Lyon",
+          "Marseille",
+          "Nice"
+        ]
       }
     ]
   },
   {
-    "countryName": "Spain",
-    "isoCode": "ES",
-    "phoneCode": "+34",
-    "defaultCity": "Madrid",
-    "defaultTimeZone": "Europe/Madrid",
+    "countryName": "French Guiana",
+    "isoCode": "GF",
+    "phoneCode": "+594",
+    "defaultCity": "Cayenne",
+    "defaultTimeZone": "America/Cayenne",
     "timeZones": [
       {
-        "identifier": "Europe/Madrid",
-        "label": "Central European Time",
-        "majorCities": ["Madrid", "Barcelona", "Valencia", "Seville"]
+        "identifier": "America/Cayenne",
+        "label": "Cayenne Time",
+        "majorCities": [
+          "Cayenne"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "French Polynesia",
+    "isoCode": "PF",
+    "phoneCode": "+689",
+    "defaultCity": "Tahiti",
+    "defaultTimeZone": "Pacific/Tahiti",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Tahiti",
+        "label": "Society Islands Time",
+        "majorCities": [
+          "Tahiti"
+        ]
       },
       {
-        "identifier": "Atlantic/Canary",
-        "label": "Canary Islands Time",
-        "majorCities": ["Las Palmas", "Santa Cruz de Tenerife"]
+        "identifier": "Pacific/Marquesas",
+        "label": "Marquesas Islands Time",
+        "majorCities": [
+          "Marquesas"
+        ]
+      },
+      {
+        "identifier": "Pacific/Gambier",
+        "label": "Gambier Islands Time",
+        "majorCities": [
+          "Gambier"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Gabon",
+    "isoCode": "GA",
+    "phoneCode": "+241",
+    "defaultCity": "Libreville",
+    "defaultTimeZone": "Africa/Libreville",
+    "timeZones": [
+      {
+        "identifier": "Africa/Libreville",
+        "label": "Libreville Time",
+        "majorCities": [
+          "Libreville"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Gambia",
+    "isoCode": "GM",
+    "phoneCode": "+220",
+    "defaultCity": "Banjul",
+    "defaultTimeZone": "Africa/Banjul",
+    "timeZones": [
+      {
+        "identifier": "Africa/Banjul",
+        "label": "Banjul Time",
+        "majorCities": [
+          "Banjul"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Georgia",
+    "isoCode": "GE",
+    "phoneCode": "+995",
+    "defaultCity": "Tbilisi",
+    "defaultTimeZone": "Asia/Tbilisi",
+    "timeZones": [
+      {
+        "identifier": "Asia/Tbilisi",
+        "label": "Tbilisi Time",
+        "majorCities": [
+          "Tbilisi"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Germany",
+    "isoCode": "DE",
+    "phoneCode": "+49",
+    "defaultCity": "Berlin",
+    "defaultTimeZone": "Europe/Berlin",
+    "timeZones": [
+      {
+        "identifier": "Europe/Berlin",
+        "label": "Central European Time",
+        "majorCities": [
+          "Berlin",
+          "Munich",
+          "Frankfurt",
+          "Hamburg"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Ghana",
+    "isoCode": "GH",
+    "phoneCode": "+233",
+    "defaultCity": "Accra",
+    "defaultTimeZone": "Africa/Accra",
+    "timeZones": [
+      {
+        "identifier": "Africa/Accra",
+        "label": "Accra Time",
+        "majorCities": [
+          "Accra"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Gibraltar",
+    "isoCode": "GI",
+    "phoneCode": "+350",
+    "defaultCity": "Gibraltar",
+    "defaultTimeZone": "Europe/Gibraltar",
+    "timeZones": [
+      {
+        "identifier": "Europe/Gibraltar",
+        "label": "Gibraltar Time",
+        "majorCities": [
+          "Gibraltar"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Greece",
+    "isoCode": "GR",
+    "phoneCode": "+30",
+    "defaultCity": "Athens",
+    "defaultTimeZone": "Europe/Athens",
+    "timeZones": [
+      {
+        "identifier": "Europe/Athens",
+        "label": "Athens Time",
+        "majorCities": [
+          "Athens"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Greenland",
+    "isoCode": "GL",
+    "phoneCode": "+299",
+    "defaultCity": "Nuuk",
+    "defaultTimeZone": "America/Nuuk",
+    "timeZones": [
+      {
+        "identifier": "America/Nuuk",
+        "label": "most of Greenland Time",
+        "majorCities": [
+          "Nuuk"
+        ]
+      },
+      {
+        "identifier": "America/Danmarkshavn",
+        "label": "National Park (east coast) Time",
+        "majorCities": [
+          "Danmarkshavn"
+        ]
+      },
+      {
+        "identifier": "America/Scoresbysund",
+        "label": "Scoresbysund/Ittoqqortoormiit Time",
+        "majorCities": [
+          "Scoresbysund"
+        ]
+      },
+      {
+        "identifier": "America/Thule",
+        "label": "Thule/Pituffik Time",
+        "majorCities": [
+          "Thule"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Grenada",
+    "isoCode": "GD",
+    "phoneCode": "+1",
+    "defaultCity": "Grenada",
+    "defaultTimeZone": "America/Grenada",
+    "timeZones": [
+      {
+        "identifier": "America/Grenada",
+        "label": "Grenada Time",
+        "majorCities": [
+          "Grenada"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Guadeloupe",
+    "isoCode": "GP",
+    "phoneCode": "+590",
+    "defaultCity": "Guadeloupe",
+    "defaultTimeZone": "America/Guadeloupe",
+    "timeZones": [
+      {
+        "identifier": "America/Guadeloupe",
+        "label": "Guadeloupe Time",
+        "majorCities": [
+          "Guadeloupe"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Guam",
+    "isoCode": "GU",
+    "phoneCode": "+1",
+    "defaultCity": "Guam",
+    "defaultTimeZone": "Pacific/Guam",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Guam",
+        "label": "Guam Time",
+        "majorCities": [
+          "Guam"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Guatemala",
+    "isoCode": "GT",
+    "phoneCode": "+502",
+    "defaultCity": "Guatemala",
+    "defaultTimeZone": "America/Guatemala",
+    "timeZones": [
+      {
+        "identifier": "America/Guatemala",
+        "label": "Guatemala Time",
+        "majorCities": [
+          "Guatemala"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Guernsey",
+    "isoCode": "GG",
+    "phoneCode": "+44",
+    "defaultCity": "Guernsey",
+    "defaultTimeZone": "Europe/Guernsey",
+    "timeZones": [
+      {
+        "identifier": "Europe/Guernsey",
+        "label": "Guernsey Time",
+        "majorCities": [
+          "Guernsey"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Guinea",
+    "isoCode": "GN",
+    "phoneCode": "+224",
+    "defaultCity": "Conakry",
+    "defaultTimeZone": "Africa/Conakry",
+    "timeZones": [
+      {
+        "identifier": "Africa/Conakry",
+        "label": "Conakry Time",
+        "majorCities": [
+          "Conakry"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Guinea-Bissau",
+    "isoCode": "GW",
+    "phoneCode": "+245",
+    "defaultCity": "Bissau",
+    "defaultTimeZone": "Africa/Bissau",
+    "timeZones": [
+      {
+        "identifier": "Africa/Bissau",
+        "label": "Bissau Time",
+        "majorCities": [
+          "Bissau"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Guyana",
+    "isoCode": "GY",
+    "phoneCode": "+592",
+    "defaultCity": "Guyana",
+    "defaultTimeZone": "America/Guyana",
+    "timeZones": [
+      {
+        "identifier": "America/Guyana",
+        "label": "Guyana Time",
+        "majorCities": [
+          "Guyana"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Haiti",
+    "isoCode": "HT",
+    "phoneCode": "+509",
+    "defaultCity": "Port-au-Prince",
+    "defaultTimeZone": "America/Port-au-Prince",
+    "timeZones": [
+      {
+        "identifier": "America/Port-au-Prince",
+        "label": "Port-au-Prince Time",
+        "majorCities": [
+          "Port-au-Prince"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Honduras",
+    "isoCode": "HN",
+    "phoneCode": "+504",
+    "defaultCity": "Tegucigalpa",
+    "defaultTimeZone": "America/Tegucigalpa",
+    "timeZones": [
+      {
+        "identifier": "America/Tegucigalpa",
+        "label": "Tegucigalpa Time",
+        "majorCities": [
+          "Tegucigalpa"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Hong Kong",
+    "isoCode": "HK",
+    "phoneCode": "+852",
+    "defaultCity": "Hong Kong",
+    "defaultTimeZone": "Asia/Hong_Kong",
+    "timeZones": [
+      {
+        "identifier": "Asia/Hong_Kong",
+        "label": "Hong Kong Time",
+        "majorCities": [
+          "Hong Kong"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Hungary",
+    "isoCode": "HU",
+    "phoneCode": "+36",
+    "defaultCity": "Budapest",
+    "defaultTimeZone": "Europe/Budapest",
+    "timeZones": [
+      {
+        "identifier": "Europe/Budapest",
+        "label": "Budapest Time",
+        "majorCities": [
+          "Budapest"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Iceland",
+    "isoCode": "IS",
+    "phoneCode": "+354",
+    "defaultCity": "Reykjavik",
+    "defaultTimeZone": "Atlantic/Reykjavik",
+    "timeZones": [
+      {
+        "identifier": "Atlantic/Reykjavik",
+        "label": "Reykjavik Time",
+        "majorCities": [
+          "Reykjavik"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "India",
+    "isoCode": "IN",
+    "phoneCode": "+91",
+    "defaultCity": "New Delhi",
+    "defaultTimeZone": "Asia/Kolkata",
+    "timeZones": [
+      {
+        "identifier": "Asia/Kolkata",
+        "label": "India Standard Time",
+        "majorCities": [
+          "New Delhi",
+          "Mumbai",
+          "Bengaluru",
+          "Kolkata"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Indonesia",
+    "isoCode": "ID",
+    "phoneCode": "+62",
+    "defaultCity": "Jakarta",
+    "defaultTimeZone": "Asia/Jakarta",
+    "timeZones": [
+      {
+        "identifier": "Asia/Jakarta",
+        "label": "Western Indonesia Time",
+        "majorCities": [
+          "Jakarta",
+          "Bandung",
+          "Medan"
+        ]
+      },
+      {
+        "identifier": "Asia/Makassar",
+        "label": "Central Indonesia Time",
+        "majorCities": [
+          "Makassar",
+          "Bali",
+          "Denpasar"
+        ]
+      },
+      {
+        "identifier": "Asia/Jayapura",
+        "label": "Eastern Indonesia Time",
+        "majorCities": [
+          "Jayapura"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Iran",
+    "isoCode": "IR",
+    "phoneCode": "+98",
+    "defaultCity": "Tehran",
+    "defaultTimeZone": "Asia/Tehran",
+    "timeZones": [
+      {
+        "identifier": "Asia/Tehran",
+        "label": "Tehran Time",
+        "majorCities": [
+          "Tehran"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Iraq",
+    "isoCode": "IQ",
+    "phoneCode": "+964",
+    "defaultCity": "Baghdad",
+    "defaultTimeZone": "Asia/Baghdad",
+    "timeZones": [
+      {
+        "identifier": "Asia/Baghdad",
+        "label": "Baghdad Time",
+        "majorCities": [
+          "Baghdad"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Ireland",
+    "isoCode": "IE",
+    "phoneCode": "+353",
+    "defaultCity": "Dublin",
+    "defaultTimeZone": "Europe/Dublin",
+    "timeZones": [
+      {
+        "identifier": "Europe/Dublin",
+        "label": "Dublin Time",
+        "majorCities": [
+          "Dublin"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Isle of Man",
+    "isoCode": "IM",
+    "phoneCode": "+44",
+    "defaultCity": "Isle of Man",
+    "defaultTimeZone": "Europe/Isle_of_Man",
+    "timeZones": [
+      {
+        "identifier": "Europe/Isle_of_Man",
+        "label": "Isle of Man Time",
+        "majorCities": [
+          "Isle of Man"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Israel",
+    "isoCode": "IL",
+    "phoneCode": "+972",
+    "defaultCity": "Jerusalem",
+    "defaultTimeZone": "Asia/Jerusalem",
+    "timeZones": [
+      {
+        "identifier": "Asia/Jerusalem",
+        "label": "Jerusalem Time",
+        "majorCities": [
+          "Jerusalem"
+        ]
       }
     ]
   },
@@ -394,21 +1891,44 @@
       {
         "identifier": "Europe/Rome",
         "label": "Central European Time",
-        "majorCities": ["Rome", "Milan", "Naples", "Turin"]
+        "majorCities": [
+          "Rome",
+          "Milan",
+          "Florence",
+          "Naples"
+        ]
       }
     ]
   },
   {
-    "countryName": "China",
-    "isoCode": "CN",
-    "phoneCode": "+86",
-    "defaultCity": "Shanghai",
-    "defaultTimeZone": "Asia/Shanghai",
+    "countryName": "Ivory Coast",
+    "isoCode": "CI",
+    "phoneCode": "+225",
+    "defaultCity": "Abidjan",
+    "defaultTimeZone": "Africa/Abidjan",
     "timeZones": [
       {
-        "identifier": "Asia/Shanghai",
-        "label": "China Standard Time",
-        "majorCities": ["Shanghai", "Beijing", "Shenzhen", "Guangzhou"]
+        "identifier": "Africa/Abidjan",
+        "label": "Abidjan Time",
+        "majorCities": [
+          "Abidjan"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Jamaica",
+    "isoCode": "JM",
+    "phoneCode": "+1",
+    "defaultCity": "Jamaica",
+    "defaultTimeZone": "America/Jamaica",
+    "timeZones": [
+      {
+        "identifier": "America/Jamaica",
+        "label": "Jamaica Time",
+        "majorCities": [
+          "Jamaica"
+        ]
       }
     ]
   },
@@ -422,7 +1942,1709 @@
       {
         "identifier": "Asia/Tokyo",
         "label": "Japan Standard Time",
-        "majorCities": ["Tokyo", "Osaka", "Kyoto", "Yokohama"]
+        "majorCities": [
+          "Tokyo",
+          "Osaka",
+          "Kyoto",
+          "Yokohama"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Jersey",
+    "isoCode": "JE",
+    "phoneCode": "+44",
+    "defaultCity": "Jersey",
+    "defaultTimeZone": "Europe/Jersey",
+    "timeZones": [
+      {
+        "identifier": "Europe/Jersey",
+        "label": "Jersey Time",
+        "majorCities": [
+          "Jersey"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Jordan",
+    "isoCode": "JO",
+    "phoneCode": "+962",
+    "defaultCity": "Amman",
+    "defaultTimeZone": "Asia/Amman",
+    "timeZones": [
+      {
+        "identifier": "Asia/Amman",
+        "label": "Amman Time",
+        "majorCities": [
+          "Amman"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Kazakhstan",
+    "isoCode": "KZ",
+    "phoneCode": "+7",
+    "defaultCity": "Almaty",
+    "defaultTimeZone": "Asia/Almaty",
+    "timeZones": [
+      {
+        "identifier": "Asia/Almaty",
+        "label": "Kazakhstan Time",
+        "majorCities": [
+          "Almaty",
+          "Astana"
+        ]
+      },
+      {
+        "identifier": "Asia/Aqtau",
+        "label": "Western Kazakhstan Time",
+        "majorCities": [
+          "Aktau",
+          "Atyrau"
+        ]
+      },
+      {
+        "identifier": "Asia/Oral",
+        "label": "Western Kazakhstan Time",
+        "majorCities": [
+          "Oral"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Kenya",
+    "isoCode": "KE",
+    "phoneCode": "+254",
+    "defaultCity": "Nairobi",
+    "defaultTimeZone": "Africa/Nairobi",
+    "timeZones": [
+      {
+        "identifier": "Africa/Nairobi",
+        "label": "Nairobi Time",
+        "majorCities": [
+          "Nairobi"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Kiribati",
+    "isoCode": "KI",
+    "phoneCode": "+686",
+    "defaultCity": "Tarawa",
+    "defaultTimeZone": "Pacific/Tarawa",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Tarawa",
+        "label": "Gilbert Islands Time",
+        "majorCities": [
+          "Tarawa"
+        ]
+      },
+      {
+        "identifier": "Pacific/Kanton",
+        "label": "Phoenix Islands Time",
+        "majorCities": [
+          "Kanton"
+        ]
+      },
+      {
+        "identifier": "Pacific/Kiritimati",
+        "label": "Line Islands Time",
+        "majorCities": [
+          "Kiritimati"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Kosovo",
+    "isoCode": "XK",
+    "phoneCode": "+383",
+    "defaultCity": "Pristina",
+    "defaultTimeZone": "Europe/Belgrade",
+    "timeZones": [
+      {
+        "identifier": "Europe/Belgrade",
+        "label": "Central European Time",
+        "majorCities": [
+          "Pristina"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Kuwait",
+    "isoCode": "KW",
+    "phoneCode": "+965",
+    "defaultCity": "Kuwait",
+    "defaultTimeZone": "Asia/Kuwait",
+    "timeZones": [
+      {
+        "identifier": "Asia/Kuwait",
+        "label": "Kuwait Time",
+        "majorCities": [
+          "Kuwait"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Kyrgyzstan",
+    "isoCode": "KG",
+    "phoneCode": "+996",
+    "defaultCity": "Bishkek",
+    "defaultTimeZone": "Asia/Bishkek",
+    "timeZones": [
+      {
+        "identifier": "Asia/Bishkek",
+        "label": "Bishkek Time",
+        "majorCities": [
+          "Bishkek"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Laos",
+    "isoCode": "LA",
+    "phoneCode": "+856",
+    "defaultCity": "Vientiane",
+    "defaultTimeZone": "Asia/Vientiane",
+    "timeZones": [
+      {
+        "identifier": "Asia/Vientiane",
+        "label": "Vientiane Time",
+        "majorCities": [
+          "Vientiane"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Latvia",
+    "isoCode": "LV",
+    "phoneCode": "+371",
+    "defaultCity": "Riga",
+    "defaultTimeZone": "Europe/Riga",
+    "timeZones": [
+      {
+        "identifier": "Europe/Riga",
+        "label": "Riga Time",
+        "majorCities": [
+          "Riga"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Lebanon",
+    "isoCode": "LB",
+    "phoneCode": "+961",
+    "defaultCity": "Beirut",
+    "defaultTimeZone": "Asia/Beirut",
+    "timeZones": [
+      {
+        "identifier": "Asia/Beirut",
+        "label": "Beirut Time",
+        "majorCities": [
+          "Beirut"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Lesotho",
+    "isoCode": "LS",
+    "phoneCode": "+266",
+    "defaultCity": "Maseru",
+    "defaultTimeZone": "Africa/Maseru",
+    "timeZones": [
+      {
+        "identifier": "Africa/Maseru",
+        "label": "Maseru Time",
+        "majorCities": [
+          "Maseru"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Liberia",
+    "isoCode": "LR",
+    "phoneCode": "+231",
+    "defaultCity": "Monrovia",
+    "defaultTimeZone": "Africa/Monrovia",
+    "timeZones": [
+      {
+        "identifier": "Africa/Monrovia",
+        "label": "Monrovia Time",
+        "majorCities": [
+          "Monrovia"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Libya",
+    "isoCode": "LY",
+    "phoneCode": "+218",
+    "defaultCity": "Tripoli",
+    "defaultTimeZone": "Africa/Tripoli",
+    "timeZones": [
+      {
+        "identifier": "Africa/Tripoli",
+        "label": "Tripoli Time",
+        "majorCities": [
+          "Tripoli"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Liechtenstein",
+    "isoCode": "LI",
+    "phoneCode": "+423",
+    "defaultCity": "Vaduz",
+    "defaultTimeZone": "Europe/Vaduz",
+    "timeZones": [
+      {
+        "identifier": "Europe/Vaduz",
+        "label": "Vaduz Time",
+        "majorCities": [
+          "Vaduz"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Lithuania",
+    "isoCode": "LT",
+    "phoneCode": "+370",
+    "defaultCity": "Vilnius",
+    "defaultTimeZone": "Europe/Vilnius",
+    "timeZones": [
+      {
+        "identifier": "Europe/Vilnius",
+        "label": "Vilnius Time",
+        "majorCities": [
+          "Vilnius"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Luxembourg",
+    "isoCode": "LU",
+    "phoneCode": "+352",
+    "defaultCity": "Luxembourg",
+    "defaultTimeZone": "Europe/Luxembourg",
+    "timeZones": [
+      {
+        "identifier": "Europe/Luxembourg",
+        "label": "Luxembourg Time",
+        "majorCities": [
+          "Luxembourg"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Macau",
+    "isoCode": "MO",
+    "phoneCode": "+853",
+    "defaultCity": "Macau",
+    "defaultTimeZone": "Asia/Macau",
+    "timeZones": [
+      {
+        "identifier": "Asia/Macau",
+        "label": "Macau Time",
+        "majorCities": [
+          "Macau"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Madagascar",
+    "isoCode": "MG",
+    "phoneCode": "+261",
+    "defaultCity": "Antananarivo",
+    "defaultTimeZone": "Indian/Antananarivo",
+    "timeZones": [
+      {
+        "identifier": "Indian/Antananarivo",
+        "label": "Antananarivo Time",
+        "majorCities": [
+          "Antananarivo"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Malawi",
+    "isoCode": "MW",
+    "phoneCode": "+265",
+    "defaultCity": "Blantyre",
+    "defaultTimeZone": "Africa/Blantyre",
+    "timeZones": [
+      {
+        "identifier": "Africa/Blantyre",
+        "label": "Blantyre Time",
+        "majorCities": [
+          "Blantyre"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Malaysia",
+    "isoCode": "MY",
+    "phoneCode": "+60",
+    "defaultCity": "Kuala Lumpur",
+    "defaultTimeZone": "Asia/Kuala_Lumpur",
+    "timeZones": [
+      {
+        "identifier": "Asia/Kuala_Lumpur",
+        "label": "Malaysia Time",
+        "majorCities": [
+          "Kuala Lumpur",
+          "Penang",
+          "Johor Bahru"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Maldives",
+    "isoCode": "MV",
+    "phoneCode": "+960",
+    "defaultCity": "Maldives",
+    "defaultTimeZone": "Indian/Maldives",
+    "timeZones": [
+      {
+        "identifier": "Indian/Maldives",
+        "label": "Maldives Time",
+        "majorCities": [
+          "Maldives"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Mali",
+    "isoCode": "ML",
+    "phoneCode": "+223",
+    "defaultCity": "Bamako",
+    "defaultTimeZone": "Africa/Bamako",
+    "timeZones": [
+      {
+        "identifier": "Africa/Bamako",
+        "label": "Bamako Time",
+        "majorCities": [
+          "Bamako"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Malta",
+    "isoCode": "MT",
+    "phoneCode": "+356",
+    "defaultCity": "Malta",
+    "defaultTimeZone": "Europe/Malta",
+    "timeZones": [
+      {
+        "identifier": "Europe/Malta",
+        "label": "Malta Time",
+        "majorCities": [
+          "Malta"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Marshall Islands",
+    "isoCode": "MH",
+    "phoneCode": "+692",
+    "defaultCity": "Majuro",
+    "defaultTimeZone": "Pacific/Majuro",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Majuro",
+        "label": "most of Marshall Islands Time",
+        "majorCities": [
+          "Majuro"
+        ]
+      },
+      {
+        "identifier": "Pacific/Kwajalein",
+        "label": "Kwajalein Time",
+        "majorCities": [
+          "Kwajalein"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Martinique",
+    "isoCode": "MQ",
+    "phoneCode": "+596",
+    "defaultCity": "Martinique",
+    "defaultTimeZone": "America/Martinique",
+    "timeZones": [
+      {
+        "identifier": "America/Martinique",
+        "label": "Martinique Time",
+        "majorCities": [
+          "Martinique"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Mauritania",
+    "isoCode": "MR",
+    "phoneCode": "+222",
+    "defaultCity": "Nouakchott",
+    "defaultTimeZone": "Africa/Nouakchott",
+    "timeZones": [
+      {
+        "identifier": "Africa/Nouakchott",
+        "label": "Nouakchott Time",
+        "majorCities": [
+          "Nouakchott"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Mauritius",
+    "isoCode": "MU",
+    "phoneCode": "+230",
+    "defaultCity": "Mauritius",
+    "defaultTimeZone": "Indian/Mauritius",
+    "timeZones": [
+      {
+        "identifier": "Indian/Mauritius",
+        "label": "Mauritius Time",
+        "majorCities": [
+          "Mauritius"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Mayotte",
+    "isoCode": "YT",
+    "phoneCode": "+262",
+    "defaultCity": "Mayotte",
+    "defaultTimeZone": "Indian/Mayotte",
+    "timeZones": [
+      {
+        "identifier": "Indian/Mayotte",
+        "label": "Mayotte Time",
+        "majorCities": [
+          "Mayotte"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Mexico",
+    "isoCode": "MX",
+    "phoneCode": "+52",
+    "defaultCity": "Mexico City",
+    "defaultTimeZone": "America/Mexico_City",
+    "timeZones": [
+      {
+        "identifier": "America/Mexico_City",
+        "label": "Central Mexico Time",
+        "majorCities": [
+          "Mexico City",
+          "Guadalajara",
+          "Monterrey"
+        ]
+      },
+      {
+        "identifier": "America/Chihuahua",
+        "label": "Mountain Mexico Time",
+        "majorCities": [
+          "Chihuahua"
+        ]
+      },
+      {
+        "identifier": "America/Tijuana",
+        "label": "Pacific Mexico Time",
+        "majorCities": [
+          "Tijuana"
+        ]
+      },
+      {
+        "identifier": "America/Cancun",
+        "label": "Eastern Mexico Time",
+        "majorCities": [
+          "Cancun"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Micronesia",
+    "isoCode": "FM",
+    "phoneCode": "+691",
+    "defaultCity": "Chuuk",
+    "defaultTimeZone": "Pacific/Chuuk",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Chuuk",
+        "label": "Chuuk/Truk, Yap Time",
+        "majorCities": [
+          "Chuuk"
+        ]
+      },
+      {
+        "identifier": "Pacific/Pohnpei",
+        "label": "Pohnpei/Ponape Time",
+        "majorCities": [
+          "Pohnpei"
+        ]
+      },
+      {
+        "identifier": "Pacific/Kosrae",
+        "label": "Kosrae Time",
+        "majorCities": [
+          "Kosrae"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Moldova",
+    "isoCode": "MD",
+    "phoneCode": "+373",
+    "defaultCity": "Chisinau",
+    "defaultTimeZone": "Europe/Chisinau",
+    "timeZones": [
+      {
+        "identifier": "Europe/Chisinau",
+        "label": "Chisinau Time",
+        "majorCities": [
+          "Chisinau"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Monaco",
+    "isoCode": "MC",
+    "phoneCode": "+377",
+    "defaultCity": "Monaco",
+    "defaultTimeZone": "Europe/Monaco",
+    "timeZones": [
+      {
+        "identifier": "Europe/Monaco",
+        "label": "Monaco Time",
+        "majorCities": [
+          "Monaco"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Mongolia",
+    "isoCode": "MN",
+    "phoneCode": "+976",
+    "defaultCity": "Ulaanbaatar",
+    "defaultTimeZone": "Asia/Ulaanbaatar",
+    "timeZones": [
+      {
+        "identifier": "Asia/Ulaanbaatar",
+        "label": "most of Mongolia Time",
+        "majorCities": [
+          "Ulaanbaatar"
+        ]
+      },
+      {
+        "identifier": "Asia/Hovd",
+        "label": "Bayan-Olgii, Hovd, Uvs Time",
+        "majorCities": [
+          "Hovd"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Montenegro",
+    "isoCode": "ME",
+    "phoneCode": "+382",
+    "defaultCity": "Podgorica",
+    "defaultTimeZone": "Europe/Podgorica",
+    "timeZones": [
+      {
+        "identifier": "Europe/Podgorica",
+        "label": "Podgorica Time",
+        "majorCities": [
+          "Podgorica"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Montserrat",
+    "isoCode": "MS",
+    "phoneCode": "+1",
+    "defaultCity": "Montserrat",
+    "defaultTimeZone": "America/Montserrat",
+    "timeZones": [
+      {
+        "identifier": "America/Montserrat",
+        "label": "Montserrat Time",
+        "majorCities": [
+          "Montserrat"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Morocco",
+    "isoCode": "MA",
+    "phoneCode": "+212",
+    "defaultCity": "Casablanca",
+    "defaultTimeZone": "Africa/Casablanca",
+    "timeZones": [
+      {
+        "identifier": "Africa/Casablanca",
+        "label": "Casablanca Time",
+        "majorCities": [
+          "Casablanca"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Mozambique",
+    "isoCode": "MZ",
+    "phoneCode": "+258",
+    "defaultCity": "Maputo",
+    "defaultTimeZone": "Africa/Maputo",
+    "timeZones": [
+      {
+        "identifier": "Africa/Maputo",
+        "label": "Maputo Time",
+        "majorCities": [
+          "Maputo"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Myanmar",
+    "isoCode": "MM",
+    "phoneCode": "+95",
+    "defaultCity": "Yangon",
+    "defaultTimeZone": "Asia/Yangon",
+    "timeZones": [
+      {
+        "identifier": "Asia/Yangon",
+        "label": "Yangon Time",
+        "majorCities": [
+          "Yangon"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Namibia",
+    "isoCode": "NA",
+    "phoneCode": "+264",
+    "defaultCity": "Windhoek",
+    "defaultTimeZone": "Africa/Windhoek",
+    "timeZones": [
+      {
+        "identifier": "Africa/Windhoek",
+        "label": "Windhoek Time",
+        "majorCities": [
+          "Windhoek"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Nauru",
+    "isoCode": "NR",
+    "phoneCode": "+674",
+    "defaultCity": "Nauru",
+    "defaultTimeZone": "Pacific/Nauru",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Nauru",
+        "label": "Nauru Time",
+        "majorCities": [
+          "Nauru"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Nepal",
+    "isoCode": "NP",
+    "phoneCode": "+977",
+    "defaultCity": "Kathmandu",
+    "defaultTimeZone": "Asia/Kathmandu",
+    "timeZones": [
+      {
+        "identifier": "Asia/Kathmandu",
+        "label": "Kathmandu Time",
+        "majorCities": [
+          "Kathmandu"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Netherlands",
+    "isoCode": "NL",
+    "phoneCode": "+31",
+    "defaultCity": "Amsterdam",
+    "defaultTimeZone": "Europe/Amsterdam",
+    "timeZones": [
+      {
+        "identifier": "Europe/Amsterdam",
+        "label": "Amsterdam Time",
+        "majorCities": [
+          "Amsterdam"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "New Caledonia",
+    "isoCode": "NC",
+    "phoneCode": "+687",
+    "defaultCity": "Noumea",
+    "defaultTimeZone": "Pacific/Noumea",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Noumea",
+        "label": "Noumea Time",
+        "majorCities": [
+          "Noumea"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "New Zealand",
+    "isoCode": "NZ",
+    "phoneCode": "+64",
+    "defaultCity": "Auckland",
+    "defaultTimeZone": "Pacific/Auckland",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Auckland",
+        "label": "New Zealand Time",
+        "majorCities": [
+          "Auckland",
+          "Wellington",
+          "Christchurch"
+        ]
+      },
+      {
+        "identifier": "Pacific/Chatham",
+        "label": "Chatham Islands Time",
+        "majorCities": [
+          "Chatham Islands"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Nicaragua",
+    "isoCode": "NI",
+    "phoneCode": "+505",
+    "defaultCity": "Managua",
+    "defaultTimeZone": "America/Managua",
+    "timeZones": [
+      {
+        "identifier": "America/Managua",
+        "label": "Managua Time",
+        "majorCities": [
+          "Managua"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Niger",
+    "isoCode": "NE",
+    "phoneCode": "+227",
+    "defaultCity": "Niamey",
+    "defaultTimeZone": "Africa/Niamey",
+    "timeZones": [
+      {
+        "identifier": "Africa/Niamey",
+        "label": "Niamey Time",
+        "majorCities": [
+          "Niamey"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Nigeria",
+    "isoCode": "NG",
+    "phoneCode": "+234",
+    "defaultCity": "Lagos",
+    "defaultTimeZone": "Africa/Lagos",
+    "timeZones": [
+      {
+        "identifier": "Africa/Lagos",
+        "label": "Lagos Time",
+        "majorCities": [
+          "Lagos"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Niue",
+    "isoCode": "NU",
+    "phoneCode": "+683",
+    "defaultCity": "Niue",
+    "defaultTimeZone": "Pacific/Niue",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Niue",
+        "label": "Niue Time",
+        "majorCities": [
+          "Niue"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Norfolk Island",
+    "isoCode": "NF",
+    "phoneCode": "+672",
+    "defaultCity": "Norfolk",
+    "defaultTimeZone": "Pacific/Norfolk",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Norfolk",
+        "label": "Norfolk Time",
+        "majorCities": [
+          "Norfolk"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "North Korea",
+    "isoCode": "KP",
+    "phoneCode": "+850",
+    "defaultCity": "Pyongyang",
+    "defaultTimeZone": "Asia/Pyongyang",
+    "timeZones": [
+      {
+        "identifier": "Asia/Pyongyang",
+        "label": "Pyongyang Time",
+        "majorCities": [
+          "Pyongyang"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "North Macedonia",
+    "isoCode": "MK",
+    "phoneCode": "+389",
+    "defaultCity": "Skopje",
+    "defaultTimeZone": "Europe/Skopje",
+    "timeZones": [
+      {
+        "identifier": "Europe/Skopje",
+        "label": "Skopje Time",
+        "majorCities": [
+          "Skopje"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Northern Mariana Islands",
+    "isoCode": "MP",
+    "phoneCode": "+1",
+    "defaultCity": "Saipan",
+    "defaultTimeZone": "Pacific/Saipan",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Saipan",
+        "label": "Saipan Time",
+        "majorCities": [
+          "Saipan"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Norway",
+    "isoCode": "NO",
+    "phoneCode": "+47",
+    "defaultCity": "Oslo",
+    "defaultTimeZone": "Europe/Oslo",
+    "timeZones": [
+      {
+        "identifier": "Europe/Oslo",
+        "label": "Oslo Time",
+        "majorCities": [
+          "Oslo"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Oman",
+    "isoCode": "OM",
+    "phoneCode": "+968",
+    "defaultCity": "Muscat",
+    "defaultTimeZone": "Asia/Muscat",
+    "timeZones": [
+      {
+        "identifier": "Asia/Muscat",
+        "label": "Muscat Time",
+        "majorCities": [
+          "Muscat"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Pakistan",
+    "isoCode": "PK",
+    "phoneCode": "+92",
+    "defaultCity": "Karachi",
+    "defaultTimeZone": "Asia/Karachi",
+    "timeZones": [
+      {
+        "identifier": "Asia/Karachi",
+        "label": "Karachi Time",
+        "majorCities": [
+          "Karachi"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Palau",
+    "isoCode": "PW",
+    "phoneCode": "+680",
+    "defaultCity": "Palau",
+    "defaultTimeZone": "Pacific/Palau",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Palau",
+        "label": "Palau Time",
+        "majorCities": [
+          "Palau"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Palestine",
+    "isoCode": "PS",
+    "phoneCode": "+970",
+    "defaultCity": "Gaza",
+    "defaultTimeZone": "Asia/Gaza",
+    "timeZones": [
+      {
+        "identifier": "Asia/Gaza",
+        "label": "Gaza Strip Time",
+        "majorCities": [
+          "Gaza"
+        ]
+      },
+      {
+        "identifier": "Asia/Hebron",
+        "label": "West Bank Time",
+        "majorCities": [
+          "Hebron"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Panama",
+    "isoCode": "PA",
+    "phoneCode": "+507",
+    "defaultCity": "Panama",
+    "defaultTimeZone": "America/Panama",
+    "timeZones": [
+      {
+        "identifier": "America/Panama",
+        "label": "Panama Time",
+        "majorCities": [
+          "Panama"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Papua New Guinea",
+    "isoCode": "PG",
+    "phoneCode": "+675",
+    "defaultCity": "Port Moresby",
+    "defaultTimeZone": "Pacific/Port_Moresby",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Port_Moresby",
+        "label": "most of Papua New Guinea Time",
+        "majorCities": [
+          "Port Moresby"
+        ]
+      },
+      {
+        "identifier": "Pacific/Bougainville",
+        "label": "Bougainville Time",
+        "majorCities": [
+          "Bougainville"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Paraguay",
+    "isoCode": "PY",
+    "phoneCode": "+595",
+    "defaultCity": "Asuncion",
+    "defaultTimeZone": "America/Asuncion",
+    "timeZones": [
+      {
+        "identifier": "America/Asuncion",
+        "label": "Asuncion Time",
+        "majorCities": [
+          "Asuncion"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Peru",
+    "isoCode": "PE",
+    "phoneCode": "+51",
+    "defaultCity": "Lima",
+    "defaultTimeZone": "America/Lima",
+    "timeZones": [
+      {
+        "identifier": "America/Lima",
+        "label": "Lima Time",
+        "majorCities": [
+          "Lima"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Philippines",
+    "isoCode": "PH",
+    "phoneCode": "+63",
+    "defaultCity": "Manila",
+    "defaultTimeZone": "Asia/Manila",
+    "timeZones": [
+      {
+        "identifier": "Asia/Manila",
+        "label": "Manila Time",
+        "majorCities": [
+          "Manila"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Poland",
+    "isoCode": "PL",
+    "phoneCode": "+48",
+    "defaultCity": "Warsaw",
+    "defaultTimeZone": "Europe/Warsaw",
+    "timeZones": [
+      {
+        "identifier": "Europe/Warsaw",
+        "label": "Warsaw Time",
+        "majorCities": [
+          "Warsaw"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Portugal",
+    "isoCode": "PT",
+    "phoneCode": "+351",
+    "defaultCity": "Lisbon",
+    "defaultTimeZone": "Europe/Lisbon",
+    "timeZones": [
+      {
+        "identifier": "Europe/Lisbon",
+        "label": "Portugal (mainland) Time",
+        "majorCities": [
+          "Lisbon"
+        ]
+      },
+      {
+        "identifier": "Atlantic/Madeira",
+        "label": "Madeira Islands Time",
+        "majorCities": [
+          "Madeira"
+        ]
+      },
+      {
+        "identifier": "Atlantic/Azores",
+        "label": "Azores Time",
+        "majorCities": [
+          "Azores"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Puerto Rico",
+    "isoCode": "PR",
+    "phoneCode": "+1",
+    "defaultCity": "Puerto Rico",
+    "defaultTimeZone": "America/Puerto_Rico",
+    "timeZones": [
+      {
+        "identifier": "America/Puerto_Rico",
+        "label": "Puerto Rico Time",
+        "majorCities": [
+          "Puerto Rico"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Qatar",
+    "isoCode": "QA",
+    "phoneCode": "+974",
+    "defaultCity": "Qatar",
+    "defaultTimeZone": "Asia/Qatar",
+    "timeZones": [
+      {
+        "identifier": "Asia/Qatar",
+        "label": "Qatar Time",
+        "majorCities": [
+          "Qatar"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Republic of the Congo",
+    "isoCode": "CG",
+    "phoneCode": "+242",
+    "defaultCity": "Brazzaville",
+    "defaultTimeZone": "Africa/Brazzaville",
+    "timeZones": [
+      {
+        "identifier": "Africa/Brazzaville",
+        "label": "Brazzaville Time",
+        "majorCities": [
+          "Brazzaville"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Romania",
+    "isoCode": "RO",
+    "phoneCode": "+40",
+    "defaultCity": "Bucharest",
+    "defaultTimeZone": "Europe/Bucharest",
+    "timeZones": [
+      {
+        "identifier": "Europe/Bucharest",
+        "label": "Bucharest Time",
+        "majorCities": [
+          "Bucharest"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Russia",
+    "isoCode": "RU",
+    "phoneCode": "+7",
+    "defaultCity": "Moscow",
+    "defaultTimeZone": "Europe/Moscow",
+    "timeZones": [
+      {
+        "identifier": "Europe/Kaliningrad",
+        "label": "Kaliningrad Time",
+        "majorCities": [
+          "Kaliningrad"
+        ]
+      },
+      {
+        "identifier": "Europe/Moscow",
+        "label": "Moscow Time",
+        "majorCities": [
+          "Moscow",
+          "Saint Petersburg"
+        ]
+      },
+      {
+        "identifier": "Europe/Samara",
+        "label": "Samara Time",
+        "majorCities": [
+          "Samara"
+        ]
+      },
+      {
+        "identifier": "Asia/Yekaterinburg",
+        "label": "Yekaterinburg Time",
+        "majorCities": [
+          "Yekaterinburg"
+        ]
+      },
+      {
+        "identifier": "Asia/Omsk",
+        "label": "Omsk Time",
+        "majorCities": [
+          "Omsk"
+        ]
+      },
+      {
+        "identifier": "Asia/Krasnoyarsk",
+        "label": "Krasnoyarsk Time",
+        "majorCities": [
+          "Krasnoyarsk"
+        ]
+      },
+      {
+        "identifier": "Asia/Irkutsk",
+        "label": "Irkutsk Time",
+        "majorCities": [
+          "Irkutsk"
+        ]
+      },
+      {
+        "identifier": "Asia/Yakutsk",
+        "label": "Yakutsk Time",
+        "majorCities": [
+          "Yakutsk"
+        ]
+      },
+      {
+        "identifier": "Asia/Vladivostok",
+        "label": "Vladivostok Time",
+        "majorCities": [
+          "Vladivostok"
+        ]
+      },
+      {
+        "identifier": "Asia/Magadan",
+        "label": "Magadan Time",
+        "majorCities": [
+          "Magadan"
+        ]
+      },
+      {
+        "identifier": "Asia/Kamchatka",
+        "label": "Kamchatka Time",
+        "majorCities": [
+          "Petropavlovsk-Kamchatsky"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Rwanda",
+    "isoCode": "RW",
+    "phoneCode": "+250",
+    "defaultCity": "Kigali",
+    "defaultTimeZone": "Africa/Kigali",
+    "timeZones": [
+      {
+        "identifier": "Africa/Kigali",
+        "label": "Kigali Time",
+        "majorCities": [
+          "Kigali"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "R\u00e9union",
+    "isoCode": "RE",
+    "phoneCode": "+262",
+    "defaultCity": "Reunion",
+    "defaultTimeZone": "Indian/Reunion",
+    "timeZones": [
+      {
+        "identifier": "Indian/Reunion",
+        "label": "Reunion Time",
+        "majorCities": [
+          "Reunion"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Saint Barth\u00e9lemy",
+    "isoCode": "BL",
+    "phoneCode": "+590",
+    "defaultCity": "St Barthelemy",
+    "defaultTimeZone": "America/St_Barthelemy",
+    "timeZones": [
+      {
+        "identifier": "America/St_Barthelemy",
+        "label": "St Barthelemy Time",
+        "majorCities": [
+          "St Barthelemy"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Saint Helena",
+    "isoCode": "SH",
+    "phoneCode": "+290",
+    "defaultCity": "St Helena",
+    "defaultTimeZone": "Atlantic/St_Helena",
+    "timeZones": [
+      {
+        "identifier": "Atlantic/St_Helena",
+        "label": "St Helena Time",
+        "majorCities": [
+          "St Helena"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Saint Kitts and Nevis",
+    "isoCode": "KN",
+    "phoneCode": "+1",
+    "defaultCity": "St Kitts",
+    "defaultTimeZone": "America/St_Kitts",
+    "timeZones": [
+      {
+        "identifier": "America/St_Kitts",
+        "label": "St Kitts Time",
+        "majorCities": [
+          "St Kitts"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Saint Lucia",
+    "isoCode": "LC",
+    "phoneCode": "+1",
+    "defaultCity": "St Lucia",
+    "defaultTimeZone": "America/St_Lucia",
+    "timeZones": [
+      {
+        "identifier": "America/St_Lucia",
+        "label": "St Lucia Time",
+        "majorCities": [
+          "St Lucia"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Saint Martin (French part)",
+    "isoCode": "MF",
+    "phoneCode": "+590",
+    "defaultCity": "Marigot",
+    "defaultTimeZone": "America/Marigot",
+    "timeZones": [
+      {
+        "identifier": "America/Marigot",
+        "label": "Marigot Time",
+        "majorCities": [
+          "Marigot"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Saint Pierre and Miquelon",
+    "isoCode": "PM",
+    "phoneCode": "+508",
+    "defaultCity": "Miquelon",
+    "defaultTimeZone": "America/Miquelon",
+    "timeZones": [
+      {
+        "identifier": "America/Miquelon",
+        "label": "Miquelon Time",
+        "majorCities": [
+          "Miquelon"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Saint Vincent and the Grenadines",
+    "isoCode": "VC",
+    "phoneCode": "+1",
+    "defaultCity": "St Vincent",
+    "defaultTimeZone": "America/St_Vincent",
+    "timeZones": [
+      {
+        "identifier": "America/St_Vincent",
+        "label": "St Vincent Time",
+        "majorCities": [
+          "St Vincent"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Samoa",
+    "isoCode": "WS",
+    "phoneCode": "+685",
+    "defaultCity": "Apia",
+    "defaultTimeZone": "Pacific/Apia",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Apia",
+        "label": "Apia Time",
+        "majorCities": [
+          "Apia"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "San Marino",
+    "isoCode": "SM",
+    "phoneCode": "+378",
+    "defaultCity": "San Marino",
+    "defaultTimeZone": "Europe/San_Marino",
+    "timeZones": [
+      {
+        "identifier": "Europe/San_Marino",
+        "label": "San Marino Time",
+        "majorCities": [
+          "San Marino"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Sao Tome and Principe",
+    "isoCode": "ST",
+    "phoneCode": "+239",
+    "defaultCity": "Sao Tome",
+    "defaultTimeZone": "Africa/Sao_Tome",
+    "timeZones": [
+      {
+        "identifier": "Africa/Sao_Tome",
+        "label": "Sao Tome Time",
+        "majorCities": [
+          "Sao Tome"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Saudi Arabia",
+    "isoCode": "SA",
+    "phoneCode": "+966",
+    "defaultCity": "Riyadh",
+    "defaultTimeZone": "Asia/Riyadh",
+    "timeZones": [
+      {
+        "identifier": "Asia/Riyadh",
+        "label": "Riyadh Time",
+        "majorCities": [
+          "Riyadh"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Senegal",
+    "isoCode": "SN",
+    "phoneCode": "+221",
+    "defaultCity": "Dakar",
+    "defaultTimeZone": "Africa/Dakar",
+    "timeZones": [
+      {
+        "identifier": "Africa/Dakar",
+        "label": "Dakar Time",
+        "majorCities": [
+          "Dakar"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Serbia",
+    "isoCode": "RS",
+    "phoneCode": "+381",
+    "defaultCity": "Belgrade",
+    "defaultTimeZone": "Europe/Belgrade",
+    "timeZones": [
+      {
+        "identifier": "Europe/Belgrade",
+        "label": "Belgrade Time",
+        "majorCities": [
+          "Belgrade"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Seychelles",
+    "isoCode": "SC",
+    "phoneCode": "+248",
+    "defaultCity": "Mahe",
+    "defaultTimeZone": "Indian/Mahe",
+    "timeZones": [
+      {
+        "identifier": "Indian/Mahe",
+        "label": "Mahe Time",
+        "majorCities": [
+          "Mahe"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Sierra Leone",
+    "isoCode": "SL",
+    "phoneCode": "+232",
+    "defaultCity": "Freetown",
+    "defaultTimeZone": "Africa/Freetown",
+    "timeZones": [
+      {
+        "identifier": "Africa/Freetown",
+        "label": "Freetown Time",
+        "majorCities": [
+          "Freetown"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Singapore",
+    "isoCode": "SG",
+    "phoneCode": "+65",
+    "defaultCity": "Singapore",
+    "defaultTimeZone": "Asia/Singapore",
+    "timeZones": [
+      {
+        "identifier": "Asia/Singapore",
+        "label": "Singapore Time",
+        "majorCities": [
+          "Singapore"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Sint Maarten (Dutch part)",
+    "isoCode": "SX",
+    "phoneCode": "+1",
+    "defaultCity": "Lower Princes",
+    "defaultTimeZone": "America/Lower_Princes",
+    "timeZones": [
+      {
+        "identifier": "America/Lower_Princes",
+        "label": "Lower Princes Time",
+        "majorCities": [
+          "Lower Princes"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Slovakia",
+    "isoCode": "SK",
+    "phoneCode": "+421",
+    "defaultCity": "Bratislava",
+    "defaultTimeZone": "Europe/Bratislava",
+    "timeZones": [
+      {
+        "identifier": "Europe/Bratislava",
+        "label": "Bratislava Time",
+        "majorCities": [
+          "Bratislava"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Slovenia",
+    "isoCode": "SI",
+    "phoneCode": "+386",
+    "defaultCity": "Ljubljana",
+    "defaultTimeZone": "Europe/Ljubljana",
+    "timeZones": [
+      {
+        "identifier": "Europe/Ljubljana",
+        "label": "Ljubljana Time",
+        "majorCities": [
+          "Ljubljana"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Solomon Islands",
+    "isoCode": "SB",
+    "phoneCode": "+677",
+    "defaultCity": "Guadalcanal",
+    "defaultTimeZone": "Pacific/Guadalcanal",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Guadalcanal",
+        "label": "Guadalcanal Time",
+        "majorCities": [
+          "Guadalcanal"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Somalia",
+    "isoCode": "SO",
+    "phoneCode": "+252",
+    "defaultCity": "Mogadishu",
+    "defaultTimeZone": "Africa/Mogadishu",
+    "timeZones": [
+      {
+        "identifier": "Africa/Mogadishu",
+        "label": "Mogadishu Time",
+        "majorCities": [
+          "Mogadishu"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "South Africa",
+    "isoCode": "ZA",
+    "phoneCode": "+27",
+    "defaultCity": "Johannesburg",
+    "defaultTimeZone": "Africa/Johannesburg",
+    "timeZones": [
+      {
+        "identifier": "Africa/Johannesburg",
+        "label": "South Africa Time",
+        "majorCities": [
+          "Johannesburg",
+          "Cape Town",
+          "Durban"
+        ]
       }
     ]
   },
@@ -436,12 +3658,397 @@
       {
         "identifier": "Asia/Seoul",
         "label": "Korea Standard Time",
-        "majorCities": ["Seoul", "Busan", "Incheon", "Daegu"]
+        "majorCities": [
+          "Seoul",
+          "Busan",
+          "Incheon"
+        ]
       }
     ]
   },
   {
-    "countryName": "Turkey",
+    "countryName": "South Sudan",
+    "isoCode": "SS",
+    "phoneCode": "+211",
+    "defaultCity": "Juba",
+    "defaultTimeZone": "Africa/Juba",
+    "timeZones": [
+      {
+        "identifier": "Africa/Juba",
+        "label": "Juba Time",
+        "majorCities": [
+          "Juba"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Spain",
+    "isoCode": "ES",
+    "phoneCode": "+34",
+    "defaultCity": "Madrid",
+    "defaultTimeZone": "Europe/Madrid",
+    "timeZones": [
+      {
+        "identifier": "Europe/Madrid",
+        "label": "Central European Time",
+        "majorCities": [
+          "Madrid",
+          "Barcelona",
+          "Valencia"
+        ]
+      },
+      {
+        "identifier": "Atlantic/Canary",
+        "label": "Canary Islands Time",
+        "majorCities": [
+          "Las Palmas",
+          "Santa Cruz de Tenerife"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Sri Lanka",
+    "isoCode": "LK",
+    "phoneCode": "+94",
+    "defaultCity": "Colombo",
+    "defaultTimeZone": "Asia/Colombo",
+    "timeZones": [
+      {
+        "identifier": "Asia/Colombo",
+        "label": "Colombo Time",
+        "majorCities": [
+          "Colombo"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Sudan",
+    "isoCode": "SD",
+    "phoneCode": "+249",
+    "defaultCity": "Khartoum",
+    "defaultTimeZone": "Africa/Khartoum",
+    "timeZones": [
+      {
+        "identifier": "Africa/Khartoum",
+        "label": "Khartoum Time",
+        "majorCities": [
+          "Khartoum"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Suriname",
+    "isoCode": "SR",
+    "phoneCode": "+597",
+    "defaultCity": "Paramaribo",
+    "defaultTimeZone": "America/Paramaribo",
+    "timeZones": [
+      {
+        "identifier": "America/Paramaribo",
+        "label": "Paramaribo Time",
+        "majorCities": [
+          "Paramaribo"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Svalbard and Jan Mayen",
+    "isoCode": "SJ",
+    "phoneCode": "+47",
+    "defaultCity": "Longyearbyen",
+    "defaultTimeZone": "Arctic/Longyearbyen",
+    "timeZones": [
+      {
+        "identifier": "Arctic/Longyearbyen",
+        "label": "Longyearbyen Time",
+        "majorCities": [
+          "Longyearbyen"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Sweden",
+    "isoCode": "SE",
+    "phoneCode": "+46",
+    "defaultCity": "Stockholm",
+    "defaultTimeZone": "Europe/Stockholm",
+    "timeZones": [
+      {
+        "identifier": "Europe/Stockholm",
+        "label": "Stockholm Time",
+        "majorCities": [
+          "Stockholm"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Switzerland",
+    "isoCode": "CH",
+    "phoneCode": "+41",
+    "defaultCity": "Zurich",
+    "defaultTimeZone": "Europe/Zurich",
+    "timeZones": [
+      {
+        "identifier": "Europe/Zurich",
+        "label": "Zurich Time",
+        "majorCities": [
+          "Zurich"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Syria",
+    "isoCode": "SY",
+    "phoneCode": "+963",
+    "defaultCity": "Damascus",
+    "defaultTimeZone": "Asia/Damascus",
+    "timeZones": [
+      {
+        "identifier": "Asia/Damascus",
+        "label": "Damascus Time",
+        "majorCities": [
+          "Damascus"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Taiwan",
+    "isoCode": "TW",
+    "phoneCode": "+886",
+    "defaultCity": "Taipei",
+    "defaultTimeZone": "Asia/Taipei",
+    "timeZones": [
+      {
+        "identifier": "Asia/Taipei",
+        "label": "Taipei Time",
+        "majorCities": [
+          "Taipei"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Tajikistan",
+    "isoCode": "TJ",
+    "phoneCode": "+992",
+    "defaultCity": "Dushanbe",
+    "defaultTimeZone": "Asia/Dushanbe",
+    "timeZones": [
+      {
+        "identifier": "Asia/Dushanbe",
+        "label": "Dushanbe Time",
+        "majorCities": [
+          "Dushanbe"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Tanzania",
+    "isoCode": "TZ",
+    "phoneCode": "+255",
+    "defaultCity": "Dar es Salaam",
+    "defaultTimeZone": "Africa/Dar_es_Salaam",
+    "timeZones": [
+      {
+        "identifier": "Africa/Dar_es_Salaam",
+        "label": "Dar es Salaam Time",
+        "majorCities": [
+          "Dar es Salaam"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Thailand",
+    "isoCode": "TH",
+    "phoneCode": "+66",
+    "defaultCity": "Bangkok",
+    "defaultTimeZone": "Asia/Bangkok",
+    "timeZones": [
+      {
+        "identifier": "Asia/Bangkok",
+        "label": "Thailand Time",
+        "majorCities": [
+          "Bangkok",
+          "Phuket",
+          "Chiang Mai",
+          "Pattaya"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Timor-Leste",
+    "isoCode": "TL",
+    "phoneCode": "+670",
+    "defaultCity": "Dili",
+    "defaultTimeZone": "Asia/Dili",
+    "timeZones": [
+      {
+        "identifier": "Asia/Dili",
+        "label": "Dili Time",
+        "majorCities": [
+          "Dili"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Togo",
+    "isoCode": "TG",
+    "phoneCode": "+228",
+    "defaultCity": "Lome",
+    "defaultTimeZone": "Africa/Lome",
+    "timeZones": [
+      {
+        "identifier": "Africa/Lome",
+        "label": "Lome Time",
+        "majorCities": [
+          "Lome"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Tokelau",
+    "isoCode": "TK",
+    "phoneCode": "+690",
+    "defaultCity": "Fakaofo",
+    "defaultTimeZone": "Pacific/Fakaofo",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Fakaofo",
+        "label": "Fakaofo Time",
+        "majorCities": [
+          "Fakaofo"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Tonga",
+    "isoCode": "TO",
+    "phoneCode": "+676",
+    "defaultCity": "Tongatapu",
+    "defaultTimeZone": "Pacific/Tongatapu",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Tongatapu",
+        "label": "Tongatapu Time",
+        "majorCities": [
+          "Tongatapu"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Trinidad and Tobago",
+    "isoCode": "TT",
+    "phoneCode": "+1",
+    "defaultCity": "Port of Spain",
+    "defaultTimeZone": "America/Port_of_Spain",
+    "timeZones": [
+      {
+        "identifier": "America/Port_of_Spain",
+        "label": "Port of Spain Time",
+        "majorCities": [
+          "Port of Spain"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Tristan da Cunha",
+    "isoCode": "TA",
+    "phoneCode": "+290",
+    "defaultCity": "Edinburgh of the Seven Seas",
+    "defaultTimeZone": "Atlantic/St_Helena",
+    "timeZones": [
+      {
+        "identifier": "Atlantic/St_Helena",
+        "label": "Tristan da Cunha Time",
+        "majorCities": [
+          "Edinburgh of the Seven Seas"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Tunisia",
+    "isoCode": "TN",
+    "phoneCode": "+216",
+    "defaultCity": "Tunis",
+    "defaultTimeZone": "Africa/Tunis",
+    "timeZones": [
+      {
+        "identifier": "Africa/Tunis",
+        "label": "Tunis Time",
+        "majorCities": [
+          "Tunis"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Turkmenistan",
+    "isoCode": "TM",
+    "phoneCode": "+993",
+    "defaultCity": "Ashgabat",
+    "defaultTimeZone": "Asia/Ashgabat",
+    "timeZones": [
+      {
+        "identifier": "Asia/Ashgabat",
+        "label": "Ashgabat Time",
+        "majorCities": [
+          "Ashgabat"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Turks and Caicos Islands",
+    "isoCode": "TC",
+    "phoneCode": "+1",
+    "defaultCity": "Grand Turk",
+    "defaultTimeZone": "America/Grand_Turk",
+    "timeZones": [
+      {
+        "identifier": "America/Grand_Turk",
+        "label": "Grand Turk Time",
+        "majorCities": [
+          "Grand Turk"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Tuvalu",
+    "isoCode": "TV",
+    "phoneCode": "+688",
+    "defaultCity": "Funafuti",
+    "defaultTimeZone": "Pacific/Funafuti",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Funafuti",
+        "label": "Funafuti Time",
+        "majorCities": [
+          "Funafuti"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "T\u00fcrkiye",
     "isoCode": "TR",
     "phoneCode": "+90",
     "defaultCity": "Istanbul",
@@ -450,7 +4057,347 @@
       {
         "identifier": "Europe/Istanbul",
         "label": "Turkey Time",
-        "majorCities": ["Istanbul", "Ankara", "Izmir", "Antalya"]
+        "majorCities": [
+          "Istanbul",
+          "Ankara",
+          "Izmir"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "U.S. Virgin Islands",
+    "isoCode": "VI",
+    "phoneCode": "+1",
+    "defaultCity": "St Thomas",
+    "defaultTimeZone": "America/St_Thomas",
+    "timeZones": [
+      {
+        "identifier": "America/St_Thomas",
+        "label": "St Thomas Time",
+        "majorCities": [
+          "St Thomas"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Uganda",
+    "isoCode": "UG",
+    "phoneCode": "+256",
+    "defaultCity": "Kampala",
+    "defaultTimeZone": "Africa/Kampala",
+    "timeZones": [
+      {
+        "identifier": "Africa/Kampala",
+        "label": "Kampala Time",
+        "majorCities": [
+          "Kampala"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Ukraine",
+    "isoCode": "UA",
+    "phoneCode": "+380",
+    "defaultCity": "Simferopol",
+    "defaultTimeZone": "Europe/Simferopol",
+    "timeZones": [
+      {
+        "identifier": "Europe/Simferopol",
+        "label": "Crimea Time",
+        "majorCities": [
+          "Simferopol"
+        ]
+      },
+      {
+        "identifier": "Europe/Kyiv",
+        "label": "most of Ukraine Time",
+        "majorCities": [
+          "Kyiv"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "United Arab Emirates",
+    "isoCode": "AE",
+    "phoneCode": "+971",
+    "defaultCity": "Dubai",
+    "defaultTimeZone": "Asia/Dubai",
+    "timeZones": [
+      {
+        "identifier": "Asia/Dubai",
+        "label": "Gulf Standard Time",
+        "majorCities": [
+          "Dubai",
+          "Abu Dhabi",
+          "Sharjah"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "United Kingdom",
+    "isoCode": "GB",
+    "phoneCode": "+44",
+    "defaultCity": "London",
+    "defaultTimeZone": "Europe/London",
+    "timeZones": [
+      {
+        "identifier": "Europe/London",
+        "label": "United Kingdom Time",
+        "majorCities": [
+          "London",
+          "Manchester",
+          "Edinburgh",
+          "Belfast"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "United States",
+    "isoCode": "US",
+    "phoneCode": "+1",
+    "defaultCity": "New York",
+    "defaultTimeZone": "America/New_York",
+    "timeZones": [
+      {
+        "identifier": "America/New_York",
+        "label": "Eastern Time",
+        "majorCities": [
+          "New York",
+          "Washington",
+          "Miami",
+          "Boston"
+        ]
+      },
+      {
+        "identifier": "America/Chicago",
+        "label": "Central Time",
+        "majorCities": [
+          "Chicago",
+          "Houston",
+          "Dallas"
+        ]
+      },
+      {
+        "identifier": "America/Denver",
+        "label": "Mountain Time",
+        "majorCities": [
+          "Denver",
+          "Phoenix",
+          "Salt Lake City"
+        ]
+      },
+      {
+        "identifier": "America/Los_Angeles",
+        "label": "Pacific Time",
+        "majorCities": [
+          "Los Angeles",
+          "San Francisco",
+          "Seattle",
+          "Las Vegas"
+        ]
+      },
+      {
+        "identifier": "America/Anchorage",
+        "label": "Alaska Time",
+        "majorCities": [
+          "Anchorage"
+        ]
+      },
+      {
+        "identifier": "Pacific/Honolulu",
+        "label": "Hawaii Time",
+        "majorCities": [
+          "Honolulu"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Uruguay",
+    "isoCode": "UY",
+    "phoneCode": "+598",
+    "defaultCity": "Montevideo",
+    "defaultTimeZone": "America/Montevideo",
+    "timeZones": [
+      {
+        "identifier": "America/Montevideo",
+        "label": "Montevideo Time",
+        "majorCities": [
+          "Montevideo"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Uzbekistan",
+    "isoCode": "UZ",
+    "phoneCode": "+998",
+    "defaultCity": "Samarkand",
+    "defaultTimeZone": "Asia/Samarkand",
+    "timeZones": [
+      {
+        "identifier": "Asia/Samarkand",
+        "label": "Uzbekistan (west) Time",
+        "majorCities": [
+          "Samarkand"
+        ]
+      },
+      {
+        "identifier": "Asia/Tashkent",
+        "label": "Uzbekistan (east) Time",
+        "majorCities": [
+          "Tashkent"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Vanuatu",
+    "isoCode": "VU",
+    "phoneCode": "+678",
+    "defaultCity": "Efate",
+    "defaultTimeZone": "Pacific/Efate",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Efate",
+        "label": "Efate Time",
+        "majorCities": [
+          "Efate"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Vatican City",
+    "isoCode": "VA",
+    "phoneCode": "+39",
+    "defaultCity": "Vatican",
+    "defaultTimeZone": "Europe/Vatican",
+    "timeZones": [
+      {
+        "identifier": "Europe/Vatican",
+        "label": "Vatican Time",
+        "majorCities": [
+          "Vatican"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Venezuela",
+    "isoCode": "VE",
+    "phoneCode": "+58",
+    "defaultCity": "Caracas",
+    "defaultTimeZone": "America/Caracas",
+    "timeZones": [
+      {
+        "identifier": "America/Caracas",
+        "label": "Caracas Time",
+        "majorCities": [
+          "Caracas"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Vietnam",
+    "isoCode": "VN",
+    "phoneCode": "+84",
+    "defaultCity": "Ho Chi Minh",
+    "defaultTimeZone": "Asia/Ho_Chi_Minh",
+    "timeZones": [
+      {
+        "identifier": "Asia/Ho_Chi_Minh",
+        "label": "Ho Chi Minh Time",
+        "majorCities": [
+          "Ho Chi Minh"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Wallis and Futuna",
+    "isoCode": "WF",
+    "phoneCode": "+681",
+    "defaultCity": "Wallis",
+    "defaultTimeZone": "Pacific/Wallis",
+    "timeZones": [
+      {
+        "identifier": "Pacific/Wallis",
+        "label": "Wallis Time",
+        "majorCities": [
+          "Wallis"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Western Sahara",
+    "isoCode": "EH",
+    "phoneCode": "+212",
+    "defaultCity": "El Aaiun",
+    "defaultTimeZone": "Africa/El_Aaiun",
+    "timeZones": [
+      {
+        "identifier": "Africa/El_Aaiun",
+        "label": "El Aaiun Time",
+        "majorCities": [
+          "El Aaiun"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Yemen",
+    "isoCode": "YE",
+    "phoneCode": "+967",
+    "defaultCity": "Aden",
+    "defaultTimeZone": "Asia/Aden",
+    "timeZones": [
+      {
+        "identifier": "Asia/Aden",
+        "label": "Aden Time",
+        "majorCities": [
+          "Aden"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Zambia",
+    "isoCode": "ZM",
+    "phoneCode": "+260",
+    "defaultCity": "Lusaka",
+    "defaultTimeZone": "Africa/Lusaka",
+    "timeZones": [
+      {
+        "identifier": "Africa/Lusaka",
+        "label": "Lusaka Time",
+        "majorCities": [
+          "Lusaka"
+        ]
+      }
+    ]
+  },
+  {
+    "countryName": "Zimbabwe",
+    "isoCode": "ZW",
+    "phoneCode": "+263",
+    "defaultCity": "Harare",
+    "defaultTimeZone": "Africa/Harare",
+    "timeZones": [
+      {
+        "identifier": "Africa/Harare",
+        "label": "Harare Time",
+        "majorCities": [
+          "Harare"
+        ]
       }
     ]
   }
