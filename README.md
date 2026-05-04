@@ -159,9 +159,7 @@ TZMate/
 
 TZ Mate uses this App Group identifier:
 
-```text
-group.com.remdee.tzmate
-```
+
 
 Both the main app and widget extension need the same App Group enabled so they can share local contacts and settings.
 
@@ -187,7 +185,7 @@ If the widget does not appear in macOS:
 - Open Notification Center, choose Edit Widgets, and search for `TZ Mate`.
 - Clean the build folder and rebuild if the widget is still missing.
 - Make sure both `TZMate` and `TZMateWidgetExtension` use the same Development Team.
-- Make sure both targets have App Groups enabled with `group.com.remdee.tzmate`.
+- Make sure both targets have App Groups enabled with.
 
 ## Privacy
 
