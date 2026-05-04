@@ -10,6 +10,8 @@ TZ Mate is intended to ship through GitHub Releases for the initial public versi
 - Test contacts, favorites, phone code lookup, settings, and time converter.
 - Test the widget after enabling the App Group for both targets.
 - Confirm `group.com.remdee.tzmate` is enabled for the main app and widget extension.
+- Confirm the Sparkle appcast URL is final and reachable over HTTPS.
+- Confirm the Sparkle EdDSA public key in `TZMate/Info.plist` matches the private key used to sign release archives.
 
 ## 2. Version Bump
 
@@ -36,6 +38,7 @@ Track B - Public GitHub Release:
 - Build a Release configuration.
 - Use Developer ID signing for distribution outside the Mac App Store.
 - Include the widget extension in the signed app bundle.
+- Include Sparkle.framework in the signed app bundle.
 - Notarize the final app or DMG before publishing.
 
 ## 4. Signing
@@ -45,15 +48,26 @@ Track B - Public GitHub Release:
 - Sign the widget extension with the matching team.
 - Keep provisioning profiles and private certificates out of Git.
 - Verify App Groups are enabled for both targets.
+- Verify the Sparkle private key remains in Keychain and is never committed.
 
-## 5. Notarization
+## 5. Sparkle Updates
+
+- Use Sparkle for update checks outside the Mac App Store.
+- Confirm `SUFeedURL` points to the production HTTPS appcast.
+- Confirm `SUPublicEDKey` is present in `TZMate/Info.plist`.
+- Sign the release archive with Sparkle tools before publishing.
+- Generate or update `appcast.xml` with Sparkle tools.
+- Host `appcast.xml` over HTTPS, recommended through GitHub Pages.
+- Keep Sparkle private keys, Apple credentials, and notarization credentials out of Git.
+
+## 6. Notarization
 
 - Submit the signed app or packaged archive to Apple notarization.
 - Wait for notarization success.
 - Staple the notarization ticket to the app or DMG.
 - Validate the final artifact on a clean macOS user account if possible.
 
-## 6. DMG Or ZIP Packaging
+## 7. DMG Or ZIP Packaging
 
 - Package the signed and notarized app as `.dmg`.
 - Use `.zip` only for developer/testing builds.
@@ -68,18 +82,21 @@ scripts/build_release.sh
 
 The script creates a local Release build and ZIP for testing. Developer ID signing, notarization, and final DMG polish still require release-owner configuration.
 
-## 7. GitHub Release
+## 8. GitHub Release
 
 - Create a version tag.
 - Draft a GitHub Release.
 - Upload the signed and notarized `.dmg` or `.zip`.
+- Upload the matching signed archive expected by the Sparkle appcast.
+- Publish the updated `appcast.xml`.
 - Include release notes and known limitations.
 - Mention that Mac App Store distribution is not part of the initial release.
 
-## 8. Post-release Checks
+## 9. Post-release Checks
 
 - Download the artifact from GitHub Releases.
 - Confirm macOS does not show unexpected Gatekeeper warnings for the signed/notarized build.
 - Launch the app and open the menu bar popover.
+- Use Settings to run `Check for Updates…` against the published appcast.
 - Confirm the widget can read shared contacts after App Groups are configured.
 - Watch incoming issues for signing, launch, or widget visibility problems.

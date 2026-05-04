@@ -55,6 +55,8 @@
 		BB14B2C3D4E5F60000000001 /* DefaultSettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14B2C3D4E5F60000000011 /* DefaultSettingsService.swift */; };
 		CC14B2C3D4E5F60000000001 /* SharedUserDefaultsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC14B2C3D4E5F60000000011 /* SharedUserDefaultsProvider.swift */; };
 		CC14B2C3D4E5F60000000002 /* SharedUserDefaultsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC14B2C3D4E5F60000000011 /* SharedUserDefaultsProvider.swift */; };
+		DD15B2C3D4E5F60000000001 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = DD15B2C3D4E5F60000000021 /* Sparkle */; };
+		DD15B2C3D4E5F60000000002 /* UpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15B2C3D4E5F60000000011 /* UpdateService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +125,7 @@
 		AA13B2C3D4E5F60000000011 /* LaunchAtLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginService.swift; sourceTree = "<group>"; };
 		BB14B2C3D4E5F60000000011 /* DefaultSettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSettingsService.swift; sourceTree = "<group>"; };
 		CC14B2C3D4E5F60000000011 /* SharedUserDefaultsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUserDefaultsProvider.swift; sourceTree = "<group>"; };
+		DD15B2C3D4E5F60000000011 /* UpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD15B2C3D4E5F60000000001 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +231,7 @@
 				AA13B2C3D4E5F60000000011 /* LaunchAtLoginService.swift */,
 				BB14B2C3D4E5F60000000011 /* DefaultSettingsService.swift */,
 				CC14B2C3D4E5F60000000011 /* SharedUserDefaultsProvider.swift */,
+				DD15B2C3D4E5F60000000011 /* UpdateService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -320,6 +325,9 @@
 				77A1B2C3D4E5F60000000052 /* PBXTargetDependency */,
 			);
 			name = TZMate;
+			packageProductDependencies = (
+				DD15B2C3D4E5F60000000021 /* Sparkle */,
+			);
 			productName = TZMate;
 			productReference = 11A1B2C3D4E5F60000000010 /* TZMate.app */;
 			productType = "com.apple.product-type.application";
@@ -378,6 +386,9 @@
 				Base,
 			);
 			mainGroup = 11A1B2C3D4E5F60000000030;
+			packageReferences = (
+				DD15B2C3D4E5F60000000020 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			productRefGroup = 11A1B2C3D4E5F60000000034 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -441,6 +452,7 @@
 				AA13B2C3D4E5F60000000001 /* LaunchAtLoginService.swift in Sources */,
 				BB14B2C3D4E5F60000000001 /* DefaultSettingsService.swift in Sources */,
 				CC14B2C3D4E5F60000000001 /* SharedUserDefaultsProvider.swift in Sources */,
+				DD15B2C3D4E5F60000000002 /* UpdateService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,6 +773,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD15B2C3D4E5F60000000020 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD15B2C3D4E5F60000000021 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD15B2C3D4E5F60000000020 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 11A1B2C3D4E5F60000000060 /* Project object */;
 }

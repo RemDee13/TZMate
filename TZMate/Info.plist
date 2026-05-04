@@ -39,5 +39,13 @@
 	<string>NSApplication</string>
 	<key>NSSupportsAutomaticGraphicsSwitching</key>
 	<true/>
+	<key>SUAutomaticallyUpdate</key>
+	<false/>
+	<key>SUEnableAutomaticChecks</key>
+	<false/>
+	<key>SUFeedURL</key>
+	<string>https://remdee13.github.io/TZMate/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>GElwZqNSYtynTm+8yUtvN0aJar6twh4rGSWIFdeIWBA=</string>
 </dict>
 </plist>

@@ -4101,21 +4101,15 @@
     "countryName": "Ukraine",
     "isoCode": "UA",
     "phoneCode": "+380",
-    "defaultCity": "Simferopol",
+    "defaultCity": "Kyiv",
     "defaultTimeZone": "Europe/Simferopol",
     "timeZones": [
-      {
-        "identifier": "Europe/Simferopol",
-        "label": "Crimea Time",
-        "majorCities": [
-          "Simferopol"
-        ]
-      },
       {
         "identifier": "Europe/Kyiv",
         "label": "most of Ukraine Time",
         "majorCities": [
-          "Kyiv"
+          "Kyiv",
+          "Lviv"
         ]
       }
     ]

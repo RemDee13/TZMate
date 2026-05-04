@@ -14,15 +14,18 @@ final class AppState: ObservableObject {
     @Published private(set) var settings: AppSettings
     @Published private(set) var contacts: [Contact]
     @Published private(set) var launchAtLoginErrorMessage: String?
+    @Published private(set) var automaticallyChecksForUpdates: Bool
 
     let settingsStorageService: SettingsStorageService
     let contactStorageService: ContactStorageService
     let launchAtLoginService: LaunchAtLoginService
+    let updateService: UpdateService
 
     init(
         settingsStorageService: SettingsStorageService? = nil,
         contactStorageService: ContactStorageService = ContactStorageService(),
-        launchAtLoginService: LaunchAtLoginService = LaunchAtLoginService()
+        launchAtLoginService: LaunchAtLoginService = LaunchAtLoginService(),
+        updateService: UpdateService? = nil
     ) {
         self.settingsStorageService = settingsStorageService ?? SettingsStorageService(
             defaultSettingsProvider: {
@@ -31,8 +34,10 @@ final class AppState: ObservableObject {
         )
         self.contactStorageService = contactStorageService
         self.launchAtLoginService = launchAtLoginService
+        self.updateService = updateService ?? UpdateService()
         settings = self.settingsStorageService.loadSettings()
         contacts = contactStorageService.loadContacts()
+        automaticallyChecksForUpdates = self.updateService.automaticallyChecksForUpdates
         DispatchQueue.main.async { [weak self] in
             self?.syncLaunchAtLoginStatus()
         }
@@ -90,6 +95,15 @@ final class AppState: ObservableObject {
 
     func quitApplication() {
         NSApplication.shared.terminate(nil)
+    }
+
+    func checkForUpdates() {
+        updateService.checkForUpdates()
+    }
+
+    func setAutomaticallyChecksForUpdates(_ enabled: Bool) {
+        updateService.setAutomaticallyChecksForUpdates(enabled)
+        automaticallyChecksForUpdates = updateService.automaticallyChecksForUpdates
     }
 
     private func contactWithWidgetOrderIfNeeded(_ contact: Contact) -> Contact {

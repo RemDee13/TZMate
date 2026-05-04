@@ -15,6 +15,7 @@ struct SettingsView: View {
             VStack(alignment: .leading, spacing: 18) {
                 defaultTimeZoneSection
                 preferencesSection
+                updatesSection
                 launchAtLoginSection
                 appLifecycleSection
             }
@@ -58,6 +59,29 @@ struct SettingsView: View {
                 }
 
                 Toggle("Show time in menu bar", isOn: binding(for: \.showTimeInMenuBar))
+            }
+        }
+    }
+
+    private var updatesSection: some View {
+        SectionCardView {
+            VStack(alignment: .leading, spacing: 12) {
+                Text("Updates")
+                    .font(.headline)
+
+                Button {
+                    appState.checkForUpdates()
+                } label: {
+                    Label("Check for Updates…", systemImage: "arrow.down.circle")
+                }
+                .buttonStyle(.borderedProminent)
+                .controlSize(.small)
+
+                Toggle("Automatically Check for Updates", isOn: automaticallyChecksForUpdatesBinding)
+
+                Text("TZ Mate can check for new GitHub Releases when updates are configured.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
             }
         }
     }
@@ -121,6 +145,19 @@ struct SettingsView: View {
                 updatedSettings[keyPath: keyPath] = newValue
                 DispatchQueue.main.async {
                     appState.updateSettings(updatedSettings)
+                }
+            }
+        )
+    }
+
+    private var automaticallyChecksForUpdatesBinding: Binding<Bool> {
+        Binding(
+            get: {
+                appState.automaticallyChecksForUpdates
+            },
+            set: { enabled in
+                DispatchQueue.main.async {
+                    appState.setAutomaticallyChecksForUpdates(enabled)
                 }
             }
         )

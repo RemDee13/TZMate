@@ -18,6 +18,10 @@ Use this checklist before publishing a developer prerelease or public GitHub Rel
 - [ ] App launches without a normal Dock window
 - [ ] Menu bar item appears
 - [ ] Clicking the menu bar item opens compact popover
+- [ ] Buttons, text fields, pickers, and sheets are clickable inside the popover
+- [ ] Right-click or Control-click on the menu bar item opens the status menu
+- [ ] Status menu includes `Open TZ Mate`
+- [ ] Status menu includes `Quit TZ Mate`
 - [ ] Popover size is reasonable
 - [ ] App name is `TZ Mate`
 
@@ -31,6 +35,8 @@ Use this checklist before publishing a developer prerelease or public GitHub Rel
 - [ ] Default time zone display is correct
 - [ ] Enable Launch at Login
 - [ ] Disable Launch at Login
+- [ ] Check for Updates opens Sparkle update UI
+- [ ] Automatically Check for Updates toggle changes state
 - [ ] Quit TZ Mate from Settings
 - [ ] Settings persist after relaunch
 
@@ -49,6 +55,10 @@ Use this checklist before publishing a developer prerelease or public GitHub Rel
 
 ## 5. Phone Code Lookup
 
+- [ ] Country name search: `Japan`
+- [ ] Country name search: `Germany`
+- [ ] Country name search: `United States`
+- [ ] Country name search: `United Arab Emirates`
 - [ ] `+49` -> Germany
 - [ ] `49` -> Germany
 - [ ] `+49 170` -> Germany
@@ -88,7 +98,7 @@ Use this checklist before publishing a developer prerelease or public GitHub Rel
 
 - [ ] App works without login
 - [ ] App works offline
-- [ ] No network requests expected
+- [ ] No network requests expected except optional update checks
 - [ ] Data stored locally
 
 ## 9. Known Issues

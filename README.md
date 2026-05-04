@@ -26,6 +26,7 @@ The app stays small on purpose. It is not a CRM, it has no account system, and i
 - Light, dark, and system theme
 - 12-hour and 24-hour time format
 - Launch at Login
+- Sparkle-based update checking foundation
 - Quit action from Settings and the status item menu
 - Local-first storage
 - Works offline
@@ -42,7 +43,7 @@ Screenshots will be added in `docs/screenshots/` before the first public binary 
 
 ## Installation
 
-TZ Mate is currently in development.
+TZ Mate is currently available as a source-only alpha/developer preview.
 
 ### Build From Source
 
@@ -61,9 +62,17 @@ group.com.remdee.tzmate
 
 ### GitHub Releases
 
-GitHub Releases are planned for public downloads. The intended release artifact is a signed and notarized `.dmg`.
+The first GitHub Release is intended to be source-only for alpha testing. A public `.dmg` download is planned later. The intended binary release artifact is a signed and notarized `.dmg`.
 
 Unsigned local builds may trigger macOS Gatekeeper warnings. Public binary releases outside the Mac App Store should be signed with a Developer ID certificate and notarized by Apple.
+
+Update checking is planned through Sparkle and GitHub-hosted appcasts. The app currently points to:
+
+```text
+https://remdee13.github.io/TZMate/appcast.xml
+```
+
+This URL must be confirmed before the first public binary release.
 
 ### Homebrew
 
@@ -80,6 +89,7 @@ Initial distribution is through GitHub, not the Mac App Store. The Mac App Store
 - Use Lookup to search by phone code or country name.
 - Use Convert to plan a call across time zones.
 - Add the macOS widget to see favorite contacts at a glance.
+- Use Settings to check for updates or enable automatic update checks once releases are configured.
 - Enable Launch at Login in Settings if you want TZ Mate to start automatically.
 - Quit the app from Settings or by right-clicking the menu bar item and choosing `Quit TZ Mate`.
 
@@ -109,6 +119,12 @@ xcodebuild -scheme TZMateWidgetExtension -configuration Debug build CODE_SIGNING
 ```
 
 Signed builds require selecting a Development Team in Xcode and enabling App Groups for both the main app target and widget extension target.
+
+Sparkle is included through Swift Package Manager. If Xcode needs to resolve packages manually:
+
+```sh
+xcodebuild -resolvePackageDependencies -project TZMate.xcodeproj
+```
 
 ## Project Structure
 
@@ -149,6 +165,20 @@ group.com.remdee.tzmate
 
 Both the main app and widget extension need the same App Group enabled so they can share local contacts and settings.
 
+## Updates
+
+TZ Mate uses Sparkle 2 for the update-checking foundation needed by GitHub Releases distribution.
+
+Production updates require:
+
+- A Developer ID signed and notarized app
+- The Sparkle EdDSA public key in `TZMate/Info.plist`
+- A signed release archive
+- An HTTPS `appcast.xml`
+- A confirmed final appcast URL
+
+Until the final appcast and signed release archives are published, the update UI is present for prerelease testing but production updates are not active.
+
 ## Widget Troubleshooting
 
 If the widget does not appear in macOS:
@@ -165,9 +195,9 @@ If the widget does not appear in macOS:
 - No backend
 - No analytics
 - No tracking
-- No third-party services
 - Contacts and settings are stored locally on the user's Mac
 - The widget reads local App Group storage only
+- Optional update checks use Sparkle and the configured HTTPS appcast URL
 
 ## Roadmap
 

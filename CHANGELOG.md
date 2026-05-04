@@ -12,6 +12,8 @@
 - Time converter
 - Settings, theme, and time format
 - Launch at Login support
+- Sparkle-based update checking foundation
+- Settings controls for checking updates and automatic update checks
 - Quit action in Settings
 - Improved default system time zone detection
 - Removed internal development traces
