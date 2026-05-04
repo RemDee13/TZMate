@@ -5,6 +5,7 @@
 //  Licensed under the MIT License.
 //
 
+import AppKit
 import SwiftUI
 import WidgetKit
 
@@ -26,6 +27,7 @@ struct TZMateWidgetEntryView: View {
             }
         }
         .padding(10)
+        .widgetContainerBackground()
         .widgetURL(URL(string: "tzmate://open"))
     }
 
@@ -131,5 +133,18 @@ struct TZMateWidgetEntryView: View {
         }
 
         return "\(contact.cityName), \(contact.countryName)"
+    }
+}
+
+private extension View {
+    @ViewBuilder
+    func widgetContainerBackground() -> some View {
+        if #available(macOS 14.0, *) {
+            containerBackground(for: .widget) {
+                Color(nsColor: .windowBackgroundColor)
+            }
+        } else {
+            background(Color(nsColor: .windowBackgroundColor))
+        }
     }
 }

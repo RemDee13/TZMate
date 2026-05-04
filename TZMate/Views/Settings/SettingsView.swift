@@ -17,6 +17,7 @@ struct SettingsView: View {
                 preferencesSection
                 updatesSection
                 launchAtLoginSection
+                widgetDiagnosticsSection
                 appLifecycleSection
             }
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -125,6 +126,63 @@ struct SettingsView: View {
         }
     }
 
+    private var widgetDiagnosticsSection: some View {
+        SectionCardView {
+            VStack(alignment: .leading, spacing: 12) {
+                Text("Widget Diagnostics")
+                    .font(.headline)
+
+                VStack(alignment: .leading, spacing: 6) {
+                    diagnosticRow("App Group", appState.widgetDiagnostics.appGroupIdentifier)
+                    diagnosticRow(
+                        "Shared storage",
+                        appState.widgetDiagnostics.sharedDefaultsAvailable ? "Available" : "Not available"
+                    )
+                    diagnosticRow(
+                        "App Group container",
+                        appState.widgetDiagnostics.appGroupContainerAvailable ? "Available" : "Not available"
+                    )
+                    diagnosticRow("Shared contacts", "\(appState.widgetDiagnostics.sharedContactsCount)")
+                    diagnosticRow("Shared favorites", "\(appState.widgetDiagnostics.sharedFavoritesCount)")
+                    diagnosticRow("Standard contacts", "\(appState.widgetDiagnostics.standardContactsCount)")
+                    diagnosticRow(
+                        "Migration needed",
+                        appState.widgetDiagnostics.migrationNeeded ? "Yes" : "No"
+                    )
+                    diagnosticRow("Storage key", appState.widgetDiagnostics.contactsStorageKey)
+                }
+
+                VStack(alignment: .leading, spacing: 8) {
+                    HStack(spacing: 8) {
+                        Button("Refresh Diagnostics") {
+                            appState.refreshWidgetDiagnostics()
+                        }
+
+                        Button("Reload Widget") {
+                            appState.reloadWidgetTimelinesManually()
+                        }
+                    }
+
+                    Button("Copy Diagnostics") {
+                        appState.copyWidgetDiagnosticsToPasteboard()
+                    }
+
+                    Button("Migrate Contacts to Shared Storage") {
+                        appState.migrateContactsToSharedStorage()
+                    }
+                    .disabled(!appState.widgetDiagnostics.migrationNeeded)
+                    .help("Copies contacts from standard local storage into the App Group store without deleting anything.")
+                }
+                .buttonStyle(.bordered)
+                .controlSize(.small)
+
+                Text("Diagnostics show counts only. Contact names are not included.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+        }
+    }
+
     private var defaultLocationText: String {
         let settings = appState.settings
 
@@ -133,6 +191,21 @@ struct SettingsView: View {
         }
 
         return "\(settings.defaultCity), \(settings.defaultCountryName) (\(settings.defaultCountryCode))"
+    }
+
+    private func diagnosticRow(_ title: String, _ value: String) -> some View {
+        HStack(alignment: .firstTextBaseline, spacing: 8) {
+            Text(title)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
+            Spacer(minLength: 8)
+
+            Text(value)
+                .font(.caption.monospacedDigit())
+                .multilineTextAlignment(.trailing)
+                .lineLimit(2)
+        }
     }
 
     private func binding<Value>(for keyPath: WritableKeyPath<AppSettings, Value>) -> Binding<Value> {

@@ -9,7 +9,7 @@ import WidgetKit
 import SwiftUI
 
 struct TZMateWidget: Widget {
-    let kind = "TZMateWidget"
+    let kind = Constants.widgetKind
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: TZMateWidgetProvider()) { entry in

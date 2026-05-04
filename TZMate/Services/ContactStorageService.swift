@@ -10,25 +10,39 @@ import Foundation
 struct ContactStorageService {
     private let sharedUserDefaults: UserDefaults?
     private let standardUserDefaults: UserDefaults
+    private let allowsStandardFallback: Bool
     private let contactsKey = Constants.contactsStorageKey
 
     init(
         sharedUserDefaults: UserDefaults? = SharedUserDefaultsProvider.makeSharedDefaults(),
-        standardUserDefaults: UserDefaults = .standard
+        standardUserDefaults: UserDefaults = .standard,
+        allowsStandardFallback: Bool = true
     ) {
         self.sharedUserDefaults = sharedUserDefaults
         self.standardUserDefaults = standardUserDefaults
-        Self.migrateValueIfNeeded(key: contactsKey, from: standardUserDefaults, to: sharedUserDefaults)
+        self.allowsStandardFallback = allowsStandardFallback
+
+        if allowsStandardFallback {
+            Self.migrateContactsIfNeeded(key: contactsKey, from: standardUserDefaults, to: sharedUserDefaults)
+        }
+    }
+
+    var isSharedStorageAvailable: Bool {
+        sharedUserDefaults != nil
     }
 
     func loadContacts() -> [Contact] {
         if let sharedData = sharedUserDefaults?.data(forKey: contactsKey),
-           let contacts = decodeContacts(from: sharedData) {
+           let contacts = Self.decodeContacts(from: sharedData) {
             return sortedContacts(contacts)
         }
 
+        guard allowsStandardFallback else {
+            return []
+        }
+
         if let standardData = standardUserDefaults.data(forKey: contactsKey),
-           let contacts = decodeContacts(from: standardData) {
+           let contacts = Self.decodeContacts(from: standardData) {
             return sortedContacts(contacts)
         }
 
@@ -39,6 +53,8 @@ struct ContactStorageService {
         do {
             let data = try JSONEncoder().encode(sortedContacts(contacts))
             storageUserDefaults.set(data, forKey: contactsKey)
+            _ = storageUserDefaults.synchronize()
+            logDebugSave(contactCount: contacts.count)
         } catch {
             assertionFailure("Failed to encode contacts: \(error)")
         }
@@ -64,10 +80,13 @@ struct ContactStorageService {
         sharedUserDefaults ?? standardUserDefaults
     }
 
-    private func decodeContacts(from data: Data) -> [Contact]? {
+    private static func decodeContacts(from data: Data) -> [Contact]? {
         do {
             return try JSONDecoder().decode([Contact].self, from: data)
         } catch {
+            #if DEBUG
+            print("TZ Mate storage: failed to decode contacts: \(error)")
+            #endif
             return nil
         }
     }
@@ -98,13 +117,45 @@ struct ContactStorageService {
         }
     }
 
-    private static func migrateValueIfNeeded(key: String, from standardUserDefaults: UserDefaults, to sharedUserDefaults: UserDefaults?) {
+    private static func migrateContactsIfNeeded(key: String, from standardUserDefaults: UserDefaults, to sharedUserDefaults: UserDefaults?) {
         guard let sharedUserDefaults,
-              sharedUserDefaults.data(forKey: key) == nil,
-              let standardData = standardUserDefaults.data(forKey: key) else {
+              let standardData = standardUserDefaults.data(forKey: key),
+              let standardContacts = decodeContacts(from: standardData),
+              !standardContacts.isEmpty else {
+            return
+        }
+
+        if let sharedData = sharedUserDefaults.data(forKey: key),
+           let sharedContacts = decodeContacts(from: sharedData),
+           !sharedContacts.isEmpty {
             return
         }
 
         sharedUserDefaults.set(standardData, forKey: key)
+        _ = sharedUserDefaults.synchronize()
+    }
+
+    private func logDebugSave(contactCount: Int) {
+        #if DEBUG
+        ContactStorageDebugLogger.log(
+            contactCount: contactCount,
+            sharedDefaultsAvailable: sharedUserDefaults != nil
+        )
+        #endif
     }
 }
+
+#if DEBUG
+private enum ContactStorageDebugLogger {
+    private static var didLog = false
+
+    static func log(contactCount: Int, sharedDefaultsAvailable: Bool) {
+        guard !didLog else {
+            return
+        }
+
+        didLog = true
+        print("TZ Mate app storage: saved contacts=\(contactCount) to sharedDefaultsAvailable=\(sharedDefaultsAvailable)")
+    }
+}
+#endif

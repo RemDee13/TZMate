@@ -9,10 +9,6 @@ import Foundation
 
 enum SharedUserDefaultsProvider {
     static func makeSharedDefaults() -> UserDefaults? {
-        guard FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: Constants.appGroupIdentifier) != nil else {
-            return nil
-        }
-
         return UserDefaults(suiteName: Constants.appGroupIdentifier)
     }
 }

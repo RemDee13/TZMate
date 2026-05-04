@@ -57,6 +57,7 @@
 		CC14B2C3D4E5F60000000002 /* SharedUserDefaultsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC14B2C3D4E5F60000000011 /* SharedUserDefaultsProvider.swift */; };
 		DD15B2C3D4E5F60000000001 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = DD15B2C3D4E5F60000000021 /* Sparkle */; };
 		DD15B2C3D4E5F60000000002 /* UpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15B2C3D4E5F60000000011 /* UpdateService.swift */; };
+		EE20B2C3D4E5F60000000001 /* WidgetDiagnosticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20B2C3D4E5F60000000011 /* WidgetDiagnosticsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 		BB14B2C3D4E5F60000000011 /* DefaultSettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSettingsService.swift; sourceTree = "<group>"; };
 		CC14B2C3D4E5F60000000011 /* SharedUserDefaultsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUserDefaultsProvider.swift; sourceTree = "<group>"; };
 		DD15B2C3D4E5F60000000011 /* UpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateService.swift; sourceTree = "<group>"; };
+		EE20B2C3D4E5F60000000011 /* WidgetDiagnosticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDiagnosticsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 				BB14B2C3D4E5F60000000011 /* DefaultSettingsService.swift */,
 				CC14B2C3D4E5F60000000011 /* SharedUserDefaultsProvider.swift */,
 				DD15B2C3D4E5F60000000011 /* UpdateService.swift */,
+				EE20B2C3D4E5F60000000011 /* WidgetDiagnosticsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				BB14B2C3D4E5F60000000001 /* DefaultSettingsService.swift in Sources */,
 				CC14B2C3D4E5F60000000001 /* SharedUserDefaultsProvider.swift in Sources */,
 				DD15B2C3D4E5F60000000002 /* UpdateService.swift in Sources */,
+				EE20B2C3D4E5F60000000001 /* WidgetDiagnosticsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,7 +618,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RJH4M6H673;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMate/Info.plist;
@@ -641,7 +646,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RJH4M6H673;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TZMate/Info.plist;
@@ -667,7 +673,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RJH4M6H673;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
 				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
@@ -684,7 +691,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.remdee.tzmate.TZMateWidgetExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.remdee.tzmate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
@@ -709,7 +716,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RJH4M6H673;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
 				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
@@ -726,7 +734,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.remdee.tzmate.TZMateWidgetExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.remdee.tzmate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;

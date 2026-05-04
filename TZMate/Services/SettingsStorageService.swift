@@ -10,24 +10,34 @@ import Foundation
 struct SettingsStorageService {
     private let sharedUserDefaults: UserDefaults?
     private let standardUserDefaults: UserDefaults
+    private let allowsStandardFallback: Bool
     private let defaultSettingsProvider: () -> AppSettings
     private let settingsKey = Constants.appSettingsStorageKey
 
     init(
         sharedUserDefaults: UserDefaults? = SharedUserDefaultsProvider.makeSharedDefaults(),
         standardUserDefaults: UserDefaults = .standard,
-        defaultSettingsProvider: @escaping () -> AppSettings = { AppSettings.default }
+        defaultSettingsProvider: @escaping () -> AppSettings = { AppSettings.default },
+        allowsStandardFallback: Bool = true
     ) {
         self.sharedUserDefaults = sharedUserDefaults
         self.standardUserDefaults = standardUserDefaults
+        self.allowsStandardFallback = allowsStandardFallback
         self.defaultSettingsProvider = defaultSettingsProvider
-        Self.migrateValueIfNeeded(key: settingsKey, from: standardUserDefaults, to: sharedUserDefaults)
+
+        if allowsStandardFallback {
+            Self.migrateValueIfNeeded(key: settingsKey, from: standardUserDefaults, to: sharedUserDefaults)
+        }
     }
 
     func loadSettings() -> AppSettings {
         if let sharedData = sharedUserDefaults?.data(forKey: settingsKey),
            let settings = decodeSettings(from: sharedData) {
             return settings
+        }
+
+        guard allowsStandardFallback else {
+            return defaultSettingsProvider()
         }
 
         if let standardData = standardUserDefaults.data(forKey: settingsKey),
@@ -42,6 +52,7 @@ struct SettingsStorageService {
         do {
             let data = try JSONEncoder().encode(settings)
             storageUserDefaults.set(data, forKey: settingsKey)
+            _ = storageUserDefaults.synchronize()
         } catch {
             assertionFailure("Failed to encode app settings: \(error)")
         }
@@ -67,5 +78,6 @@ struct SettingsStorageService {
         }
 
         sharedUserDefaults.set(standardData, forKey: key)
+        _ = sharedUserDefaults.synchronize()
     }
 }

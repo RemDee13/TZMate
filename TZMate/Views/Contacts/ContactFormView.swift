@@ -60,69 +60,40 @@ struct ContactFormView: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            Text(contact == nil ? "Add Contact" : "Edit Contact")
-                .font(.headline)
+        VStack(spacing: 0) {
+            formHeader
 
-            Form {
-                TextField("Name", text: $name)
-                phoneCodeLookupSection
+            Divider()
 
-                if countries.isEmpty {
-                    Text("Country data unavailable")
-                        .foregroundStyle(.secondary)
-                } else {
-                    Picker("Country", selection: $selectedCountryISOCode) {
-                        ForEach(countries) { country in
-                            Text(country.countryName)
-                                .tag(country.isoCode)
-                        }
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                    SectionCardView {
+                        basicInfoSection
                     }
 
-                    TextField("City", text: $cityName)
+                    SectionCardView {
+                        locationSection
+                    }
 
-                    if currentTimeZones.count > 1 {
-                        Picker("Time zone", selection: $selectedTimeZoneIdentifier) {
-                            ForEach(currentTimeZones) { timeZone in
-                                Text(timeZonePickerLabel(for: timeZone))
-                                    .tag(timeZone.identifier)
-                            }
-                        }
-                    } else if let onlyTimeZone = currentTimeZones.first {
-                        LabeledContent("Time zone") {
-                            Text(timeZonePickerLabel(for: onlyTimeZone))
-                                .foregroundStyle(.secondary)
-                        }
+                    SectionCardView {
+                        detailsSection
+                    }
+
+                    if !isValid {
+                        Text("Name and valid time zone are required.")
+                            .font(.caption)
+                            .foregroundStyle(.red)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
                 }
-
-                TextField("Note", text: $note)
-
-                Toggle("Show in widget", isOn: $isFavorite)
+                .padding(14)
             }
 
-            if !isValid {
-                Text("Name and valid time zone are required.")
-                    .font(.caption)
-                    .foregroundStyle(.red)
-            }
+            Divider()
 
-            HStack {
-                Spacer()
-
-                Button("Cancel") {
-                    dismiss()
-                }
-
-                Button("Save") {
-                    saveContact()
-                }
-                .keyboardShortcut(.defaultAction)
-                .disabled(!isValid)
-            }
+            formFooter
         }
-        .padding(20)
-        .frame(width: 420, height: 580)
+        .frame(width: 410, height: 560)
         .onChange(of: selectedCountryISOCode) { newISOCode in
             if isApplyingLookupSelection {
                 isApplyingLookupSelection = false
@@ -145,10 +116,114 @@ struct ContactFormView: View {
         }
     }
 
+    private var formHeader: some View {
+        HStack {
+            Text(contact == nil ? "Add Contact" : "Edit Contact")
+                .font(.headline)
+                .lineLimit(1)
+
+            Spacer()
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 12)
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private var formFooter: some View {
+        HStack(spacing: 8) {
+            Spacer()
+
+            Button("Cancel") {
+                dismiss()
+            }
+
+            Button("Save") {
+                saveContact()
+            }
+            .keyboardShortcut(.defaultAction)
+            .buttonStyle(.borderedProminent)
+            .disabled(!isValid)
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 12)
+    }
+
+    private var basicInfoSection: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Basic Info")
+                .font(.subheadline.weight(.semibold))
+
+            labeledTextField("Name", text: $name, prompt: "Client name")
+            phoneCodeLookupSection
+        }
+    }
+
+    private var locationSection: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Location")
+                .font(.subheadline.weight(.semibold))
+
+            if countries.isEmpty {
+                Text("Country data unavailable")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            } else {
+                VStack(alignment: .leading, spacing: 5) {
+                    fieldLabel("Country")
+
+                    Picker("Country", selection: $selectedCountryISOCode) {
+                        ForEach(countries) { country in
+                            Text(country.countryName)
+                                .tag(country.isoCode)
+                        }
+                    }
+                    .labelsHidden()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+
+                labeledTextField("City", text: $cityName, prompt: "City")
+
+                VStack(alignment: .leading, spacing: 5) {
+                    fieldLabel("Time zone")
+
+                    if currentTimeZones.count > 1 {
+                        Picker("Time zone", selection: $selectedTimeZoneIdentifier) {
+                            ForEach(currentTimeZones) { timeZone in
+                                Text(timeZonePickerLabel(for: timeZone))
+                                    .lineLimit(1)
+                                    .tag(timeZone.identifier)
+                            }
+                        }
+                        .labelsHidden()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    } else if let onlyTimeZone = currentTimeZones.first {
+                        Text(timeZonePickerLabel(for: onlyTimeZone))
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+            }
+        }
+    }
+
+    private var detailsSection: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Details")
+                .font(.subheadline.weight(.semibold))
+
+            labeledTextField("Note", text: $note, prompt: "Optional note")
+            Toggle("Show in widget", isOn: $isFavorite)
+        }
+    }
+
     private var phoneCodeLookupSection: some View {
         VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                TextField("Phone code or number prefix", text: $phoneCode)
+            fieldLabel("Phone code or number prefix")
+
+            HStack(spacing: 8) {
+                TextField("+49, +1 212", text: $phoneCode)
+                    .textFieldStyle(.roundedBorder)
 
                 Button("Lookup") {
                     runPhoneCodeLookup()
@@ -160,6 +235,22 @@ struct ContactFormView: View {
                 phoneCodeLookupResultView(lookupResult)
             }
         }
+    }
+
+    private func labeledTextField(_ title: String, text: Binding<String>, prompt: String) -> some View {
+        VStack(alignment: .leading, spacing: 5) {
+            fieldLabel(title)
+
+            TextField(prompt, text: text)
+                .textFieldStyle(.roundedBorder)
+        }
+    }
+
+    private func fieldLabel(_ title: String) -> some View {
+        Text(title)
+            .font(.caption.weight(.medium))
+            .foregroundStyle(.secondary)
+            .lineLimit(1)
     }
 
     private var selectedCountry: CountryTimeData? {
@@ -177,7 +268,7 @@ struct ContactFormView: View {
     }
 
     private func timeZonePickerLabel(for timeZone: CountryTimeZone) -> String {
-        let cities = timeZone.majorCities.prefix(3).joined(separator: ", ")
+        let cities = timeZone.majorCities.prefix(2).joined(separator: ", ")
 
         guard !cities.isEmpty else {
             return timeZone.label
@@ -216,22 +307,30 @@ struct ContactFormView: View {
         actionTitle: String,
         action: @escaping () -> Void
     ) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text(country.countryName)
-                .font(.caption.weight(.semibold))
+        HStack(alignment: .center, spacing: 8) {
+            VStack(alignment: .leading, spacing: 3) {
+                Text(country.countryName)
+                    .font(.caption.weight(.semibold))
+                    .lineLimit(1)
 
-            Text("\(country.defaultCity) - \(timeZoneService.formatTime(Date(), in: timeZone.identifier, format: appState.settings.timeFormat))")
-                .font(.caption)
-                .foregroundStyle(.secondary)
+                Text("\(country.defaultCity) - \(timeZoneService.formatTime(Date(), in: timeZone.identifier, format: appState.settings.timeFormat))")
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(1)
 
-            Text(timeZone.label)
-                .font(.caption2)
-                .foregroundStyle(.secondary)
+                Text(timeZone.label)
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(1)
+            }
+
+            Spacer(minLength: 8)
 
             Button(actionTitle, action: action)
                 .controlSize(.small)
         }
         .padding(8)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(nsColor: .controlBackgroundColor).opacity(0.9))
         .overlay(
             RoundedRectangle(cornerRadius: 8, style: .continuous)
@@ -244,6 +343,7 @@ struct ContactFormView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(country.countryName)
                 .font(.caption.weight(.semibold))
+                .lineLimit(1)
 
             Text("Current time range: \(timeZoneService.timeRangeDescription(for: country.timeZones, format: appState.settings.timeFormat))")
                 .font(.caption)
@@ -256,9 +356,11 @@ struct ContactFormView: View {
             Picker("Choose city/time zone", selection: $lookupTimeZoneIdentifier) {
                 ForEach(country.timeZones) { timeZone in
                     Text(lookupTimeZoneLabel(for: timeZone))
+                        .lineLimit(1)
                         .tag(timeZone.identifier)
                 }
             }
+            .labelsHidden()
 
             Button("Use selected time zone") {
                 let timeZone = timeZone(in: country, matching: lookupTimeZoneIdentifier)
@@ -273,6 +375,7 @@ struct ContactFormView: View {
             .controlSize(.small)
         }
         .padding(8)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(nsColor: .controlBackgroundColor).opacity(0.9))
         .overlay(
             RoundedRectangle(cornerRadius: 8, style: .continuous)
@@ -286,38 +389,52 @@ struct ContactFormView: View {
             Text("This phone code is used by multiple countries. Choose one.")
                 .font(.caption)
                 .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
 
-            ForEach(countries) { country in
-                HStack(alignment: .center, spacing: 8) {
-                    VStack(alignment: .leading, spacing: 3) {
-                        Text(country.countryName)
-                            .font(.caption.weight(.semibold))
-
-                        Text(country.defaultCity)
-                            .font(.caption2)
-                            .foregroundStyle(.secondary)
-
-                        Text(countryTimeSummary(for: country))
-                            .font(.caption2)
-                            .foregroundStyle(.secondary)
+            ScrollView {
+                LazyVStack(spacing: 6) {
+                    ForEach(countries) { country in
+                        compactCountryLookupRow(for: country)
                     }
-
-                    Spacer()
-
-                    Button("Use") {
-                        guard let timeZone = defaultTimeZone(for: country) else {
-                            return
-                        }
-
-                        applyLookupSelection(country: country, timeZone: timeZone)
-                    }
-                    .controlSize(.small)
                 }
-                .padding(6)
-                .background(Color(nsColor: .controlBackgroundColor).opacity(0.8))
-                .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
             }
+            .frame(maxHeight: 170)
         }
+    }
+
+    private func compactCountryLookupRow(for country: CountryTimeData) -> some View {
+        HStack(alignment: .center, spacing: 8) {
+            VStack(alignment: .leading, spacing: 3) {
+                Text(country.countryName)
+                    .font(.caption.weight(.semibold))
+                    .lineLimit(1)
+
+                Text(country.defaultCity)
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(1)
+
+                Text(countryTimeSummary(for: country))
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(1)
+            }
+
+            Spacer(minLength: 8)
+
+            Button("Use") {
+                guard let timeZone = defaultTimeZone(for: country) else {
+                    return
+                }
+
+                applyLookupSelection(country: country, timeZone: timeZone)
+            }
+            .controlSize(.small)
+        }
+        .padding(7)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(nsColor: .controlBackgroundColor).opacity(0.8))
+        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
     }
 
     private func runPhoneCodeLookup() {

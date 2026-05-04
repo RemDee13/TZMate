@@ -14,8 +14,8 @@ struct TZMateWidgetEntry: TimelineEntry {
 }
 
 struct TZMateWidgetProvider: TimelineProvider {
-    private let contactStorageService = ContactStorageService()
-    private let settingsStorageService = SettingsStorageService()
+    private let contactStorageService = ContactStorageService(allowsStandardFallback: false)
+    private let settingsStorageService = SettingsStorageService(allowsStandardFallback: false)
 
     func placeholder(in context: Context) -> TZMateWidgetEntry {
         TZMateWidgetEntry(
@@ -41,10 +41,43 @@ struct TZMateWidgetProvider: TimelineProvider {
         let favoriteContacts = contacts.filter(\.isFavorite)
         let displayContacts = favoriteContacts.isEmpty ? contacts : favoriteContacts
 
+        logDebugSnapshot(
+            sharedDefaultsAvailable: contactStorageService.isSharedStorageAvailable,
+            contactCount: contacts.count,
+            favoriteCount: favoriteContacts.count
+        )
+
         return TZMateWidgetEntry(
             date: Date(),
             contacts: Array(displayContacts.prefix(8)),
             settings: settings
         )
     }
+
+    private func logDebugSnapshot(sharedDefaultsAvailable: Bool, contactCount: Int, favoriteCount: Int) {
+        #if DEBUG
+        WidgetDebugDiagnostics.log(
+            sharedDefaultsAvailable: sharedDefaultsAvailable,
+            contactCount: contactCount,
+            favoriteCount: favoriteCount
+        )
+        #endif
+    }
 }
+
+#if DEBUG
+private enum WidgetDebugDiagnostics {
+    private static var didLog = false
+
+    static func log(sharedDefaultsAvailable: Bool, contactCount: Int, favoriteCount: Int) {
+        guard !didLog else {
+            return
+        }
+
+        didLog = true
+        print(
+            "TZ Mate widget storage: sharedDefaultsAvailable=\(sharedDefaultsAvailable), contacts=\(contactCount), favorites=\(favoriteCount)"
+        )
+    }
+}
+#endif

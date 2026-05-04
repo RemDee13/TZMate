@@ -7,6 +7,7 @@
 
 import AppKit
 import SwiftUI
+import WidgetKit
 
 @MainActor
 final class AppState: ObservableObject {
@@ -15,17 +16,20 @@ final class AppState: ObservableObject {
     @Published private(set) var contacts: [Contact]
     @Published private(set) var launchAtLoginErrorMessage: String?
     @Published private(set) var automaticallyChecksForUpdates: Bool
+    @Published private(set) var widgetDiagnostics: WidgetDiagnostics
 
     let settingsStorageService: SettingsStorageService
     let contactStorageService: ContactStorageService
     let launchAtLoginService: LaunchAtLoginService
     let updateService: UpdateService
+    let widgetDiagnosticsService: WidgetDiagnosticsService
 
     init(
         settingsStorageService: SettingsStorageService? = nil,
         contactStorageService: ContactStorageService = ContactStorageService(),
         launchAtLoginService: LaunchAtLoginService = LaunchAtLoginService(),
-        updateService: UpdateService? = nil
+        updateService: UpdateService? = nil,
+        widgetDiagnosticsService: WidgetDiagnosticsService = WidgetDiagnosticsService()
     ) {
         self.settingsStorageService = settingsStorageService ?? SettingsStorageService(
             defaultSettingsProvider: {
@@ -35,11 +39,14 @@ final class AppState: ObservableObject {
         self.contactStorageService = contactStorageService
         self.launchAtLoginService = launchAtLoginService
         self.updateService = updateService ?? UpdateService()
+        self.widgetDiagnosticsService = widgetDiagnosticsService
         settings = self.settingsStorageService.loadSettings()
         contacts = contactStorageService.loadContacts()
         automaticallyChecksForUpdates = self.updateService.automaticallyChecksForUpdates
+        widgetDiagnostics = widgetDiagnosticsService.loadDiagnostics()
         DispatchQueue.main.async { [weak self] in
             self?.syncLaunchAtLoginStatus()
+            self?.reloadWidgetTimelinesIfContactsExist()
         }
     }
 
@@ -52,6 +59,8 @@ final class AppState: ObservableObject {
         let normalizedContact = contactWithWidgetOrderIfNeeded(contact)
         contacts = contactStorageService.addContact(normalizedContact, to: contacts)
         contactStorageService.saveContacts(contacts)
+        refreshWidgetDiagnostics()
+        reloadWidgetTimelines()
     }
 
     func updateContact(_ contact: Contact) {
@@ -59,11 +68,15 @@ final class AppState: ObservableObject {
         updatedContact.updatedAt = Date()
         contacts = contactStorageService.updateContact(updatedContact, in: contacts)
         contactStorageService.saveContacts(contacts)
+        refreshWidgetDiagnostics()
+        reloadWidgetTimelines()
     }
 
     func deleteContact(id: UUID) {
         contacts = contactStorageService.deleteContact(id: id, from: contacts)
         contactStorageService.saveContacts(contacts)
+        refreshWidgetDiagnostics()
+        reloadWidgetTimelines()
     }
 
     func toggleFavorite(for contactID: UUID) {
@@ -78,6 +91,8 @@ final class AppState: ObservableObject {
 
         contacts = contactStorageService.updateContact(updatedContact, in: contacts)
         contactStorageService.saveContacts(contacts)
+        refreshWidgetDiagnostics()
+        reloadWidgetTimelines()
     }
 
     func setLaunchAtLogin(_ enabled: Bool) {
@@ -104,6 +119,30 @@ final class AppState: ObservableObject {
     func setAutomaticallyChecksForUpdates(_ enabled: Bool) {
         updateService.setAutomaticallyChecksForUpdates(enabled)
         automaticallyChecksForUpdates = updateService.automaticallyChecksForUpdates
+    }
+
+    func refreshWidgetDiagnostics() {
+        widgetDiagnostics = widgetDiagnosticsService.loadDiagnostics()
+    }
+
+    func reloadWidgetTimelinesManually() {
+        WidgetCenter.shared.reloadAllTimelines()
+        refreshWidgetDiagnostics()
+    }
+
+    func copyWidgetDiagnosticsToPasteboard() {
+        NSPasteboard.general.clearContents()
+        NSPasteboard.general.setString(widgetDiagnostics.reportText, forType: .string)
+    }
+
+    func migrateContactsToSharedStorage() {
+        let didMigrate = widgetDiagnosticsService.migrateContactsToSharedStorageIfNeeded()
+        contacts = contactStorageService.loadContacts()
+        refreshWidgetDiagnostics()
+
+        if didMigrate {
+            WidgetCenter.shared.reloadAllTimelines()
+        }
     }
 
     private func contactWithWidgetOrderIfNeeded(_ contact: Contact) -> Contact {
@@ -136,6 +175,18 @@ final class AppState: ObservableObject {
         updatedSettings.launchAtLogin = systemValue
         settings = updatedSettings
         settingsStorageService.saveSettings(updatedSettings)
+    }
+
+    private func reloadWidgetTimelines() {
+        WidgetCenter.shared.reloadTimelines(ofKind: Constants.widgetKind)
+    }
+
+    private func reloadWidgetTimelinesIfContactsExist() {
+        guard !contacts.isEmpty else {
+            return
+        }
+
+        reloadWidgetTimelines()
     }
 }
 
